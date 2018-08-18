@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+
+    .top {
+        flex-basis: 40px;
+        display: flex;            
+        background-color: #ff8b00;
+       
+
+        .back  {
+            flex-basis: 40px;         
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+      
+
+        .title {
+            flex: 1;
+            font-size: 18px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right  {
+            flex-basis: 40px;
+            
+        }
+    }
+    .select {
+        flex-basis: 30px;
+        background-color: skyblue;
+    }
+}

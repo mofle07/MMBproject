@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .top {
+  flex-basis: 40px;
+  display: flex;
+  background-color: #ff8b00;
+}
+.container .top .back {
+  flex-basis: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.container .top .title {
+  flex: 1;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .top .right {
+  flex-basis: 40px;
+}
+.container .select {
+  flex-basis: 30px;
+  background-color: skyblue;
+}
+
+/*# sourceMappingURL=gather.css.map */
