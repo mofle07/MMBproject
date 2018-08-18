@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="./lib/js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="./lib/css/bootstrap.css">
+    <script src="./lib/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <script src="./lib/js/mui.min.js"></script>
+    <link rel="stylesheet" href="./css/haitao.css">
+    <script src="./js/haitao.js"></script>
 </head>
+
 <body>
-    <h1>海淘</h1>
+    <div class="top">
+        <div class="top-iner">
+            <div class="top-bar">
+                <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
+                <div class="searchbox">
+                    <input type="text" placeholder="搜索商品比价">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+                <a href="">下载</a>
+            </div>
+            <div class="nav">
+                <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <div class="mui-scroll">
+                        <a class="mui-control-item ">
+                            首页
+                        </a>
+                        <a class="mui-control-item">
+                            省钱控
+                        </a>
+                        <a class="mui-control-item">
+                            比价搜索
+                        </a>
+                        <a class="mui-control-item">
+                            国内折扣
+                        </a>
+                        <a class="mui-control-item">
+                            查历史价
+                        </a>
+                        <a class="mui-control-item">
+                            白菜价
+                        </a>
+                        <a class="mui-control-item">
+                            小时风云榜
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="productslist">
+            <ul>
+                <li>
+                    <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
+                    <div class="productInfo">
+                        <p class="decript">
+                            妮维雅 全身深层润肤乳 125ml*2瓶
+                            <span class=" preferential">14.9元(券后)</span>
+                        </p>
+                        <p class="other">
+                            <span class="place">天猫商城 | 08-18 15:25</span>
+                            <span class="comments  mui-pull-right">
+                                <i class="glyphicon glyphicon-comment"></i>
+                                0</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 分页 -->
+        <div class="pagination"></div>
+       
+    </div>
+    <div class="footer">
+         <!-- 面包屑导航 -->
+         <div class="breadCrumb">
+                <a href="">首页</a>
+                <span class="">></span>
+                <span>省钱控</span>
+                </div>
+    </div>
 </body>
+
 </html>
