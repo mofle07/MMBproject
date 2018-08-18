@@ -72,8 +72,6 @@ $(function() {
 
     //获取参数的id
     //给下拉列表添加点击事件
-    
-   //li是模板生成的,怎么样才能把里面的值传出来
 
     $("ul").on("click","li",function(){
         
@@ -84,8 +82,7 @@ $(function() {
 
     });
 
-    var qw = show;
-    console.log(show);
+  
     
     
    
