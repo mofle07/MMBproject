@@ -73,7 +73,7 @@ li {
 
 /* 设置网页的版心 */
 body {
-  font: 12px/100% "微软雅黑";
+  font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   background-color: #fff;
 }
 
@@ -104,9 +104,10 @@ html {
   flex-direction: column;
 }
 .container .header {
-  flex-basis: 100px;
+  min-height: 100px;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #e6e6e6;
 }
 .container .header .header-info {
   flex-basis: 50px;
@@ -114,14 +115,14 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 5px;
 }
 .container .header .header-info .logo a img {
-  width: 190px;
+  width: 180px;
 }
 .container .header .header-info .app a img {
-  width: 40px;
+  width: 35px;
 }
 .container .header .search {
   flex-basis: 50px;
@@ -136,6 +137,7 @@ html {
   border-radius: 30px;
   margin: 0;
   background-color: #f1f1f1;
+  border: none;
 }
 .container .header .search button {
   font-size: 16px;
@@ -152,8 +154,6 @@ html {
 }
 .container .main {
   flex: 1;
-  background-color: #6f8e9c;
-  position: relative;
 }
 .container .footer {
   flex-basis: 100px;

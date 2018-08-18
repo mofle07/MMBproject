@@ -78,7 +78,7 @@ li {
 /* 设置网页的版心 */
 
 body {
-    font: 12px/100% "微软雅黑";
+    font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     background-color: #fff;
 }
 
@@ -111,28 +111,29 @@ html {
     display: flex;
     flex-direction: column;
     .header {
-       flex-basis: 100px;
+       min-height: 100px;
        display: flex;
        flex-direction: column;
+       border-bottom: 1px solid #e6e6e6;
         .header-info {
              flex-basis: 50px;
              background-color: #ff841d;
              display: flex;
              align-items: center;
              justify-content: space-between;
-             padding-left: 10px;
+             padding-left: 15px;
              padding-right: 5px;
             .logo {
                 a {
                     img {
-                        width: 190px;
+                        width: 180px;
                     }
                 }
             }
             .app {
                 a {
                     img {
-                        width: 40px;
+                        width: 35px;
                         ;
                     }
                 }
@@ -143,7 +144,6 @@ html {
             flex-basis: 50px;
             display: flex;
             align-items: center;
-            // justify-content: center;
             padding: 0 10px;
             position: relative;
             input {
@@ -152,6 +152,7 @@ html {
                 border-radius: 30px;
                 margin: 0;
                 background-color: #f1f1f1;
+                border: none;
             }
             button {
                 font-size: 16px;
@@ -171,8 +172,6 @@ html {
     }
     .main {
         flex: 1;
-        background-color: rgb(111, 142, 156);
-        position: relative;
     }
     .footer {
         flex-basis: 100px;
