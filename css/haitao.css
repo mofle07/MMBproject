@@ -22,6 +22,7 @@ img {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .clearfix::after {
@@ -133,12 +134,77 @@ body {
   color: orangered;
 }
 
+.footer {
+  position: relative;
+}
 .footer .breadCrumb {
   height: 40px;
   display: flex;
   align-items: center;
   border-bottom: solid 1px #ccc;
-  border-top: solid 1px  #ccc;
+  border-top: solid 1px #ccc;
+}
+.footer .foot-nav {
+  height: 34px;
+  display: flex;
+  margin-top: 30px;
+  border-top: #ccc solid 1px;
+  border-bottom: solid 1px #ccc;
+}
+.footer .foot-nav a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+.footer .foot-nav a:nth-child(2) {
+  border-left: solid #ccc 1px;
+  border-right: solid #ccc 1px;
+}
+.footer .foot-nav a img {
+  width: 15px;
+  height: 15px;
+}
+.footer .friendLink {
+  height: 60px;
+  padding: 15px 0px;
+  text-align: center;
+  opacity: 0;
+}
+.footer .friendLink .loadApp {
+  color: #f00;
+}
+.footer .app-bar {
+  height: 60px;
+  position: absolute;
+  bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+.footer .app-bar .man {
+  width: 44px;
+  height: 44px;
+  background: url("../images/bottom.png") no-repeat;
+}
+.footer .app-bar .info .title {
+  font-size: 18px;
+}
+.footer .app-bar .info .descript {
+  font-size: 14px;
+}
+.footer .app-bar .download-btn {
+  height: 40px;
+  width: 74px;
+  background: orange;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  padding: 0px;
+  border-radius: 8px;
+}
+.footer .app-bar .download-btn:hover {
+  background-color: #32104e;
 }
 
 /*# sourceMappingURL=haitao.css.map */
