@@ -1,0 +1,144 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  outline: 0 none;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #f2f2f2;
+  font: 12px/100% "微软雅黑";
+}
+
+.top {
+  position: relative;
+  height: 90px;
+  background-color: #fff;
+}
+.top .top-iner {
+  position: fixed;
+  height: 90px;
+}
+.top .top-iner .top-bar {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: solid #ccc 1px;
+}
+.top .top-iner .top-bar img {
+  flex-basis: 80px;
+  height: 24px;
+}
+.top .top-iner .top-bar .searchbox {
+  flex: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  position: relative;
+}
+.top .top-iner .top-bar .searchbox input {
+  width: 100%;
+  height: 20px;
+  border: solid 1px red;
+  background-color: #eee;
+  border-radius: 15px;
+  padding-left: 20px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+.top .top-iner .top-bar .searchbox .glyphicon-search {
+  position: absolute;
+  top: 4px;
+  left: 10px;
+}
+.top .top-iner .top-bar a {
+  flex-basis: 50px;
+  height: 20px;
+  border: solid orangered 1px;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 20px;
+  color: orangered;
+}
+.top .top-iner .nav {
+  position: relative;
+}
+.top .top-iner .nav a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main {
+  background-color: #fff;
+  margin-top: 10px;
+}
+.main .productslist ul li {
+  height: 130px;
+  border-bottom: solid 1px #ccc;
+  display: flex;
+  padding: 10px;
+}
+.main .productslist ul li img {
+  flex-basis: 110px;
+  height: 110px;
+}
+.main .productslist ul li .productInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 4px;
+}
+.main .productslist ul li .productInfo .decript {
+  font-size: 16px;
+  letter-spacing: 3px;
+  line-height: 20px;
+}
+.main .productslist ul li .productInfo .decript .preferential {
+  color: orangered;
+}
+
+.footer .breadCrumb {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #ccc;
+  border-top: solid 1px  #ccc;
+}
+
+/*# sourceMappingURL=haitao.css.map */
