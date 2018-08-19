@@ -1,0 +1,225 @@
+body,
+div,
+span,
+p,
+a,
+img,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+i,
+em,
+b,
+strong,
+del,
+s,
+u,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+/* 清楚网页内标签的内外边距 */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 清楚a标签的下划线和默认字体颜色 */
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+/* 清除表单输入框的边框和外轮廓线 */
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+/* 低版本的插入图片会默认生成边框 */
+
+i,
+em {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+/* 清除li标签的默认小点点 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 设置网页的版心 */
+
+body {
+    font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    background-color: #fff;
+}
+
+/* 修改网页默认字体和行高 */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body,
+html {
+   
+    width: 100%;
+    height: 100%;
+}
+body{
+    box-sizing: border-box;
+}
+/* 设置清除浮动影响 */
+div.container{
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .header{
+        flex-basis: 50px;
+        background-color: #f4483e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .back {
+            a {
+                font-size: 20px;
+                color: #fff;
+                padding-left: 15px;
+            }
+        }
+
+        .title{
+            font-size: 20px;
+            color: #fff;
+        }
+        .app {
+            padding-right: 15px;
+            a {
+                img {
+                    width: 35px;
+                    ;
+                }
+            }
+        }
+    }
+
+    .main{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        .list{
+            // flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            a{
+                width: 33%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        .bar{
+            flex-basis: 30px;
+            background-color: #efefef;
+            border-top: 0.5px solid #ccc;
+            span{
+                margin-left: 15px;
+                font-size: 12px;
+                line-height: 30px;
+                color: #595959;
+            }
+        }
+    }
+
+    .footer {
+        flex-basis: 100px;
+        background-color: #efefef;
+        .footer-nav {
+            flex-basis: 35px;
+            ul {
+                display: flex;
+                align-items: center;
+                border-top: 1px solid #c4c4c4;
+                border-bottom: 1px solid #c4c4c4;
+                li {
+                    line-height: 35px;
+                    flex: 1;
+                    text-align: center;
+                    border-right: 1px solid #c4c4c4;
+                    &:nth-child(3) {
+                        border-right: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    a {
+                        color: #5a5a5a;
+                    }
+                    img {
+                        width: 15px;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .footer-info {
+            height: 65px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #5a5a5a;
+            p {
+                a {
+                    color: red;
+                }
+            }
+        }
+    }
+}
