@@ -1,81 +1,42 @@
 @charset "UTF-8";
-body,
-div,
-span,
-p,
-a,
-img,
-ul,
-ol,
-dl,
-li,
-dt,
-dd,
-h1,
-h2,
-h3,
-h4,
-input,
-i,
-em,
-b,
-strong,
-del,
-s,
-u,
-input {
+body, div, span, p, a, img, ul, ol, dl, li, dt, dd, h1, h2, h3, h4, input, i, em, b, strong, del, s, u, input {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 /* 清楚网页内标签的内外边距 */
 a {
   text-decoration: none;
-  color: #000;
-}
+  color: #000; }
 
 /* 清楚a标签的下划线和默认字体颜色 */
 input {
   border: 0 none;
-  outline: 0 none;
-}
+  outline: 0 none; }
 
 /* 清除表单输入框的边框和外轮廓线 */
 img {
   border: 0 none;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /* 低版本的插入图片会默认生成边框 */
-i,
-em {
-  font-style: normal;
-}
+i, em {
+  font-style: normal; }
 
-h1,
-h2,
-h3,
-h4,
-b,
-strong {
-  font-weight: normal;
-}
+h1, h2, h3, h4, b, strong {
+  font-weight: normal; }
 
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 /* 清除li标签的默认小点点 */
 .w {
   width: 1200px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 /* 设置网页的版心 */
 body {
   font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 /* 修改网页默认字体和行高 */
 .clearfix:after {
@@ -83,32 +44,26 @@ body {
   display: block;
   height: 0;
   clear: both;
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 .clearfix {
-  *zoom: 1;
-}
+  *zoom: 1; }
 
-body,
-html {
+body, html {
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
 /* 设置清除浮动影响 */
 .container {
   height: 100%;
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 .container .header {
   min-height: 100px;
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid #e6e6e6;
-}
+  border-bottom: 1px solid #e6e6e6; }
 .container .header .header-info {
   flex-basis: 50px;
   background-color: #ff841d;
@@ -116,29 +71,24 @@ html {
   align-items: center;
   justify-content: space-between;
   padding-left: 15px;
-  padding-right: 5px;
-}
+  padding-right: 5px; }
 .container .header .header-info .logo a img {
-  width: 180px;
-}
+  width: 180px; }
 .container .header .header-info .app a img {
-  width: 35px;
-}
+  width: 35px; }
 .container .header .search {
   flex-basis: 50px;
   display: flex;
   align-items: center;
   padding: 0 10px;
-  position: relative;
-}
+  position: relative; }
 .container .header .search input {
   font-size: 16px;
   height: 30px;
   border-radius: 30px;
   margin: 0;
   background-color: #f1f1f1;
-  border: none;
-}
+  border: none; }
 .container .header .search button {
   font-size: 16px;
   color: white;
@@ -150,74 +100,60 @@ html {
   border: none;
   outline: none;
   position: absolute;
-  right: 10px;
-}
+  right: 10px; }
 .container .main {
-  flex: 1;
-}
+  flex: 1; }
 .container .footer {
   flex-basis: 100px;
-  background-color: #efefef;
-}
+  background-color: #efefef; }
 .container .footer .footer-nav {
-  flex-basis: 35px;
-}
+  flex-basis: 35px; }
 .container .footer .footer-nav ul {
   display: flex;
   align-items: center;
   border-top: 1px solid #c4c4c4;
-  border-bottom: 1px solid #c4c4c4;
-}
+  border-bottom: 1px solid #c4c4c4; }
 .container .footer .footer-nav ul li {
   line-height: 35px;
   flex: 1;
   text-align: center;
-  border-right: 1px solid #c4c4c4;
-}
+  border-right: 1px solid #c4c4c4; }
 .container .footer .footer-nav ul li:nth-child(3) {
   border-right: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
+  justify-content: center; }
 .container .footer .footer-nav ul li a {
-  color: #5a5a5a;
-}
+  color: #5a5a5a; }
 .container .footer .footer-nav ul li img {
   width: 15px;
-  display: block;
-}
+  display: block; }
 .container .footer .footer-info {
   height: 65px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #5a5a5a;
-}
+  color: #5a5a5a; }
 .container .footer .footer-info p a {
-  color: red;
-}
+  color: red; }
 
 .main {
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 .main .navBar {
   flex-basis: 30px;
   line-height: 30px;
   color: #000;
   background-color: #f3f3f3;
   border-bottom: 1px solid #c4c4c4;
-  padding-left: 5px;
-}
+  padding-left: 5px; }
 .main .brandTitles {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-}
+  position: relative; }
 .main .brandTitles .title {
   flex-basis: 40px;
   line-height: 40px;
@@ -225,11 +161,9 @@ html {
   background-color: #eee;
   color: #874604;
   font-size: 16px;
-  font-weight: bold;
-}
+  font-weight: bold; }
 .main .brandTitles .brands {
-  flex: 1;
-}
+  flex: 1; }
 .main .brandTitles .brands li.brand {
   line-height: 20px;
   margin: 10px 0;
@@ -239,34 +173,26 @@ html {
   font-weight: bold;
   margin: 0;
   border: 0px solid #000;
-  border-bottom: 1px solid #c4c4c4;
-}
+  border-bottom: 1px solid #c4c4c4; }
 .main .brandTitles .brands li.brand .mui-navigate-right {
   color: #000;
   display: flex;
-  font-weight: normal;
-}
+  font-weight: normal; }
 .main .brandTitles .brands li.brand .mui-navigate-right .left {
-  margin-right: 8px;
-}
+  margin-right: 8px; }
 .main .brandTitles .brands li.brand .mui-navigate-right .left .mui-badge-danger {
-  border-radius: 0;
-}
+  border-radius: 0; }
 .main .brandTitles .brands li.brand .mui-navigate-right .right .brandName {
   color: #000;
-  font-size: 14px;
-}
+  font-size: 14px; }
 .main .brandTitles .brands li.brand .mui-navigate-right .right .sell {
   font-size: 12px;
-  color: #b7b7b7;
-}
+  color: #b7b7b7; }
 .main .brandTitles .brands li.brand:after {
-  height: 0;
-}
+  height: 0; }
 .main .brandTitles .brands .mui-navigate-right:after {
   content: '\e583';
   color: #666;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 /*# sourceMappingURL=brand.css.map */
