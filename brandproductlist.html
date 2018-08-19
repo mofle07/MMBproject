@@ -36,25 +36,8 @@
                 <ul class="mui-table-view productlist">
 
                     <!-- 数据模板区域地址 -->
-                    <li class="mui-table-view-cell product">
-                        <a href="brandproduct.html?brandtitleid={{v.brandTitleId}}" class="">
-                            <div class="left">
-                                <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视" width="100" height="100">
-                            </div>
-                            <div class="right">
-                                <p class="brandName">乐视TV</p>
-                                <p class="productPriceBar">
-                                    <span class="productPrice mui-pull-left">"￥1999.00"</span>
-                                    <span class="star mui-pull-right">☆☆☆☆☆</span>
-                                </p>
-                                <div class="productComBar">
-                                    <span class="productQuote">报价(6)</span>
-                                    <span class="productCom">评论(2286)</span>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                   
+
+
                 </ul>
 
             </div>
@@ -62,13 +45,28 @@
     </div>
 
     <!-- 数据渲染模板 -->
-    <!-- <script type="text/html" id="brandTitleTmp">
+    <script type="text/html" id="productTmp">
         {{each result v i}}
-        <li class="mui-table-view-cell brand" data-brandTitleId={{v.brandTitleId}}>
-            <a href="brand.html?brandtitleid={{v.brandTitleId}}" class="mui-navigate-right brandText">{{v.brandTitle}}</a>
+        <li class="mui-table-view-cell product">
+            <a href="productcom.html?productId={{v.productId}}" class="">
+                <div class="left">
+                    {{#v.productImg}}
+                </div>
+                <div class="right">
+                    <p class="brandName mui-ellipsis-2">{{v.productName}}</p>
+                    <p class="productPriceBar">
+                        <span class="productPrice mui-pull-left">{{v.productPrice}}</span>
+                        <span class="star mui-pull-right">☆☆☆☆☆</span>
+                    </p>
+                    <div class="productComBar">
+                        <span class="productQuote">{{v.productQuote}}</span>
+                        <span class="productCom">{{v.productCom}}</span>
+                    </div>
+                </div>
+            </a>
         </li>
         {{/each}}
-    </script> -->
+    </script>
 </body>
 
 </html>

@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+ $(function () {
+     $(".footer-nav").on('mouseenter', 'li', function () {
+         $(this).addClass('active').siblings().removeClass('active');
+         //console.log("haha1");
+
+     })
+ })
+=======
 // 封装区域 -----------------------
 //a. URL中的参数获取(可适配单个/多个参数) - 周
 function getParam(){
@@ -40,3 +49,4 @@ $(function () {
 
 
 })
+>>>>>>> ad67227387ebe4334ce4adb5c93d9b99a67c6dad
