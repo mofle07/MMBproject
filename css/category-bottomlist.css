@@ -1,0 +1,80 @@
+/*
+Error: Invalid CSS after "<<<<<<< HEAD": expected "{", was "}"
+        on line 222 of sass/common.scss
+        from line 1 of sass/category-bottomlist.scss
+
+217:                     }
+218:                 }
+219:             }
+220:         }
+221: <<<<<<< HEAD
+222:     }
+223: =======
+224:     }
+225: }
+226: 
+227: 
+
+Backtrace:
+sass/common.scss:222
+sass/category-bottomlist.scss:1
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:677:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:323:in `block in visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"<<<<<<< HEAD\": expected \"{\", was \"}\"\A         on line 222 of sass/common.scss\A         from line 1 of sass/category-bottomlist.scss\A \A 217:                     }\A 218:                 }\A 219:             }\A 220:         }\A 221: <<<<<<< HEAD\A 222:     }\A 223: =======\A 224:     }\A 225: }\A 226: \A 227: "; }
