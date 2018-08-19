@@ -148,6 +148,7 @@ html {
   margin: 5px;
 }
 .container .main .products .product .box a {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
 }
@@ -156,6 +157,8 @@ html {
   align-self: center;
 }
 .container .main .products .product .box a .proname {
+  font-size: 16px;
+  line-height: 25px;
   padding-top: 15px;
   color: #000;
 }

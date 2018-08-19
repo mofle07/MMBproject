@@ -111,7 +111,6 @@ html {
     height: 100%;
     display: flex;
     flex-direction: column;
-    
 
     .header {
         height: 45px;
@@ -152,8 +151,7 @@ html {
 
             .product {
                 width: 50%;
-               
-                
+
                 .box {
                     border: 1px solid #c4c4c4;
                     display: flex;
@@ -163,6 +161,7 @@ html {
                     margin: 5px;
                    
                    a {
+                    text-decoration: none;
                        display: flex;
                        flex-direction: column;
 
@@ -171,8 +170,10 @@ html {
                        align-self: center;
                        }
                        .proname {
-                        padding-top: 15px;
-                        color: #000;
+                           font-size: 16px;
+                           line-height: 25px;
+                           padding-top: 15px;
+                           color: #000;
                        
                        }
                        .prices {
@@ -184,9 +185,6 @@ html {
                         padding: 10px 10px 10px 0px;;
                        }
                    }
-                    
-                    
-                
                 }
             }
         }
