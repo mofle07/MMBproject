@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+
+    <!-- mui框架 -->
+    <script src="./lib/js/mui.min.js"></script>
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+
+    <!-- 模板插件 -->
+    <script src="./lib/js/template-web.js"></script>
+
+    <!-- 字体图标 -->
+    <link rel="stylesheet" href="./font_9i0y6ct7jlb/iconfont.css">
+
+      <!-- bootstrap插件 -->
+      <link rel="stylesheet" href="./lib/css/bootstrap.css">
+      <script src="./lib/js/bootstrap.min.js"></script>
+
+    <script src="./js/savelist.js"></script>
+    <link rel="stylesheet" href="./css/savelist.css">
+</head>
+
+<body>
+    <!-- <h1>国内折扣商品详情页功能界面</h1> -->
+    <div class="container" style="padding:0">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="header-info">
+                <!-- 返回 -->
+                <div class="logo">
+                    <a href="javascript:back()">
+                        <i class="iconfont icon-fanhui"></i>
+                    </a>
+                </div>
+                <!-- 标题 -->
+                <div class="titlebur">
+                    国内折扣
+                </div>
+
+                <!-- APP下载 -->
+                <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- 主体 -->
+
+        <div class="main">
+            <!-- 内容 -->
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                </div>
+            </div>
+
+        </div>
+        <!-- 尾部 -->
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li class="roll">
+                        <img src="./images/top.jpg" alt="">
+                        <a>返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/html" id="savedata">
+        {{each result v i}}
+        <div class="content">
+            <div class="pic">
+                {{#v.productImgSm}}
+            </div>
+
+            <div class="info">
+                <span class="mall">{{v.productFrom}}</span>
+                <span>|</span>
+                <span class="addtime">{{v.productTime}}</span>
+                <span>|</span>
+                <span class="author">{{v.productTips}}</span>
+            </div>
+            <p class="title">{{v.productName}}</p>
+            <p class="subtitle">
+                {{v.productPinkage}}
+            </p>
+            <div class="golink">
+                <a href="">直达链接</a>
+            </div>
+            <p class="word">
+
+                {{v.productInfo2}}
+            </p>
+            <br>
+            <br>
+            <p class="subword">
+
+                {{v.productInfo1}}
+            </p>
+            <div class="subpic">
+                {{#v.productImgSm}}
+            </div>
+
+            <!-- 弹出框 -->
+            <div class="dropup">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      前往购买
+                      <!-- <span class="caret"></span> -->
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu2">
+                       {{#v.productCity}}
+                    </ul>
+                  </div>
+              
+            <!-- 二维码区 -->
+            <div class="qr">
+                <img src="./images/mmbweixin2.png" alt="">
+
+            </div>
+
+            <!-- 评论区 -->
+            {{#v.productComment}}
+        </div>
+        {{/each}}
+    </script>
+</body>
+
+</html>
