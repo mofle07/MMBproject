@@ -11,5 +11,15 @@ $(function(){
             bounce: true //是否启用回弹
            }
     });
- 
+//  封装一个函数来渲染页面
+function render(pageid){
+$.get({
+    data:{pageid:pageid},
+    success:function(res){
+var  htmlstr=template('product',res);
+$('.productslist ul').html(htmlstr);
+    }
+})
+};
+render()
 })

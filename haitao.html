@@ -113,3 +113,22 @@
 </body>
 
 </html>
+<script type="text/html" id="product">
+    {{each result v}}
+    <li>
+        <img src="{{v.productImgSm}}" alt="">
+        <div class="productInfo">
+            <p class="decript">
+                {{v.productName}}
+                <span class=" preferential">{{v.productPinkage}}</span>
+            </p>
+            <p class="other">
+                <span class="place">{{v.productFrom}}</span>
+                <span class="comments  mui-pull-right">
+                    <i class="glyphicon glyphicon-comment"></i>
+                    {{v.productComCount}}</span>
+            </p>
+        </div>
+    </li> 
+    {{/each}}   
+</script>
