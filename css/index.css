@@ -136,7 +136,12 @@ body, html {
   justify-content: center;
   color: #5a5a5a; }
 .container .footer .footer-info p a {
+<<<<<<< HEAD
+  color: red;
+}
+=======
   color: red; }
+>>>>>>> d4a833ff81a65d4ad33a692c3bc72cb0528c69c3
 
 .container .main {
   background-color: #f2f2f2; }
