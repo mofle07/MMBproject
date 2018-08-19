@@ -130,8 +130,8 @@ html {
         }
         .right {
             img {
-              width: 35px;
-            //   height: 30px;
+              width: 30px;
+              height: 30px;
               margin-right: 10px;
          }
         }
@@ -146,60 +146,63 @@ html {
     .main {
         flex: 1;
         position: relative;
-       
-        .nam {
-             display: flex;
-        flex-wrap: wrap;
-       
-
         .products {
-            
-            // flex-wrap: wrap;
-            width: 50%;
+            display: flex;
+            flex-direction: column;
+            // background-color: #5a5a5a;
 
-            // .product {
-                // width: 50%;
-
+            .product {
+                width: 100%;
                 .box {
                     border: 1px solid #c4c4c4;
                     display: flex;
                     flex-direction: column;
-                    height: 270px;
-
-                    padding: 10px 10px 0px 10px;
-                    
-                    margin: 5px;
-                   
-                   a {
-                    text-decoration: none;
+                    padding: 5px;
+                   .proname {
+                       font-size: 18px;
+                       line-height: 20px;
+                        margin-top: 20px;
+                        font-weight: bold;
+                   }
+                   .prices {
+                    color: darkorange;
+                    margin-top: 10px;
+                   }
+                   .site {
+                       line-height: 50px;
+                   }
+                   .abstract {
                        display: flex;
-                       flex-direction: column;
-                       
-
-                       img {
-                       width: 140px;
-                       height: 140px;
-                       align-self: center;
+                       flex-wrap: wrap;
+                       .left {
+                           flex: 2;
+                           .content{
+                               line-height: 25px;
+                               color: #bbbbbb;
+                               font-size: 14px; 
+                               img {
+                                   margin-top: 10PX;
+                               }    
+                           }
                        }
-                       .proname {
-                           font-size: 16px;
-                           line-height: 20px;
-                           padding-top: 15px;
-                           color: #000;
-                       
-                       }
-                       .prices {
-                        color: darkorange;
-                        margin-top: 15px;
-                       }
-                       .site {
-                           font-size: 12px;
-                        padding: 10px 10px 10px 0px;;
+                       .right {
+                           flex: 1;
+                           img {
+                              width: 100%; 
+                           }
                        }
                    }
+                }  
+                a {
+                    margin: 20px;
                 }
-            // }
-        }
+                // button {
+                //     color: #fff;
+                //     margin-top: 20px;
+                //     background-color:darkorange;
+                //    border: none;
+                // }         
+        } 
     }
     }
     .footer {

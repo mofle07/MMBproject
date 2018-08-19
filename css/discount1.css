@@ -123,7 +123,8 @@ html {
   color: #fff;
 }
 .container .header .right img {
-  width: 35px;
+  width: 30px;
+  height: 30px;
   margin-right: 10px;
 }
 .container .header h4 {
@@ -135,44 +136,55 @@ html {
   flex: 1;
   position: relative;
 }
-.container .main .nam {
+.container .main .products {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
-.container .main .nam .products {
-  width: 50%;
+.container .main .products .product {
+  width: 100%;
 }
-.container .main .nam .products .box {
+.container .main .products .product .box {
   border: 1px solid #c4c4c4;
   display: flex;
   flex-direction: column;
-  height: 270px;
-  padding: 10px 10px 0px 10px;
-  margin: 5px;
+  padding: 5px;
 }
-.container .main .nam .products .box a {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-}
-.container .main .nam .products .box a img {
-  width: 140px;
-  height: 140px;
-  align-self: center;
-}
-.container .main .nam .products .box a .proname {
-  font-size: 16px;
+.container .main .products .product .box .proname {
+  font-size: 18px;
   line-height: 20px;
-  padding-top: 15px;
-  color: #000;
+  margin-top: 20px;
+  font-weight: bold;
 }
-.container .main .nam .products .box a .prices {
+.container .main .products .product .box .prices {
   color: darkorange;
-  margin-top: 15px;
+  margin-top: 10px;
 }
-.container .main .nam .products .box a .site {
-  font-size: 12px;
-  padding: 10px 10px 10px 0px;
+.container .main .products .product .box .site {
+  line-height: 50px;
+}
+.container .main .products .product .box .abstract {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main .products .product .box .abstract .left {
+  flex: 2;
+}
+.container .main .products .product .box .abstract .left .content {
+  line-height: 25px;
+  color: #bbbbbb;
+  font-size: 14px;
+}
+.container .main .products .product .box .abstract .left .content img {
+  margin-top: 10PX;
+}
+.container .main .products .product .box .abstract .right {
+  flex: 1;
+}
+.container .main .products .product .box .abstract .right img {
+  width: 100%;
+}
+.container .main .products .product a {
+  margin: 20px;
 }
 .container .footer {
   flex-basis: 100px;
@@ -218,4 +230,4 @@ html {
   color: red;
 }
 
-/*# sourceMappingURL=discount.css.map */
+/*# sourceMappingURL=discount1.css.map */
