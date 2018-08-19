@@ -94,8 +94,12 @@
     </div>
 
     <!-- 数据渲染模板 -->
-    <script type="text/html" id="brandTmp">
-      
+    <script type="text/html" id="brandTitleTmp">
+        {{each result v i}}
+        <li class="mui-table-view-cell brand" data-brandTitleId={{v.brandTitleId}}>
+            <a href="brand.html?brandtitleid={{v.brandTitleId}}" class="mui-navigate-right brandText">{{v.brandTitle}}</a>
+        </li>
+        {{/each}}
     </script>
 </body>
 

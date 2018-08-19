@@ -18,21 +18,13 @@
     <!-- 字体图标 -->
     <link rel="stylesheet" href="./font_9i0y6ct7jlb/iconfont.css">
 
-    <!-- bootstrap插件 -->
-    <link rel="stylesheet" href="./lib/css/bootstrap.css">
-    <script src="./lib/js/bootstrap.min.js"></script>
-
-    <!-- bootstrap分页插件 -->
-    <script src="./lib/js/bootstrap-paginator.min.js"></script>
-
-
-    <script src="./js/save.js"></script>
-    <link rel="stylesheet" href="./css/save.css">
+    <script src="./js/savelist.js"></script>
+    <link rel="stylesheet" href="./css/savelist.css">
 </head>
 
 <body>
-    <!-- <h1>省钱控</h1> -->
-    <div class="container" style="padding:0" >
+    <!-- <h1>国内折扣商品详情页功能界面</h1> -->
+    <div class="container">
         <!-- 头部 -->
         <div class="header">
             <div class="header-info">
@@ -44,7 +36,7 @@
                 </div>
                 <!-- 标题 -->
                 <div class="titlebur">
-                    省钱控 - 最新优惠
+                    国内折扣
                 </div>
 
                 <!-- APP下载 -->
@@ -57,27 +49,14 @@
 
         </div>
         <!-- 主体 -->
+
         <div class="main">
             <!-- 内容 -->
-            <div class="content">
-
-
-                <ul class="mui-table-view products">
-
-                    <!-- 模板熏染的内容 -->
-                </ul>
-
-
-                    <!-- 分页插件 -->
-         
-            <div class="pull-right">
-                    <ul id="paginator"></ul>
+            <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!--这里放置真实显示的DOM内容-->
+                    </div>
                 </div>
-            
-
-            </div>
-
-        
 
         </div>
         <!-- 尾部 -->
@@ -106,26 +85,50 @@
         </div>
 
     </div>
-    <script type="text/html" id="savelist">
+    <script type="text/html" id="savedata">
         {{each result v i}}
-        <!-- 每一列 -->
-        <li class="mui-table-view-cell product" data-id="{{v.productId}}">
-            <div class="left">
-                {{#v.productImgSm}}
+        <div class="content">
+            <div class="pic">
+               {{#v.productImgSm}}
             </div>
-            
-            <div class="right">
-                <p class="title">
-                    <span class="message">{{v.productName}}</span>
-                    <span class="red">{{v.productPinkage}}</span>
-                </p>
-                <div class="brand">
-                    <span class="mall">{{v.productFrom}} | {{v.productTime}}</span>
-                    <span class="icon">
-                        <i class="iconfont icon-xinxi"></i> {{v.productComCount}}</span>
-                </div>
+
+            <div class="info">
+                <span class="mall">{{v.productFrom}}</span>
+                <span>|</span>
+                <span class="addtime">{{v.productTime}}</span>
+                <span>|</span>
+                <span class="author">{{v.productTips}}</span>
             </div>
-        </li>
+            <p class="title">{{v.productName}}</p>
+            <p class="subtitle">
+               {{v.productPinkage}}
+            </p>
+            <div class="golink">
+                <a href="">直达链接</a>
+            </div>
+            <p class="word">
+
+            {{v.productInfo2}}
+            </p>
+            <br>
+            <br>
+            <p class="subword">
+
+               {{v.productInfo1}}
+            </p>
+            <div class="subpic">
+                    {{#v.productImgSm}}
+            </div>
+
+            <!-- 二维码区 -->
+             <div class="qr">
+                 <img src="./images/mmbweixin2.png" alt="">
+
+             </div>
+
+            <!-- 评论区 -->
+            {{#v.productComment}}
+        </div>
         {{/each}}
     </script>
 </body>
