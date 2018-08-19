@@ -169,9 +169,7 @@ html {
   border-bottom: 1px solid #c4c4c4;
 }
 .container .footer .footer-nav ul li {
-  line-height: 35px;
   flex: 1;
-  text-align: center;
   border-right: 1px solid #c4c4c4;
 }
 .container .footer .footer-nav ul li:nth-child(3) {
@@ -180,7 +178,14 @@ html {
   align-items: center;
   justify-content: center;
 }
+.container .footer .footer-nav ul li.active {
+  box-shadow: 0px 0px 5px #92bdda;
+}
 .container .footer .footer-nav ul li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 35px;
   color: #5a5a5a;
 }
 .container .footer .footer-nav ul li img {
@@ -205,7 +210,7 @@ html {
 .container .main .man {
   position: fixed;
   right: 0;
-  bottom: 66px;
+  bottom: 102px;
   z-index: 100;
 }
 .container .main .man img {
@@ -213,6 +218,8 @@ html {
 }
 .container .main .navbar {
   background-color: #fff;
+  max-height: 225px;
+  overflow: hidden;
 }
 .container .main .navbar ul {
   display: flex;
@@ -222,6 +229,13 @@ html {
 .container .main .navbar ul li {
   width: 25%;
   margin-bottom: 15px;
+  padding: 5px 0;
+}
+.container .main .navbar ul li:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+.container .main .navbar ul li.active {
+  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
 }
 .container .main .navbar ul li a {
   display: flex;
@@ -232,9 +246,6 @@ html {
 .container .main .navbar ul li a img {
   width: 50px;
   margin-bottom: 15px;
-}
-.container .main .navbar .more {
-  display: none;
 }
 .container .main .recommend {
   display: flex;

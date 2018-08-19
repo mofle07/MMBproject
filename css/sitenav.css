@@ -204,4 +204,51 @@ html {
   color: red;
 }
 
-/*# sourceMappingURL=common.css.map */
+.container .header {
+  width: 100%;
+  min-height: 50px;
+}
+.container .header .header-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header .header-info .mui-icon-back {
+  color: #fff;
+  font-size: 30px;
+}
+.container .header .header-info .title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+.container .main {
+  padding: 10px 40px;
+}
+.container .main ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main ul li {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.container .main ul li a {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 15px;
+  border: 1px solid #ccc;
+}
+.container .main ul li a img {
+  width: 16px;
+  display: block;
+  margin-right: 10px;
+}
+.container .main ul li a span {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=sitenav.css.map */

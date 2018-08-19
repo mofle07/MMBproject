@@ -204,4 +204,16 @@ html {
   color: red;
 }
 
-/*# sourceMappingURL=common.css.map */
+.main .form-horizontal .form-group {
+  margin: 0;
+}
+.main .form-horizontal .form-group .btn {
+  width: 100%;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+}
+.main .form-horizontal .form-group .checkbox labal {
+  display: flex;
+  align-items: center;
+}
+
+/*# sourceMappingURL=login.css.map */
