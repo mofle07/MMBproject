@@ -1,0 +1,90 @@
+@import "./common.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    .header {
+        width: 100%;
+     flex-basis: 85px;
+      min-height: 85px;
+        border: none; 
+        position: fixed;
+        z-index: 2;
+        .header-info {
+            padding: 0 30px;
+            flex-basis: 85px;
+            .titlebur {
+                font-size: 25px;
+                color: #fff;
+                font-weight: bolder;
+            }
+            .logo {
+                .iconfont {
+                    color: #ffff;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .footer {
+        z-index: 3;
+    }
+    .main {
+        background-color: #f2f2f2;
+        padding: 95px 0px 0px 0px;
+        .content {
+            margin: 0px auto;
+            max-width: 960px;
+         
+            background-color: #fff;
+            .products {
+                .product {
+                    display: flex;
+                    padding: 14px 8px;
+                    .left {
+                        width: 100px;
+                        height: 100px;
+                        margin-right: 20px;
+                        img {
+                           width: 100%;
+                        }
+                    }
+                    .right {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        .title {
+                            font-size: 16px;
+                            .red {
+                              font-size: 16px;
+                              line-height: 20px;
+                                color: #ff8300;
+                            }
+                            .message{
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+                        .brand {
+                            color: #a1a1a1;
+                            display: flex;
+                            justify-content: space-between;
+                            .icon {
+                                display: flex;
+                                .iconfont {
+                                    font-size: 12px;
+                                    margin-right: 3px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
