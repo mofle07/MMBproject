@@ -1,4 +1,5 @@
 $(function(){
+    // 从url 中获得产品id
     var url=location.href;
    var id=url.split('=')[1];
     
