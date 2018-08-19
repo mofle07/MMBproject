@@ -15,9 +15,9 @@
     <script src="lib/js/template-web.js"></script>
 
     <!-- 自己的 -->
-    <link rel="stylesheet" href="./css/brandTitle.css">
+    <link rel="stylesheet" href="./css/brand.css">
     <script src="./js/common.js"></script>
-    <script src="./js/brandTitle.js"></script>
+    <script src="./js/brand.js"></script>
 
 </head>
 
@@ -58,9 +58,10 @@
                 <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <!-- 标题 -->
-                        <div class="title">热门品牌排行</div>
+                        <div class="title">平板电视那个好</div>
                         <ul class="mui-table-view brands">
                             <!-- 数据模板区域地址 -->
+
                         </ul>
                     </div>
                 </div>
@@ -95,7 +96,19 @@
 
     <!-- 数据渲染模板 -->
     <script type="text/html" id="brandTmp">
-      
+        {{each result v i}}
+        <li class="mui-table-view-cell brand">
+            <a href="brandproduct.html?brandtitleid={{v.brandTitleId}}" class="mui-navigate-right ">
+                <div class="left">
+                    <span class="mui-badge mui-badge-danger">{{i+1}}</span>
+                </div>
+                <div class="right">
+                    <p class="brandName">{{v.brandName}}</p>
+                    <p class="sell">{{v.brandInfo}}</p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
     </script>
 </body>
 
