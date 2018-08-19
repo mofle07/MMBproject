@@ -5,8 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/Coupon.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <script src="lib/js/zepto.min.js"></script>
+    <script src="lib/js/mui.min.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+    <script src="lib/js/template-web.js"></script>
+    <script src="./js/Coupon.js"></script>
+
+
 </head>
 <body>
-    <h1>优惠券</h1>
+    <div class="container">
+        <!-- header部分 -->
+        <div class="header">
+            <div class="back">
+                <a href="#">
+                    <
+                </a>
+            </div>
+            <div class="title">优惠券</div>
+            <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+            </div>
+        </div>
+
+        <!-- main部分 -->
+        <div class="main">
+            <div class="list">
+                <a><img src="images/sqkb_sources_static_img_news_2016_01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg" alt=""> <span>肯德基</span> </a>
+                <a><img src="images/sqkb_sources_static_img_news_2016_01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg" alt=""><span>肯德基</span></a>
+                <a><img src="images/sqkb_sources_static_img_news_2016_01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg" alt=""><span>肯德基</span></a>
+                <a><img src="images/sqkb_sources_static_img_news_2016_01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg" alt=""><span>肯德基</span></a>
+                <a><img src="images/sqkb_sources_static_img_news_2016_01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg" alt=""><span>肯德基</span></a>
+                <a><img src="images/sqkb_sources_static_img_news_2016_01bbdeaab8c24230957c3ce7015f51f57ada7c33.jpg" alt=""><span>肯德基</span></a>  
+            </div>
+            <div class="bar">
+                <span>首页>优惠</span> 
+            </div>
+        </div>
+
+        <!-- footer部分 -->
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <img src="./images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+<script>
+    // // 区域滚动初始化代码
+    // mui('.mui-scroll-wrapper').scroll({
+    //     // deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    // });
+</script>
+
+<script type="text/html" id="tpl">
+ 
+        {{each list v i}}
+        <a href=".Couponlist?id={{v.couponId}}"><img src="{{v.couponImg}}" alt=""> <span>{{v.couponTitle}}</span> </a> 
+        {{/each}}
+    
+    
+</script>

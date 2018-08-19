@@ -1,26 +1,47 @@
-@charset "UTF-8";
-body, div, span, p, a, img, ul, ol, dl, li, dt, dd, h1, h2, h3, h4, input, i, em, b, strong, del, s, u, input {
+body,
+div,
+span,
+p,
+a,
+img,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+i,
+em,
+b,
+strong,
+del,
+s,
+u,
+input {
   padding: 0;
   margin: 0; }
 
-/* 清楚网页内标签的内外边距 */
 a {
   text-decoration: none;
   color: #000; }
 
-/* 清楚a标签的下划线和默认字体颜色 */
 input {
   border: 0 none;
   outline: 0 none; }
 
-/* 清除表单输入框的边框和外轮廓线 */
 img {
   border: 0 none;
   vertical-align: middle; }
 
-/* 低版本的插入图片会默认生成边框 */
-i, em {
-  font-style: normal; }
+i,
+em {
+  font-style: normal;
+}
 
 h1, h2, h3, h4, b, strong {
   font-weight: normal; }
@@ -28,17 +49,14 @@ h1, h2, h3, h4, b, strong {
 li {
   list-style: none; }
 
-/* 清除li标签的默认小点点 */
 .w {
   width: 1200px;
   margin: 0 auto; }
 
-/* 设置网页的版心 */
 body {
   font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   background-color: #fff; }
 
-/* 修改网页默认字体和行高 */
 .clearfix:after {
   content: "";
   display: block;
@@ -54,7 +72,6 @@ body, html {
   width: 100%;
   height: 100%; }
 
-/* 设置清除浮动影响 */
 .container {
   height: 100%;
   display: flex;
@@ -147,17 +164,25 @@ body, html {
   border-top: 1px solid #c4c4c4;
   border-bottom: 1px solid #c4c4c4; }
 .container .footer .footer-nav ul li {
-  line-height: 35px;
   flex: 1;
-  text-align: center;
-  border-right: 1px solid #c4c4c4; }
+  border-right: 1px solid #c4c4c4;
+}
 .container .footer .footer-nav ul li:nth-child(3) {
   border-right: none;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
+.container .footer .footer-nav ul li.active {
+  box-shadow: 0px 0px 5px #92bdda;
+}
 .container .footer .footer-nav ul li a {
-  color: #5a5a5a; }
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 35px;
+  color: #5a5a5a;
+}
 .container .footer .footer-nav ul li img {
   width: 15px;
   display: block; }
@@ -174,21 +199,34 @@ body, html {
 .container .main {
   background-color: #f2f2f2; }
 .container .main .man {
+  display: block;
   position: fixed;
   right: 0;
-  bottom: 66px;
-  z-index: 100; }
+  bottom: 102px;
+  z-index: 100;
+}
 .container .main .man img {
   width: 60px; }
 .container .main .navbar {
-  background-color: #fff; }
+  background-color: #fff;
+  max-height: 225px;
+  overflow: hidden;
+}
 .container .main .navbar ul {
   display: flex;
   flex-wrap: wrap;
   padding: 15px 0px 5px; }
 .container .main .navbar ul li {
   width: 25%;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  padding: 5px 0;
+}
+.container .main .navbar ul li:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1), 0 1px 6px rgba(0, 0, 0, 0.05), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1), 8px 32px 32px rgba(0, 0, 0, 0.15), 8px 64px 64px rgba(0, 0, 0, 0.15);
+}
+.container .main .navbar ul li.active {
+  transition: box-shadow 600ms cubic-bezier(0.33, 0.11, 0.02, 0.99);
+}
 .container .main .navbar ul li a {
   display: flex;
   flex-direction: column;
@@ -196,9 +234,8 @@ body, html {
   justify-content: space-between; }
 .container .main .navbar ul li a img {
   width: 50px;
-  margin-bottom: 15px; }
-.container .main .navbar .more {
-  display: none; }
+  margin-bottom: 15px;
+}
 .container .main .recommend {
   display: flex;
   justify-content: space-between;

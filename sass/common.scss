@@ -27,28 +27,27 @@ input {
     margin: 0;
 }
 
-/* 清楚网页内标签的内外边距 */
+
 
 a {
     text-decoration: none;
     color: #000;
 }
 
-/* 清楚a标签的下划线和默认字体颜色 */
+
 
 input {
     border: 0 none;
     outline: 0 none;
 }
 
-/* 清除表单输入框的边框和外轮廓线 */
+
 
 img {
     border: 0 none;
     vertical-align: middle;
 }
 
-/* 低版本的插入图片会默认生成边框 */
 
 i,
 em {
@@ -68,21 +67,20 @@ li {
     list-style: none;
 }
 
-/* 清除li标签的默认小点点 */
+
 
 .w {
     width: 1200px;
     margin: 0 auto;
 }
 
-/* 设置网页的版心 */
+
 
 body {
     font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     background-color: #fff;
 }
 
-/* 修改网页默认字体和行高 */
 
 .clearfix:after {
     content: "";
@@ -103,26 +101,24 @@ html {
     height: 100%;
 }
 
-/* 设置清除浮动影响 */
 
-//通用首位样式
 .container {
     height: 100%;
     display: flex;
     flex-direction: column;
     .header {
-       min-height: 100px;
-       display: flex;
-       flex-direction: column;
-       border-bottom: 1px solid #e6e6e6;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #e6e6e6;
         .header-info {
-             flex-basis: 50px;
-             background-color: #ff841d;
-             display: flex;
-             align-items: center;
-             justify-content: space-between;
-             padding-left: 15px;
-             padding-right: 5px;
+            flex-basis: 50px;
+            background-color: #ff841d;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 15px;
+            padding-right: 5px;
             .logo {
                 a {
                     img {
@@ -139,7 +135,6 @@ html {
                 }
             }
         }
-
         .search {
             flex-basis: 50px;
             display: flex;
@@ -166,12 +161,12 @@ html {
                 outline: none;
                 position: absolute;
                 right: 10px;
-
             }
         }
     }
     .main {
         flex: 1;
+       
     }
     // 点击底部消失区域
     #hidden {
@@ -230,9 +225,7 @@ html {
                 border-top: 1px solid #c4c4c4;
                 border-bottom: 1px solid #c4c4c4;
                 li {
-                    line-height: 35px;
                     flex: 1;
-                    text-align: center;
                     border-right: 1px solid #c4c4c4;
                     &:nth-child(3) {
                         border-right: none;
@@ -240,28 +233,35 @@ html {
                         align-items: center;
                         justify-content: center;
                     }
-                    a {
-                        color: #5a5a5a;
-                    }
-                    img {
-                        width: 15px;
-                        display: block;
+                    &.active {
+                        box-shadow: 0px 0px 5px rgb(146, 189, 218);
+                    } 
+                        a {
+                            display: flex;
+                            justify-content: center;
+                            text-decoration: none;
+                            line-height: 35px;
+                            color: #5a5a5a;
+                        }
+                        img {
+                            width: 15px;
+                            display: block;
+                        }
                     }
                 }
             }
-        }
-        .footer-info {
-            height: 65px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #5a5a5a;
-            p {
-                a {
-                    color: red;
+            .footer-info {
+                height: 65px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                color: #5a5a5a;
+                p {
+                    a {
+                        color: red;
+                    }
                 }
             }
         }
     }
-}

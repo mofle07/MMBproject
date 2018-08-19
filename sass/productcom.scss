@@ -1,0 +1,157 @@
+body,
+div,
+span,
+p,
+a,
+img,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+i,
+em,
+b,
+strong,
+del,
+s,
+u,
+input {
+    padding: 0;
+    margin: 0;
+}
+
+/* 清楚网页内标签的内外边距 */
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* 清楚a标签的下划线和默认字体颜色 */
+
+input {
+    border: 0 none;
+    outline: 0 none;
+}
+
+/* 清除表单输入框的边框和外轮廓线 */
+
+img {
+    border: 0 none;
+    vertical-align: middle;
+}
+
+/* 低版本的插入图片会默认生成边框 */
+
+i,
+em {
+    font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+/* 清除li标签的默认小点点 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 设置网页的版心 */
+
+body {
+    font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    background-color: #fff;
+}
+
+/* 修改网页默认字体和行高 */
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.top {
+    height: 40px;
+    background-color: #f3f3f3;
+    color: #a24604;
+    padding-top: 10px;
+}
+
+.main {
+    background-color: #ffffff; // border: solid 2px #ed1c24;
+    .productInfo {
+        height: 120px;
+        padding: 10px;
+        display: flex;
+        img {
+            width: 80px;
+            height: 80px;
+        }
+        .descript {
+            color: #999999;
+        }
+    }
+    .comments {
+        background-color: #f8f8f8;
+        .comments-top {
+            display: flex;
+            height: 40px;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            .left {
+                display: flex;
+                align-content: center;
+                i {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background: url('../images/star.png') no-repeat 0px 0px/100% 100%;
+                }
+            }
+        }
+        .comments-content {
+            padding: 10px;
+            color: #000000;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}

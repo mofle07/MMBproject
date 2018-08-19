@@ -1,0 +1,19 @@
+@import "./common";
+
+.main {
+    .form-horizontal {
+        .form-group {
+            margin: 0;
+            .btn {
+                width: 100%;
+                background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+            }
+            .checkbox {
+                labal {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}
