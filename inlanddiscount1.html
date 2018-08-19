@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,127 +14,90 @@
     <script src="./lib/js/template-web.js"></script>
 
     <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/discount1.css">
-    <script src="./js/discount.js"></script>
+    <link rel="stylesheet" href="./css/inlanddiscount1.css">
+    <script src="./js/test.js"></script>
 </head>
+
 <body>
-        <div class="container">
+    <div class="container">
 
-                <div class="header">
-        
-                    <div class="previousPage">
-                        <a href="" class="homebutton">
-                            <span class="glyphicon glyphicon-menu-left"></span>
-                        </a>
-                    </div>
-                    <h4>国内折扣</h4>
-                    <div class="right">
-                        <a href="#">
-                            <img src="./images/header_app.png" alt="">
-                        </a>
-                    </div>
-        
-                </div>
-                <div class="main">
-                    <!-- 区域滚动 -->
-                    <div class="mui-scroll-wrapper">
-                        <div class="mui-scroll">
+        <div class="header">
 
-                                <div class="products content">
-                                        <div class="product ">
-                                            <div class="box">
-                                                    <div class="proname">西域美农新疆特产五星和田红枣250g*2</div>
-                                                    <p class="prices">19.8元(5件99元)</p>
-                                                   
-                                                    <p class="site">
-                                                        <span class="store">京东商城</span>
-                                                        <span class="date">10-22 13:00</span>
-                                                        <span class="hour">chenjiu/慢慢买</span>
-                                                    </p>
-                                                    <div class="abstract">
-                                                        <div class="left">
-                                                                <p class="content">
-                                                                    <span>西域美农新疆特产五星和田红枣250g*2西域美农新疆特产五星和田红枣250g*2</span>
-                                                                    <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
-                                                                </p>
-                                                        </div>
-                                                        <div class="right">
-                                                            <img src="./images/j_sources_img_2016_10_24_190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="">
-                                                        </div>
-                                                       
-                                                    </div>
-                                            </div>
-                                            <a href="#" class="btn btn-primary btn-lg active" role="button">Primary link</a>
-                                            <a href="" class="btn btn-default btn-lg btn-block"><span>前去购买</span></a>
-                                            <!-- <button type="button" class="btn btn-default btn-lg btn-block">前去购买</button> -->
-                                            <div class="QR">
-                                                    <img src="./images/mmbweixin2.png" alt="">
-                                                </div>
-                                        </div>
-                                       
-                                    </div> 
-                                    
-                        </div>
+            <div class="previousPage">
+                <a href="" class="homebutton">
+                    <span class="glyphicon glyphicon-menu-left"></span>
+                </a>
+            </div>
+            <h4>国内折扣</h4>
+            <div class="right">
+                <a href="#">
+                    <img src="./images/header_app.png" alt="">
+                </a>
+            </div>
+
+        </div>
+        <div class="main">
+            <!-- 区域滚动 -->
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <div class="products">
+                        
                     </div>
-               </div>
-                <div class="footer">
-                    <div class="footer-nav">
-                        <ul>
-                            <li>
-                                <a href="#">登录</a>
-                            </li>
-                            <li>
-                                <a href="#">注册</a>
-                            </li>
-                            <li>
-                                <img src="./images/top.jpg" alt="">
-                                <a href="#">返回顶部</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-info">
-                        <p>
-                            <a href="#">手机APP下载</a>
-                            <span>慢慢买手机版--掌上比价平台</span>
-                        </p>
-                        <span>m.manmanbuy.com</span>
-                    </div>
+
                 </div>
-            </div> 
-            <script id="detailPage" type="text/html">
-                 <!-- <div class="products"> -->
-                        {{each result v i}}
-                    <div class="product " >
-                        <div class="box">
-                                <div class="proname">{{v.productName}}</div>
-                                <p class="prices">{{v.productPrice}}</p>
-                               
-                                <p class="site">
-                                    <span class="store">{{v.productFrom}}</span>
-                                    <span class="date">{{v.productTime}}</span>
-                                    <span class="hour">{{v.productTips}}</span>
-                                </p>
-                                <div class="abstract">
-                                    <div class="left">
-                                            <p class="content">
-                                                <span>{{v.productInfo}}</span>
-                                                {{#v.productImg}}
-                                            </p>
-                                    </div>
-                                    <div class="right">
-                                        <img src="./images/j_sources_img_2016_10_24_190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="">
-                                    </div>
-                                   
-                                </div>
-                        </div>
-                        <button type="button" class="btn btn-default btn-lg btn-block">前去购买</button>
-                        <!-- <div class="QR">
-                                <img src="./images/mmbweixin2.png" alt="">
-                            </div> -->
-                        {{#v.productComment}}
-                    </div>
-                    {{/each}}
-                <!-- </div>  -->
-            </script>
+
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <img src="./images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+    </div>
+
 </body>
+
 </html>
+<script type="text/html" id="tpl2">
+{{each result v i}}
+<div class="box">
+        <p class="product">{{v.productName}}</p>
+        <p class="price">{{v.productPrice}}</p>
+        <p class="store">
+            <span>{{v.productName}}</span>
+            <span>{{v.productTime}}</span>
+        </p>
+    </div>
+    <div class="detail">
+            <div class="left ">
+                <span class="mui-ellipsis-2">{{v.productInfo}}</span>
+                {{#v.productImg}}
+
+            </div>
+            <div class="right">
+                <img src="./images/j_sources_img_2016_10_24_190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="">
+            </div>
+     </div>
+     <button>前往购买</button>
+     <img class="qr" src="./images/mmbweixin2.png" alt="">
+     {{#v.productComment}}
+{{/each}}
+</script>

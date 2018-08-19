@@ -146,64 +146,73 @@ html {
     .main {
         flex: 1;
         position: relative;
-        .products {
-            display: flex;
-            flex-direction: column;
-            // background-color: #5a5a5a;
+        .products{
+            padding:0 10px;
+            .box{
+                padding-top: 20px;
+                .product{
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #000;
+                    line-height: 24px;
+                }
+                .price{
+                    font-size: 14px;
+                    color:orangered;
+                    line-height: 20px;
+                }
+                .store{
+                    padding: 10px 0;
+                    font-size: 12px;
 
-            .product {
-                width: 100%;
-                .box {
-                    border: 1px solid #c4c4c4;
+                }
+            }
+            .detail{
+                display: flex;
+                .left{
+                    flex:2;
+                    height: 300px;
                     display: flex;
                     flex-direction: column;
-                    padding: 5px;
-                   .proname {
-                       font-size: 18px;
-                       line-height: 20px;
-                        margin-top: 20px;
-                        font-weight: bold;
-                   }
-                   .prices {
-                    color: darkorange;
-                    margin-top: 10px;
-                   }
-                   .site {
-                       line-height: 50px;
-                   }
-                   .abstract {
-                       display: flex;
-                       flex-wrap: wrap;
-                       .left {
-                           flex: 2;
-                           .content{
-                               line-height: 25px;
-                               color: #bbbbbb;
-                               font-size: 14px; 
-                               img {
-                                   margin-top: 10PX;
-                               }    
-                           }
-                       }
-                       .right {
-                           flex: 1;
-                           img {
-                              width: 100%; 
-                           }
-                       }
-                   }
-                }  
-                a {
-                    margin: 20px;
+                    span{
+                        height: 80px;
+                        font-size: 14px;
+                        line-height: 18px;
+                        letter-spacing: 2px;
+                        flex:1;
+                    }
+                    img{
+                        flex-basis: 200px;
+                        width: 180px;
+                        margin-bottom: 20px;
+                    }
                 }
-                // button {
-                //     color: #fff;
-                //     margin-top: 20px;
-                //     background-color:darkorange;
-                //    border: none;
-                // }         
-        } 
-    }
+                .right{
+                    flex: 1;
+                    padding-top: 20px;
+                    img{
+                        width: 100px;
+                    }
+                }
+                
+            }
+            button{
+                width: 100%;
+                background-color: orange;
+                color:#fff;
+                // margin-left: 10px;
+                height: 40px;
+                line-height: 20px;
+            }
+            .qr{
+               
+               width: 100%; 
+               margin-top: 20px;
+            //    padding-top: 20px;
+            }
+        }
+       
+    
     }
     .footer {
         flex-basis: 100px;

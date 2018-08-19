@@ -135,45 +135,43 @@ html {
   flex: 1;
   position: relative;
 }
-.container .main .nam {
+.container .main .products {
   display: flex;
   flex-wrap: wrap;
 }
-.container .main .nam .products {
+.container .main .products .product {
   width: 50%;
-}
-.container .main .nam .products .box {
-  border: 1px solid #c4c4c4;
+  padding-top: 20px;
+  height: 280px;
   display: flex;
   flex-direction: column;
-  padding: 10px 10px 0px 10px;
-  margin: 5px;
+  justify-content: space-around;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-left: 10px;
 }
-.container .main .nam .products .box a {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
+.container .main .products .product:nth-child(2n) {
+  border-right: 0;
 }
-.container .main .nam .products .box a img {
+.container .main .products .product img {
   width: 140px;
   height: 140px;
   align-self: center;
 }
-.container .main .nam .products .box a .proname {
-  height: 53px;
-  font-size: 16px;
-  line-height: 20px;
-  padding-top: 15px;
-  color: #000;
+.container .main .products .product .proname {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
 }
-.container .main .nam .products .box a .prices {
-  color: darkorange;
-  margin-top: 15px;
-  height: 24px;
+.container .main .products .product .prices {
+  color: orangered;
+  font-size: 14px;
+  height: 18px;
+  line-height: 18px;
 }
-.container .main .nam .products .box a .site {
+.container .main .products .product .site {
+  line-height: 18px;
   font-size: 12px;
-  padding: 10px 10px 10px 0px;
 }
 .container .footer {
   flex-basis: 100px;
