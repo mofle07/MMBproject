@@ -49,11 +49,12 @@ body {
 .top {
   position: relative;
   height: 90px;
-  background-color: #fff;
+  z-index: 100;
 }
 .top .top-iner {
   position: fixed;
   height: 90px;
+  background-color: #fff;
 }
 .top .top-iner .top-bar {
   height: 44px;
@@ -95,6 +96,7 @@ body {
   text-align: center;
   line-height: 20px;
   color: orangered;
+  text-decoration: none;
 }
 .top .top-iner .nav {
   position: relative;
@@ -102,11 +104,16 @@ body {
 .top .top-iner .nav a {
   font-size: 14px;
   font-weight: bold;
+  text-decoration: none;
+}
+.top .top-iner .nav a.active {
+  border-bottom: 2px solid red;
 }
 
 .main {
   background-color: #fff;
-  margin-top: 10px;
+  max-width: 960px;
+  margin: 10px auto 0px;
 }
 .main .productslist ul li {
   height: 130px;
@@ -118,6 +125,7 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
+  text-decoration: none;
 }
 .main .productslist ul li a img {
   flex-basis: 110px;
@@ -138,9 +146,14 @@ body {
 .main .productslist ul li a .productInfo .decript .preferential {
   color: orangered;
 }
+.main #paginator {
+  margin: 8px 0px;
+  padding-left: 20px;
+}
 
 .footer {
   position: relative;
+  height: 164px;
 }
 .footer .breadCrumb {
   height: 40px;
@@ -148,6 +161,7 @@ body {
   align-items: center;
   border-bottom: solid 1px #ccc;
   border-top: solid 1px #ccc;
+  padding-left: 10px;
 }
 .footer .foot-nav {
   height: 34px;
@@ -162,6 +176,7 @@ body {
   align-items: center;
   justify-content: center;
   color: black;
+  text-decoration: none;
 }
 .footer .foot-nav a:nth-child(2) {
   border-left: solid #ccc 1px;
@@ -183,19 +198,26 @@ body {
 .footer .app-bar {
   height: 60px;
   position: absolute;
+  width: 100%;
   bottom: 0px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
 }
-.footer .app-bar .man {
+.footer .app-bar .left {
+  display: flex;
+  align-items: center;
+}
+.footer .app-bar .left .man {
   width: 44px;
   height: 44px;
   background: url("../images/bottom.png") no-repeat;
 }
-.footer .app-bar .info .title {
+.footer .app-bar .left .info .title {
   font-size: 18px;
 }
-.footer .app-bar .info .descript {
+.footer .app-bar .left .info .descript {
   font-size: 14px;
 }
 .footer .app-bar .download-btn {
@@ -207,6 +229,7 @@ body {
   line-height: 40px;
   padding: 0px;
   border-radius: 8px;
+  float: right;
 }
 .footer .app-bar .download-btn:hover {
   background-color: #32104e;

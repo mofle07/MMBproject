@@ -23,7 +23,7 @@ $(function () {
             success: function (res) {
                 var htmlstr = template('product', res);
                 $('.productslist ul').html(htmlstr);
-               
+
                 // 分页部分
                 $("#paginator").bootstrapPaginator({
                     bootstrapMajorVersion: 3, //指定bootstrap的版本，如果是3，必须指定
@@ -37,12 +37,23 @@ $(function () {
                         //page指的是点击的页码,修改了当前页
                         page = index;
                         //每一次点击都会去发起ajax请求，获取数据，渲染数据
-                        render(page-1);
+                        render(page - 1);
                     }
                 });
             }
         })
     };
-    render(0)
+    render(0);
 
+    // 给底部的小叉叉添加点击事件
+    $('.remove').click(function () {
+        // 让app下载部分小时
+        $('.app-bar').hide();
+        $('.friendLink').css('opacity',1)
+    })
+    //   给放回顶部添加点击事件
+    $('.back').click(function () {
+        document.documentElement.scrollTop = 0;
+
+    })
 })

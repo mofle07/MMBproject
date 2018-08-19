@@ -1,6 +1,7 @@
 $(function(){
+    // 从url 中获得产品id
     var url=location.href;
-   var id=url.split('=')[0];
+   var id=url.split('=')[1];
     
     // 封装一个函数来显示评论
     function renderComment(id) { 
@@ -15,5 +16,6 @@ $(function(){
               }
      })
     }
+    //renderComment(id)
     renderComment(1)  
 })
