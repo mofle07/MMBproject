@@ -109,7 +109,6 @@ body {
 
 .main {
   background-color: #ffffff;
-  border: solid 2px #ed1c24;
 }
 .main .productInfo {
   height: 120px;
@@ -133,6 +132,16 @@ body {
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+}
+.main .comments .comments-top .left {
+  display: flex;
+  align-content: center;
+}
+.main .comments .comments-top .left i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url("../images/star.png") no-repeat 0px 0px/100% 100%;
 }
 .main .comments .comments-content {
   padding: 10px;
