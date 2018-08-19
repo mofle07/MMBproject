@@ -142,7 +142,8 @@ body, html {
   height: 40px;
   background-color: #f3f3f3;
   color: #a24604;
-  padding-left: 10px; }
+  padding-left: 10px;
+  border-bottom: 1px solid #ccc; }
 .top h4 {
   line-height: 40px;
   font-weight: bold; }
@@ -167,6 +168,7 @@ body, html {
   justify-content: space-around;
   width: 100%; }
 .main .productlist .product a .right .brandName {
+  line-height: 20px;
   font-size: 16px;
   color: #000; }
 .main .productlist .product a .right .productPriceBar {

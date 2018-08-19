@@ -5,6 +5,7 @@
     background-color: #f3f3f3;
     color: #a24604;
     padding-left: 10px;
+    border-bottom: 1px solid #ccc;
     h4 {
         line-height: 40px;
         font-weight: bold;
@@ -34,6 +35,7 @@
                     justify-content: space-around;
                     width: 100%;
                     .brandName{
+                        line-height: 20px;
                         font-size: 16px;
                         color: #000;
                     }
