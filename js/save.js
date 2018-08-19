@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
   // 渲染页面
 
   var pageid = 1;
@@ -12,18 +12,18 @@ $(function() {
         pageid: pageid
       },
 
-      success: function(res) {
+      success: function (res) {
         //   分页插件
         //   分页插件需要ajax完成之后，获取到数据之后来调用
         $("#paginator").bootstrapPaginator({
           bootstrapMajorVersion: 3, //指定bootstrap的版本，如果是3，必须指定
           currentPage: pageid, //指定当前页
-          totalPages: 14, //指定总页数
+          totalPages: Math.ceil(res.totalCount / res.pagesize)-1, //指定总页数
           size: "small", //设置控件的大小
 
           // 当点击分页组件按钮会调用该方法
           // index参数，就代表当前点击的是第几页
-          onPageClicked: function(a, b, c, index) {
+          onPageClicked: function (a, b, c, index) {
             //page指的是点击的页码,修改了当前页
             pageid = index;
 
@@ -41,13 +41,13 @@ $(function() {
   render(pageid);
 
   //   给每个产品添加点击事件跳转到详情页
-  $(".products").on("click", ".product", function() {
+  $(".products").on("click", ".product", function () {
     var productid = $(this).data("id");
     window.location.href = "./savelist.html?productid=" + productid;
   });
 
   // 给返回顶部添加点击事件
-  $(".roll").click(function() {
+  $(".roll").click(function () {
     $(window).scrollTop(0);
   });
 });

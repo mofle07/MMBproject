@@ -11,12 +11,15 @@ $(function () {
                 productid: productid
             },
             success: function (res) {
-              var htmllist=template('savedata',res);
-                 $('.mui-scroll').html(htmllist);
+                var htmllist = template('savedata', res);
+                $('.mui-scroll').html(htmllist);
+
+
+            
             }
         })
     }
-   
+
 
     var url = window.location.href;
 
@@ -26,11 +29,11 @@ $(function () {
     render(url)
 
 
-    
-  // 给返回顶部添加点击事件
-  $(".roll").click(function() {
-    $('.mui-scroll').scrollTop(0);
-  });
+
+    // 给返回顶部添加点击事件
+    $(".roll").click(function () {
+        $('.mui-scroll').scrollTop(0);
+    });
 
 
 
@@ -41,5 +44,5 @@ $(function () {
 // 创建返回方法
 function back() {
     window.history.back();
-  
-  }
+
+}
