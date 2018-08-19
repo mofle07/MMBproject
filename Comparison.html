@@ -1,14 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <script src="./lib/js/mui.min.js"></script>
+    <script src="./js/template-web.js"></script>
+
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="./css/Comparison.css">
+    <script src="./js/Comparison.js"></script>
 </head>
+
 <body>
-    <h1>比价搜索
-        
-    </h1>
+
+    <div class="container">
+
+        <div class="header">
+            <!-- <div class="headradi"> -->
+            <!-- <div class="left">
+                     <img src="./images/favicon.ico" alt="">
+                     <p class="tltie1">
+                            慢慢买比价客户端
+                            </p>
+                            <p class="title2">掌控价格不再买贵</p>
+                            <p class="title3">500万人正在使用</p>
+                </div>
+                <div class="right">
+                        <a class="mui-icon mui-icon-closeempty "></a>
+                        <button class="mui-btn mui-btn-warning mui-btn ">立即打开</button>
+                </div> -->
+            <!--                
+            </div> -->
+
+            <div class="header-info">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/manmanmai.png" alt="">
+                    </a>
+                </div>
+                <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入你想比价的商品">
+                <button class="mui-btn">搜索</button>
+            </div>
+        </div>
+
+
+        <div class="main">
+
+
+            <!-- 区域滚动 -->
+            <!-- <div class="mui-scroll-wrapper">
+                <div class="mui-scroll"> -->
+            <ul class="mui-table-view comparison">
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="Comparison-bottomlist.html">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+
+                <li class="mui-table-view-cell mui-collapse ">
+                    <a class="mui-navigate-right title" href="#">大家电</a>
+                    <div class="mui-collapse-content comparisonlist">
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                        <a href="">电视平板</a>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="bottomlist">
+                <div class="bottomlist-nav">
+                    <ul>
+                        <li>
+                            <a href="#">登录</a>
+                        </li>
+                        <li>
+                            <a href="#">注册</a>
+                        </li>
+                        <li>
+                            <img src="./images/top.jpg" alt="">
+                            <a href="#">返回顶部</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottomlist-info">
+                    <p>
+                        <a href="href=" http://m.manmanbuy.com/app.html?type=footword&value=wap "">手机APP下载</a>
+                        <span>慢慢买手机版--掌上比价平台</span>
+                    </p>
+                    <span>m.manmanbuy.com</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- </div>
+        </div> -->
+
+<!-- 底部隐藏 -->
+        <div class="footer">
+            <div class="left">
+                <a class="mui-icon mui-icon-closeempty "></a>
+                <img src="./images/favicon.ico" alt="">
+                <p>
+                    <span>实时更新品牌榜</span>
+                    <span>全网比价不吃亏</span>
+                </p>
+            </div>
+
+
+            <button class="mui-btn mui-btn-warning mui-btn ">立即打开</button>
+        </div>
+    </div>
+
+
+
 </body>
+
 </html>
+
+<!--  -->
+<script type="text/html" id="comparisonliat">
+    
+    <li class="mui-table-view-cell mui-collapse ">
+            <a class="mui-navigate-right title" href="#">大家电</a>
+            <div class="mui-collapse-content comparisonlist">
+                <a href="">电视平板</a>
+                <a href="">电视平板</a>
+                <a href="">电视平板</a>
+                <a href="">电视平板</a>
+                <a href="">电视平板</a>
+                <a href="">电视平板</a>
+                <a href="">电视平板</a>
+                <a href="">电视平板</a>
+                <a href="">电视平板</a>
+            </div>
+        </li>
+</script>
