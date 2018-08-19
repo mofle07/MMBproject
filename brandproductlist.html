@@ -15,42 +15,60 @@
     <script src="lib/js/template-web.js"></script>
 
     <!-- 自己的 -->
-    <link rel="stylesheet" href="./css/brandTitle.css">
+    <link rel="stylesheet" href="./css/brandproductlist.css">
     <script src="./js/common.js"></script>
-    <script src="./js/brandTitle.js"></script>
+    <script src="./js/brandproductlist.js"></script>
 
 </head>
 
 <body>
-    <!-- 主体区域框 -->
+    <!-- 标题栏 -->
     <div class="top">
-        <h2>平板电视最新评论</h2>
+        <h4>平板电视产品销量排行</h4>
     </div>
+    <!-- 内容展示 -->
     <div class="main">
-        <div class="productInfo">
-            <img src="./images/2016040016521576785.jpg" alt="">
-            <p class="descript">LG 49LF5400 49英寸 全高清 普通LED液晶电视</p>
-        </div>
-        <div class="comments">
-            <div class="comments-top">
-                <span class="author">8***m：</span>
-                <span class="time">2014/12/20</span>
-            </div>
-            <div class="comments-content">
-                这款液晶电视对比其它品牌电视最喜欢的是采用IPS硬屏液晶面板，屏幕比较坚固，质量应该比其它液晶面板会好，极其突出了这款电视的性价比；色彩使用了1920*1080P的分辨率，三重XD引擎，提高了色质的水准、对比度和清晰度，呈现的画质和性能画面色彩也比较清晰，显示效果也比较细腻自然；外观方面采用生动锐利铜钱纹样设计，简约的白色电视底座搭配银色的窄边框感觉比较简单时尚，也是比较喜欢的；功能使用简单，菜单键进入图像，生意，设置，时间，选项，输入，我的媒体8个功能主题，2组HDMI接口满足了我的DVD设备和网络电视机顶和的使用，1组数字音响输出满足我外接5.1音响系统的需要，画面比例点对点扫描，让我接电脑主机的画面设置更简单；炫亮人声Ⅰ，畅听清晰对话的设计。自动识别和加强电影和电视节目中的人声的功能，使我听到的背景声音更清晰突显，标注.音乐.电影.运动.游戏五个声音模式选择满足了日常视听的需求。LG的国际品牌也是比较让大家信赖的。
-            </div>
+        <!-- 区域滚动 -->
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
 
+                <!-- 内容渲染 -->
+                <ul class="mui-table-view productlist">
+
+                    <!-- 数据模板区域地址 -->
+                    <li class="mui-table-view-cell product">
+                        <a href="brandproduct.html?brandtitleid={{v.brandTitleId}}" class="">
+                            <div class="left">
+                                <img src="http://pro.zuyushop.com:8015/ProPic/20166/Thumb/Thumb_2016060015515937123.png" alt="乐视TV(Letv)S50 Air全配版2D 50英寸 全高清LED液晶电视" width="100" height="100">
+                            </div>
+                            <div class="right">
+                                <p class="brandName">乐视TV</p>
+                                <p class="productPriceBar">
+                                    <span class="productPrice mui-pull-left">"￥1999.00"</span>
+                                    <span class="star mui-pull-right">☆☆☆☆☆</span>
+                                </p>
+                                <div class="productComBar">
+                                    <span class="productQuote">报价(6)</span>
+                                    <span class="productCom">评论(2286)</span>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                   
+                </ul>
+
+            </div>
         </div>
     </div>
 
     <!-- 数据渲染模板 -->
-    <script type="text/html" id="brandTitleTmp">
+    <!-- <script type="text/html" id="brandTitleTmp">
         {{each result v i}}
         <li class="mui-table-view-cell brand" data-brandTitleId={{v.brandTitleId}}>
             <a href="brand.html?brandtitleid={{v.brandTitleId}}" class="mui-navigate-right brandText">{{v.brandTitle}}</a>
         </li>
         {{/each}}
-    </script>
+    </script> -->
 </body>
 
 </html>

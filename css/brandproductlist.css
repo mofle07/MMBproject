@@ -142,33 +142,44 @@ body, html {
   height: 40px;
   background-color: #f3f3f3;
   color: #a24604;
-  padding-top: 10px; }
+  padding-left: 10px; }
+.top h4 {
+  line-height: 40px;
+  font-weight: bold; }
 
 .main {
   background-color: #ffffff;
-  border: solid 2px #ed1c24; }
-.main .productInfo {
-  height: 120px;
-  padding: 10px;
-  display: flex; }
-.main .productInfo img {
-  width: 80px;
-  height: 80px; }
-.main .productInfo .descript {
-  color: #999999; }
-.main .comments {
-  background-color: #f8f8f8; }
-.main .comments .comments-top {
+  position: relative;
+  height: 100%; }
+.main .productlist {
   display: flex;
-  height: 40px;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px; }
-.main .comments .comments-content {
-  padding: 10px;
-  color: #000000;
+  flex-direction: column; }
+.main .productlist .product a {
+  display: flex;
+  border-bottom: 1px solid #e4e4e4; }
+.main .productlist .product a:after {
+  height: 0; }
+.main .productlist .product a .left {
+  margin-right: 10px; }
+.main .productlist .product a .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%; }
+.main .productlist .product a .right .brandName {
   font-size: 16px;
-  line-height: 20px; }
+  color: #000; }
+.main .productlist .product a .right .productPriceBar {
+  width: 100%; }
+.main .productlist .product a .right .productPriceBar .productPrice {
+  font-size: 18px;
+  color: red; }
+.main .productlist .product a .right .productPriceBar .star {
+  color: #ff9000;
+  text-shadow: 0px 0px #ff9000; }
+.main .productlist .product a .right .productComBar {
+  color: #999; }
+.main .productlist .product a .right .productComBar .productQuote {
+  margin-right: 10px; }
 
 /*# sourceMappingURL=brandproductlist.css.map */
