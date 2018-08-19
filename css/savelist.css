@@ -209,6 +209,9 @@ img {
   display: block;
 }
 
+.container {
+  width: 100%;
+}
 .container .header {
   width: 100%;
   height: 85px;
@@ -301,6 +304,19 @@ img {
   width: 350px;
   margin: 0 auto;
 }
+.container .main .mui-scroll .content .dropup #dropdownMenu2 {
+  width: 200px;
+}
+.container .main .mui-scroll .content .dropup .dropdown-menu li {
+  padding: 5px 10px;
+}
+.container .main .mui-scroll .content .dropup .dropdown-menu li span {
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .mui-scroll .content .dropup .dropdown-menu li span strong {
+  color: #ff841d;
+}
 .container .main .mui-scroll .content .qr {
   margin: 20px;
   height: 100px;
@@ -356,6 +372,11 @@ img {
 .container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b .con .content {
   font-size: 14px;
   line-height: 30px;
+}
+
+.mui-backdrop {
+  width: 0;
+  height: 0;
 }
 
 /*# sourceMappingURL=savelist.css.map */

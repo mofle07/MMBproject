@@ -10,7 +10,7 @@ img {
 }
 
 .container {
-    // overflow: hidden;
+    width: 100%;
     .header {
         width: 100%;
         height: 85px;
@@ -105,6 +105,24 @@ img {
                         margin: 0 auto;
                     }
                 }
+                .dropup{
+                      #dropdownMenu2{
+                          width: 200px;
+                      }
+                      .dropdown-menu{
+                          li{
+                              padding: 5px 10px;
+                              span{
+                                
+                                display: flex;
+                                justify-content: space-between;
+                                strong{
+                                    color: #ff841d;
+                                }
+                              }
+                          }
+                      }
+                }
                 .qr{
                     margin: 20px;
                      height: 100px;
@@ -171,4 +189,8 @@ img {
             }
         }
     }
+}
+.mui-backdrop{
+      width: 0;
+      height: 0;
 }
