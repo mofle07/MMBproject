@@ -199,45 +199,4 @@ html {
   color: red;
 }
 
-.top {
-  height: 40px;
-  background-color: #f3f3f3;
-  color: #a24604;
-  padding-top: 10px;
-}
-
-.main {
-  background-color: #ffffff;
-  border: solid 2px #ed1c24;
-}
-.main .productInfo {
-  height: 120px;
-  padding: 10px;
-  display: flex;
-}
-.main .productInfo img {
-  width: 80px;
-  height: 80px;
-}
-.main .productInfo .descript {
-  color: #999999;
-}
-.main .comments {
-  background-color: #f8f8f8;
-}
-.main .comments .comments-top {
-  display: flex;
-  height: 40px;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.main .comments .comments-content {
-  padding: 10px;
-  color: #000000;
-  font-size: 16px;
-  line-height: 20px;
-}
-
 /*# sourceMappingURL=brandproductlist.css.map */
