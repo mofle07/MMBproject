@@ -149,7 +149,7 @@ html {
        
         .nam {
              display: flex;
-        flex-wrap: wrap;
+             flex-wrap: wrap;
        
 
         .products {
@@ -164,7 +164,7 @@ html {
                     border: 1px solid #c4c4c4;
                     display: flex;
                     flex-direction: column;
-                    height: 270px;
+                    // height: 270px;
 
                     padding: 10px 10px 0px 10px;
                     
@@ -182,6 +182,7 @@ html {
                        align-self: center;
                        }
                        .proname {
+                           height: 53px;
                            font-size: 16px;
                            line-height: 20px;
                            padding-top: 15px;
@@ -191,6 +192,7 @@ html {
                        .prices {
                         color: darkorange;
                         margin-top: 15px;
+                        height: 24px;
                        }
                        .site {
                            font-size: 12px;

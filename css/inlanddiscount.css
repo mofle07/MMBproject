@@ -123,8 +123,7 @@ html {
   color: #fff;
 }
 .container .header .right img {
-  width: 30px;
-  height: 30px;
+  width: 35px;
   margin-right: 10px;
 }
 .container .header h4 {
@@ -136,55 +135,45 @@ html {
   flex: 1;
   position: relative;
 }
-.container .main .products {
-  display: flex;
-  flex-direction: column;
-}
-.container .main .products .product {
-  width: 100%;
-}
-.container .main .products .product .box {
-  border: 1px solid #c4c4c4;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-}
-.container .main .products .product .box .proname {
-  font-size: 18px;
-  line-height: 20px;
-  margin-top: 20px;
-  font-weight: bold;
-}
-.container .main .products .product .box .prices {
-  color: darkorange;
-  margin-top: 10px;
-}
-.container .main .products .product .box .site {
-  line-height: 50px;
-}
-.container .main .products .product .box .abstract {
+.container .main .nam {
   display: flex;
   flex-wrap: wrap;
 }
-.container .main .products .product .box .abstract .left {
-  flex: 2;
+.container .main .nam .products {
+  width: 50%;
 }
-.container .main .products .product .box .abstract .left .content {
-  line-height: 25px;
-  color: #bbbbbb;
-  font-size: 14px;
+.container .main .nam .products .box {
+  border: 1px solid #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 0px 10px;
+  margin: 5px;
 }
-.container .main .products .product .box .abstract .left .content img {
-  margin-top: 10PX;
+.container .main .nam .products .box a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
 }
-.container .main .products .product .box .abstract .right {
-  flex: 1;
+.container .main .nam .products .box a img {
+  width: 140px;
+  height: 140px;
+  align-self: center;
 }
-.container .main .products .product .box .abstract .right img {
-  width: 100%;
+.container .main .nam .products .box a .proname {
+  height: 53px;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 15px;
+  color: #000;
 }
-.container .main .products .product a {
-  margin: 20px;
+.container .main .nam .products .box a .prices {
+  color: darkorange;
+  margin-top: 15px;
+  height: 24px;
+}
+.container .main .nam .products .box a .site {
+  font-size: 12px;
+  padding: 10px 10px 10px 0px;
 }
 .container .footer {
   flex-basis: 100px;
@@ -230,4 +219,4 @@ html {
   color: red;
 }
 
-/*# sourceMappingURL=discount1.css.map */
+/*# sourceMappingURL=inlanddiscount.css.map */
