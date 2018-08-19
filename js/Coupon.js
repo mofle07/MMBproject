@@ -16,8 +16,4 @@ $(function(){
         window.location.href = "index.html";
     })
 
-    //单击优惠券标题，携带id跳转到优惠列表
-    $(".list").on("click",".list > a",function(){
-        
-    })
 })

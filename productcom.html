@@ -22,8 +22,14 @@
             <p class="descript">LG 49LF5400 49英寸 全高清 普通LED液晶电视</p>
         </div>
         <div class="comments">
+            .
             <div class="comments-top">
-                <span class="author">8***m：</span>
+                <div class="left">
+                    <span class="author">8***m：</span>
+                    <i class="starts"></i>
+                </div>
+
+
                 <span class="time">2014/12/20</span>
             </div>
             <div class="comments-content">
@@ -40,16 +46,24 @@
 <script type="text/html" id="comments">
     {{each list v}}
     <div class="productInfo">
-            <img src="./images/2016040016521576785.jpg" alt="">
-            <p class="descript">LG 49LF5400 49英寸 全高清 普通LED液晶电视</p>
-        </div>
-        <div class="comments">
-            <div class="comments-top">
+        <img src="./images/2016040016521576785.jpg" alt="">
+        <p class="descript">LG 49LF5400 49英寸 全高清 普通LED液晶电视</p>
+    </div>
+    <div class="comments">
+        <div class="comments-top">
+            <div class="left">
                 <span class="author">{{v.comName}}：</span>
-                <span class="time">{{v.comTime}}</span>
+                <i class="starts"></i>
+                <i class="starts"></i>
+                <i class="starts"></i>
+                <i class="starts"></i>
+                <i class="starts"></i>
             </div>
-            <div class="comments-content">
-                {{v.comContent}}
-            </div>
-            {{/each}}
+
+            <span class="time">{{v.comTime}}</span>
+        </div>
+        <div class="comments-content">
+            {{v.comContent}}
+        </div>
+        {{/each}}
 </script>

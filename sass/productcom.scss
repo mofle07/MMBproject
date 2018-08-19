@@ -114,8 +114,7 @@ body {
 }
 
 .main {
-    background-color: #ffffff;
-    border: solid 2px #ed1c24;
+    background-color: #ffffff; // border: solid 2px #ed1c24;
     .productInfo {
         height: 120px;
         padding: 10px;
@@ -128,20 +127,29 @@ body {
             color: #999999;
         }
     }
-    .comments{
+    .comments {
         background-color: #f8f8f8;
-        .comments-top{
+        .comments-top {
             display: flex;
             height: 40px;
             justify-content: space-between;
             align-items: center;
             padding-left: 10px;
             padding-right: 10px;
+            .left {
+                display: flex;
+                align-content: center;
+                i {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background: url('../images/star.png') no-repeat 0px 0px/100% 100%;
+                }
+            }
         }
-        .comments-content{
+        .comments-content {
             padding: 10px;
             color: #000000;
-         
             font-size: 16px;
             line-height: 20px;
         }
