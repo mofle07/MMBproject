@@ -304,11 +304,18 @@ img {
   width: 350px;
   margin: 0 auto;
 }
+.container .main .mui-scroll .content .dropup {
+  margin-top: 10px;
+  text-align: right;
+  position: relative;
+}
 .container .main .mui-scroll .content .dropup #dropdownMenu2 {
   width: 200px;
+  margin: 0 auto;
 }
 .container .main .mui-scroll .content .dropup .dropdown-menu li {
   padding: 5px 10px;
+  border-bottom: 1px dotted  #ff841d;
 }
 .container .main .mui-scroll .content .dropup .dropdown-menu li span {
   display: flex;
@@ -318,6 +325,7 @@ img {
   color: #ff841d;
 }
 .container .main .mui-scroll .content .qr {
+  text-align: right;
   margin: 20px;
   height: 100px;
 }
