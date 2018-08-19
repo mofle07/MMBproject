@@ -11,6 +11,9 @@
     <script src="./lib/js/bootstrap.js"></script>
     <link rel="stylesheet" href="./lib/css/mui.min.css">
     <script src="./lib/js/mui.min.js"></script>
+    <script src="./lib/js/template-web.js"></script>
+    <script src="./lib/js/bootstrap-paginator.js"></script>
+    <!-- <script src="./lib/js/jquery.twbsPagination.js"></script> -->
     <link rel="stylesheet" href="./css/haitao.css">
     <script src="./js/haitao.js"></script>
 </head>
@@ -76,9 +79,11 @@
                 </li>
             </ul>
         </div>
-        <!-- 分页 -->
-        <div class="pagination"></div>
 
+        <!-- 分页 -->
+        <div class="">
+            <ul id="paginator"></ul>
+        </div>
     </div>
     <div class="footer">
         <!-- 面包屑导航 -->
@@ -91,14 +96,14 @@
             <a href="">登录</a>
             <a href="">注册</a>
             <a href="">
-                <img src="./images/top.jpg" alt="">
-                返回顶部</a>
+                <img src="./images/top.jpg" alt=""> 返回顶部
+            </a>
         </div>
         <div class="friendLink">
             <a href="" class="loadApp">手机App下载</a>
             <a href="">慢慢买手机版</a>
             <span>-掌上比价平台</span>
-            <p> m.manmanbuy.com   </p>
+            <p> m.manmanbuy.com </p>
         </div>
         <div class="app-bar">
             <span class="glyphicon glyphicon-remove"></span>
@@ -116,19 +121,21 @@
 <script type="text/html" id="product">
     {{each result v}}
     <li>
-        <img src="{{v.productImgSm}}" alt="">
-        <div class="productInfo">
-            <p class="decript">
-                {{v.productName}}
-                <span class=" preferential">{{v.productPinkage}}</span>
-            </p>
-            <p class="other">
-                <span class="place">{{v.productFrom}}</span>
-                <span class="comments  mui-pull-right">
-                    <i class="glyphicon glyphicon-comment"></i>
-                    {{v.productComCount}}</span>
-            </p>
-        </div>
-    </li> 
-    {{/each}}   
+        <a href="">
+            {{#v.productImg2}}
+            <div class="productInfo">
+                <p class="decript">
+                    {{v.productName}}
+                    <span class=" preferential">{{v.productPinkage}}</span>
+                </p>
+                <p class="other">
+                    <span class="place">{{v.productFrom}}</span>
+                    <span class="comments  mui-pull-right">
+                        <i class="glyphicon glyphicon-comment"></i>
+                        {{v.productComCount}}</span>
+                </p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
 </script>

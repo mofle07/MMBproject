@@ -114,23 +114,28 @@ body {
   display: flex;
   padding: 10px;
 }
-.main .productslist ul li img {
+.main .productslist ul li a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.main .productslist ul li a img {
   flex-basis: 110px;
   height: 110px;
 }
-.main .productslist ul li .productInfo {
+.main .productslist ul li a .productInfo {
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding-left: 4px;
 }
-.main .productslist ul li .productInfo .decript {
+.main .productslist ul li a .productInfo .decript {
   font-size: 16px;
   letter-spacing: 3px;
   line-height: 20px;
 }
-.main .productslist ul li .productInfo .decript .preferential {
+.main .productslist ul li a .productInfo .decript .preferential {
   color: orangered;
 }
 
