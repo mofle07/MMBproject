@@ -21,7 +21,7 @@ $(function() {
     success: function(obj) {
       var html = template("categoryItem-modal", obj);
       $(".comparison").html(html);
-
+      console.log(obj);
       $(".comparison").on("click", ".categoryItem", function() {
         //获取到大清单的id
         var sonid = $(this)
