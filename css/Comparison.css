@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body,
 div,
 span,
@@ -28,25 +27,21 @@ input {
   margin: 0;
 }
 
-/* 清楚网页内标签的内外边距 */
 a {
   text-decoration: none;
   color: #000;
 }
 
-/* 清楚a标签的下划线和默认字体颜色 */
 input {
   border: 0 none;
   outline: 0 none;
 }
 
-/* 清除表单输入框的边框和外轮廓线 */
 img {
   border: 0 none;
   vertical-align: middle;
 }
 
-/* 低版本的插入图片会默认生成边框 */
 i,
 em {
   font-style: normal;
@@ -65,19 +60,16 @@ li {
   list-style: none;
 }
 
-/* 清除li标签的默认小点点 */
 .w {
   width: 1200px;
   margin: 0 auto;
 }
 
-/* 设置网页的版心 */
 body {
   font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   background-color: #fff;
 }
 
-/* 修改网页默认字体和行高 */
 .clearfix:after {
   content: "";
   display: block;
@@ -97,7 +89,6 @@ html {
   height: 100%;
 }
 
-/* 设置清除浮动影响 */
 .container {
   height: 100%;
   display: flex;
@@ -134,6 +125,7 @@ html {
 .container .header .search input {
   font-size: 16px;
   height: 30px;
+  flex: 1;
   border-radius: 30px;
   margin: 0;
   background-color: #f1f1f1;
@@ -153,41 +145,76 @@ html {
   right: 10px;
 }
 .container .main {
+  position: relative;
   flex: 1;
+  background-color: #f2f2f2;
 }
-.container .footer {
-  flex-basis: 100px;
+.container .main .comparison {
+  background-color: #ebebeb;
+  margin: 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.container .main .comparison:hover {
+  border-top: 2px solid #000;
+}
+.container .main .comparison .title {
+  font-size: 16px;
+  font-weight: bolder;
+}
+.container .main .comparison .comparisonlist {
+  background-color: #F9F9F9;
+}
+.container .main .comparison .comparisonlist a {
+  color: #000;
+  float: left;
+  display: block;
+  width: 33.3333%;
+  height: 40px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  text-decoration: none;
+  border-left: none;
+}
+.container .main .comparison .comparisonlist a:nth-child(3n) {
+  border-right: none;
+}
+.container .main .bottomlist {
+  height: 100px;
   background-color: #efefef;
 }
-.container .footer .footer-nav {
+.container .main .bottomlist .bottomlist-nav {
   flex-basis: 35px;
 }
-.container .footer .footer-nav ul {
+.container .main .bottomlist .bottomlist-nav ul {
   display: flex;
   align-items: center;
   border-top: 1px solid #c4c4c4;
   border-bottom: 1px solid #c4c4c4;
 }
-.container .footer .footer-nav ul li {
+.container .main .bottomlist .bottomlist-nav ul li {
   line-height: 35px;
   flex: 1;
   text-align: center;
   border-right: 1px solid #c4c4c4;
 }
-.container .footer .footer-nav ul li:nth-child(3) {
+.container .main .bottomlist .bottomlist-nav ul li:nth-child(3) {
   border-right: none;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.container .footer .footer-nav ul li a {
+.container .main .bottomlist .bottomlist-nav ul li a {
   color: #5a5a5a;
 }
-.container .footer .footer-nav ul li img {
+.container .main .bottomlist .bottomlist-nav ul li img {
   width: 15px;
   display: block;
 }
-.container .footer .footer-info {
+.container .main .bottomlist .bottomlist-info {
   height: 65px;
   display: flex;
   flex-direction: column;
@@ -195,71 +222,48 @@ html {
   justify-content: center;
   color: #5a5a5a;
 }
-.container .footer .footer-info p a {
+.container .main .bottomlist .bottomlist-info p a {
   color: red;
 }
-
-.top {
+.container .footer {
+  flex-basis: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-basis: 70px;
+  background-color: #fff;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.container .footer .left {
+  display: flex;
+  flex: 1;
+}
+.container .footer .left a {
+  margin-top: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+.container .footer .left img {
   height: 40px;
-  background-color: #f3f3f3;
-  color: #a24604;
-  padding-left: 10px;
-<<<<<<< HEAD
+  width: 49px;
+  margin-top: 15px;
 }
-=======
-  border-bottom: 1px solid #ccc; }
->>>>>>> 5507ff5c3f513f09c8f0f19220a8d520963f5ba2
-.top h4 {
-  line-height: 40px;
-  font-weight: bold;
-}
-
-.main {
-  background-color: #ffffff;
-  position: relative;
-  height: 100%;
-}
-.main .productlist {
+.container .footer .left p {
   display: flex;
   flex-direction: column;
+  padding: 10px;
 }
-.main .productlist .product a {
-  display: flex;
-  border-bottom: 1px solid #e4e4e4;
+.container .footer .left p span {
+  padding: 5px;
 }
-.main .productlist .product a:after {
-  height: 0;
-}
-.main .productlist .product a .left {
-  margin-right: 10px;
-}
-.main .productlist .product a .right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 100%;
-}
-.main .productlist .product a .right .brandName {
-  line-height: 20px;
-  font-size: 16px;
-  color: #000;
-}
-.main .productlist .product a .right .productPriceBar {
-  width: 100%;
-}
-.main .productlist .product a .right .productPriceBar .productPrice {
-  font-size: 18px;
-  color: red;
-}
-.main .productlist .product a .right .productPriceBar .star {
-  color: #ff9000;
-  text-shadow: 0px 0px #ff9000;
-}
-.main .productlist .product a .right .productComBar {
-  color: #999;
-}
-.main .productlist .product a .right .productComBar .productQuote {
-  margin-right: 10px;
+.container .footer .footer-btn {
+  background-color: #ff7700;
 }
 
-/*# sourceMappingURL=brandproductlist.css.map */
+/*# sourceMappingURL=Comparison.css.map */

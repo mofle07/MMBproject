@@ -196,6 +196,7 @@ html {
   color: #5a5a5a;
 }
 .container .footer .footer-info p a {
+<<<<<<< HEAD
   color: red;
 }
 
@@ -203,6 +204,23 @@ html {
   display: flex;
   flex-direction: column;
 }
+=======
+<<<<<<< HEAD
+  color: red;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+=======
+  color: red; }
+
+.main {
+  display: flex;
+  flex-direction: column; }
+>>>>>>> d4a833ff81a65d4ad33a692c3bc72cb0528c69c3
+>>>>>>> 5507ff5c3f513f09c8f0f19220a8d520963f5ba2
 .main .navBar {
   flex-basis: 30px;
   line-height: 30px;

@@ -196,8 +196,17 @@ html {
   color: #5a5a5a;
 }
 .container .footer .footer-info p a {
+<<<<<<< HEAD
   color: red;
 }
+=======
+<<<<<<< HEAD
+  color: red;
+}
+=======
+  color: red; }
+>>>>>>> d4a833ff81a65d4ad33a692c3bc72cb0528c69c3
+>>>>>>> 5507ff5c3f513f09c8f0f19220a8d520963f5ba2
 
 .main {
   display: flex;
