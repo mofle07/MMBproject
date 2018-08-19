@@ -99,61 +99,92 @@ html {
 
 /* 设置清除浮动影响 */
 .container {
+  margin: 0px auto;
+  max-width: 600px;
+  padding-right: 0px;
+  padding-left: 0px;
   height: 100%;
   display: flex;
   flex-direction: column;
 }
 .container .header {
-  min-height: 100px;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #e6e6e6;
-}
-.container .header .header-info {
-  flex-basis: 50px;
-  background-color: #ff841d;
+  height: 45px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 15px;
-  padding-right: 5px;
+  background-color: darkorange;
 }
-.container .header .header-info .logo a img {
-  width: 180px;
+.container .header .previousPage {
+  font-size: 25px;
+  padding: 10px;
 }
-.container .header .header-info .app a img {
-  width: 35px;
+.container .header .previousPage a {
+  color: #fff;
 }
-.container .header .search {
-  flex-basis: 50px;
-  display: flex;
-  align-items: center;
-  padding: 0 10px;
-  position: relative;
-}
-.container .header .search input {
-  font-size: 16px;
+.container .header .right img {
+  width: 30px;
   height: 30px;
-  border-radius: 30px;
-  margin: 0;
-  background-color: #f1f1f1;
-  border: none;
+  margin-right: 10px;
 }
-.container .header .search button {
-  font-size: 16px;
-  color: white;
-  width: 64px;
-  line-height: 30px;
-  padding: 0;
-  border-radius: 30px;
-  background-color: #ff841d;
-  border: none;
-  outline: none;
-  position: absolute;
-  right: 10px;
+.container .header h4 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #fff;
 }
 .container .main {
   flex: 1;
+  position: relative;
+}
+.container .main .products {
+  display: flex;
+  flex-direction: column;
+}
+.container .main .products .product {
+  width: 100%;
+}
+.container .main .products .product .box {
+  border: 1px solid #c4c4c4;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.container .main .products .product .box .proname {
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.container .main .products .product .box .prices {
+  color: darkorange;
+  margin-top: 10px;
+}
+.container .main .products .product .box .site {
+  line-height: 50px;
+}
+.container .main .products .product .box .abstract {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container .main .products .product .box .abstract .left {
+  flex: 2;
+}
+.container .main .products .product .box .abstract .left .content {
+  line-height: 25px;
+  color: #bbbbbb;
+  font-size: 14px;
+}
+.container .main .products .product .box .abstract .left .content img {
+  margin-top: 10PX;
+}
+.container .main .products .product .box .abstract .right {
+  flex: 1;
+}
+.container .main .products .product .box .abstract .right img {
+  width: 100%;
+}
+.container .main .products .product a {
+  margin: 20px;
 }
 .container .footer {
   flex-basis: 100px;
@@ -199,59 +230,4 @@ html {
   color: red;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-}
-.main .navBar {
-  flex-basis: 30px;
-  line-height: 30px;
-  color: #000;
-  background-color: #f3f3f3;
-  border-bottom: 1px solid #c4c4c4;
-  padding-left: 5px;
-}
-.main .brandTitles {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-.main .brandTitles .title {
-  flex-basis: 40px;
-  line-height: 40px;
-  margin: 10px 0;
-  padding-left: 10px;
-  background-color: #eee;
-  color: #874604;
-  font-size: 16px;
-}
-.main .brandTitles .brands {
-  flex: 1;
-}
-.main .brandTitles .brands li.brand {
-  line-height: 20px;
-  margin: 10px 0;
-  padding-left: 10px;
-  background-color: #eee;
-  color: #874604;
-  font-size: 16px;
-  font-weight: bold;
-  margin: 0;
-  border: 0px solid #000;
-  border-bottom: 1px solid #c4c4c4;
-}
-.main .brandTitles .brands li.brand .brandText {
-  color: #000;
-}
-.main .brandTitles .brands li.brand:after {
-  height: 0;
-}
-.main .brandTitles .brands .mui-navigate-right:after {
-  content: '\e581';
-  color: #666;
-  font-size: 20px;
-}
-
-/*# sourceMappingURL=brandTitle.css.map */
+/*# sourceMappingURL=discount1.css.map */

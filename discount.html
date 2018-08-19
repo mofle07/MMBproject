@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/discount.css">
     <script src="./js/discount.js"></script>
+    <script src="./lib/js/template-web.js"></script>
 </head>
 
 <body>
@@ -38,60 +39,16 @@
         <div class="main">
             <!-- 区域滚动 -->
             <div class="mui-scroll-wrapper">
-                <div class="mui-scroll">
-                    <div class="products">
+                <div class="mui-scroll nam">
+
+                <!-- <div class="products">
                         <div class="product ">
-                            <div class="box">
                                 <a href="">
                                     <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
                                     <div class="proname">西域美农新疆特产五星和田红枣250g*2</div>
                                     <p class="prices">19.8元(5件99元)</p>
                                     <p class="site">
-                                        <span class="store">京东商城|</span>
-                                        <span class="date">10-22</span>
-                                        <span class="hour">13:00</span>
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="box">
-                                <a href="">
-                                    <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
-                                    <div class="proname">西域美农新疆特产五星和田红枣250g*2</div>
-                                    <p class="prices">19.8元(5件99元)</p>
-                                    <p class="site">
-                                        <span class="store">京东商城|</span>
-                                        <span class="date">10-22</span>
-                                        <span class="hour">13:00</span>
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="box">
-                                <a href="">
-                                    <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
-                                    <div class="proname">
-                                        <span>西域美农新疆特产五星和田红枣250g*2</span>
-                                    </div>
-                                    <p class="prices">19.8元(5件99元)</p>
-                                    <p class="site">
-                                        <span class="store">京东商城|</span>
-                                        <span class="date">10-22</span>
-                                        <span class="hour">13:00</span>
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product">
-                            <div class="box">
-                                <a href="">
-                                    <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
-                                    <div class="proname">西域美农新疆特产五星和田红枣250g*2</div>
-                                    <p class="prices">19.8元(5件99元)</p>
-                                    <p class="site">
-                                        <span class="store">京东商城|</span>
+                                        <span class="store">京东商城 </span><i>|</i>
                                         <span class="date">10-22</span>
                                         <span class="hour">13:00</span>
                                     </p>
@@ -99,6 +56,7 @@
                             </div>
                         </div>
                     </div>
+                         -->
                 </div>
             </div>
         </div>
@@ -126,6 +84,25 @@
             </div>
         </div>
     </div>
+    <script id="productslist" type="text/html">
+       {{each result v i}}
+     <div class="products">
+         
+        <div class="box renderer">      
+           <a href="" data-main="{{v.productId}}" class="property">     
+               {{#v.productImg}}
+               <div class="proname">{{v.productName}}</div>
+               <p class="prices">{{v.productPrice}}</p>
+               <p class="site">
+                   <span class="store">{{v.productFrom}}</span>
+                   <span>|</span>
+                   <span class="date">{{v.productTime}}</span>
+               </p>
+           </a>                  
+        </div>
+    </div> 
+    {{/each}}
+    </script>
 
 </body>
 
