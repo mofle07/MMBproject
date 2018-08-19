@@ -149,6 +149,7 @@ html {
             
             font-size: 16px;
             height: 30px;
+            flex: 1;
             border-radius: 30px;
             margin: 0;
             background-color: #f1f1f1;
@@ -198,16 +199,17 @@ html {
                     display: block;
                     width: 33.3333%;
                     height: 40px;
-                    border: 1px solid #CCCCCC;
+                  border-top: 1px solid #ccc;
+                  border-right: 1px solid #ccc;
                     text-align: center;
                     line-height: 40px;
                     font-size: 12px;
                     text-decoration: none;
-                    border-top: none;
+                    // border-top: none;
                     border-left: none;
-                &:nth-child(n+7){
-                    border-bottom: none;
-                }
+                // &:nth-child(n+7){
+                //     border-bottom: none;
+                // }
                 &:nth-child(3n){
                 border-right: none;
                 }
@@ -272,7 +274,6 @@ html {
             bottom: 0;
             width: 100%;
             flex-basis: 70px;
-                
             background-color: #fff;
             justify-content: space-between;
             display: flex;
@@ -305,7 +306,10 @@ html {
                         padding: 5px;
                     }
                 }
+               
             }
-            
+            .footer-btn{
+                background-color: #ff7700;
+            }
             }
 }

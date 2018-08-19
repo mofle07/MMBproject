@@ -91,46 +91,21 @@ html {
 
 .container {
   height: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 .container .header {
   min-height: 100px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   border-bottom: 1px solid #e6e6e6;
 }
 .container .header .header-info {
-  -webkit-flex-basis: 50px;
-      -ms-flex-preferred-size: 50px;
-          flex-basis: 50px;
+  flex-basis: 50px;
   background-color: #ff841d;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   padding-left: 15px;
   padding-right: 5px;
 }
@@ -141,23 +116,16 @@ html {
   width: 35px;
 }
 .container .header .search {
-  -webkit-flex-basis: 50px;
-      -ms-flex-preferred-size: 50px;
-          flex-basis: 50px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  flex-basis: 50px;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0 10px;
   position: relative;
 }
 .container .header .search input {
   font-size: 16px;
   height: 30px;
+  flex: 1;
   border-radius: 30px;
   margin: 0;
   background-color: #f1f1f1;
@@ -178,10 +146,7 @@ html {
 }
 .container .main {
   position: relative;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   background-color: #f2f2f2;
 }
 .container .main .comparison {
@@ -206,16 +171,13 @@ html {
   display: block;
   width: 33.3333%;
   height: 40px;
-  border: 1px solid #CCCCCC;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   text-align: center;
   line-height: 40px;
   font-size: 12px;
   text-decoration: none;
-  border-top: none;
   border-left: none;
-}
-.container .main .comparison .comparisonlist a:nth-child(n+7) {
-  border-bottom: none;
 }
 .container .main .comparison .comparisonlist a:nth-child(3n) {
   border-right: none;
@@ -225,45 +187,25 @@ html {
   background-color: #efefef;
 }
 .container .main .bottomlist .bottomlist-nav {
-  -webkit-flex-basis: 35px;
-      -ms-flex-preferred-size: 35px;
-          flex-basis: 35px;
+  flex-basis: 35px;
 }
 .container .main .bottomlist .bottomlist-nav ul {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-top: 1px solid #c4c4c4;
   border-bottom: 1px solid #c4c4c4;
 }
 .container .main .bottomlist .bottomlist-nav ul li {
   line-height: 35px;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   text-align: center;
   border-right: 1px solid #c4c4c4;
 }
 .container .main .bottomlist .bottomlist-nav ul li:nth-child(3) {
   border-right: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .container .main .bottomlist .bottomlist-nav ul li a {
   color: #5a5a5a;
@@ -274,62 +216,30 @@ html {
 }
 .container .main .bottomlist .bottomlist-info {
   height: 65px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: #5a5a5a;
 }
 .container .main .bottomlist .bottomlist-info p a {
   color: red;
 }
 .container .footer {
-  -webkit-flex-basis: 50px;
-      -ms-flex-preferred-size: 50px;
-          flex-basis: 50px;
+  flex-basis: 50px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  -webkit-flex-basis: 70px;
-      -ms-flex-preferred-size: 70px;
-          flex-basis: 70px;
+  flex-basis: 70px;
   background-color: #fff;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  justify-content: space-between;
   display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 0px 10px;
 }
 .container .footer .left {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 .container .footer .left a {
   margin-top: 20px;
@@ -345,19 +255,15 @@ html {
   margin-top: 15px;
 }
 .container .footer .left p {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding: 10px;
 }
 .container .footer .left p span {
   padding: 5px;
+}
+.container .footer .footer-btn {
+  background-color: #ff7700;
 }
 
 /*# sourceMappingURL=Comparison.css.map */

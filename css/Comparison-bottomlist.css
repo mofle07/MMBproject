@@ -213,38 +213,43 @@ html {
   padding-left: 5px;
 }
 .main .details {
-  background-color: white;
-  border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
 }
-.main .details .piv {
+.main .details .box {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+.main .details .box .piv {
   text-align: center;
 }
-.main .details .sce {
+.main .details .box .sce {
   margin: 20px;
   height: 40px;
   width: 40px;
 }
-.main .details .tit {
+.main .details .box .tit {
   margin: 20px 10px;
 }
-.main .details .tit .title {
+.main .details .box .title {
   font-size: 18px;
   color: #000;
+  line-height: 24px;
   padding-bottom: 20px;
 }
-.main .details .tit span {
+.main .details .box span {
   padding-right: 20%;
   color: #aaaac2;
 }
-.main .product .product-title {
-  height: 35px;
-  margin-top: 30px;
+.main .details .product {
+  margin-top: 20px;
+}
+.main .details .product .product-title {
+  height: 40px;
   border-bottom: 1px solid red;
   border-top: 1px solid red;
   display: flex;
 }
-.main .product .product-title a {
+.main .details .product .product-title a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -254,31 +259,32 @@ html {
   color: white;
   background-color: #ffc933;
 }
-.main .product .product-title a:nth-child(3) {
+.main .details .product .product-title a:nth-child(3) {
   border-right: none;
   background-color: #ffc933;
 }
-.main .product .product-title a.active {
+.main .details .product .product-title a.active {
   background-color: #ff9a17;
 }
-.main .product .shangping .mui-table-view-cell {
+.main .details .product .shangping .mui-table-view-cell {
   padding-top: 15px;
   height: 80px;
 }
-.main .product .shangping .mui-table-view-cell .mui-navigate-right .mui-pull-right {
+.main .details .product .shangping .mui-table-view-cell .mui-navigate-right .mui-pull-right {
   padding-right: 20px;
   color: red;
 }
-.main .product .shangping .mui-table-view-cell .mui-navigate-right .word {
+.main .details .product .shangping .mui-table-view-cell .mui-navigate-right .word {
   padding-top: 10px;
 }
-.main .product .price {
+.main .details .product .price {
   height: 87px;
   background-color: #fff;
   padding: 20px 5px;
 }
-.main .product .price p {
+.main .details .product .price p {
   padding: 20px 0px 0px 10px;
+  line-height: 16px;
 }
 .main .comment-title {
   background-color: #dbdbdb;
@@ -302,6 +308,7 @@ html {
 }
 .main .disguess .font {
   padding-top: 5px;
+  line-height: 18px;
 }
 .main .disguess .font span {
   color: #000;
@@ -327,8 +334,7 @@ html {
   border-radius: 6px;
   font-size: 12px;
 }
-
-.mask {
+.main .mask {
   height: 80px;
   background-color: #434343;
   color: #000;
@@ -336,30 +342,30 @@ html {
   padding: 0px 10px;
   justify-content: space-between;
 }
-.mask .mask-left {
+.main .mask .mask-left {
   display: flex;
 }
-.mask .mask-left img {
+.main .mask .mask-left img {
   height: 50px;
   width: 50px;
   margin-top: 15px;
 }
-.mask .mask-left p {
+.main .mask .mask-left p {
   color: #fee6c2;
   font-size: 12px;
   padding: 5px 8px;
 }
-.mask .mask-left .one {
+.main .mask .mask-left .one {
   padding-top: 10px;
   font-size: 16px;
   color: white;
 }
-.mask .mask-right {
+.main .mask .mask-right {
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
-.mask .mask-right a {
+.main .mask .mask-right a {
   margin-bottom: 8px;
   margin-left: 25px;
   height: 25px;
@@ -367,7 +373,7 @@ html {
   background-color: #000;
   border-radius: 50%;
 }
-.mask .mask-right a span {
+.main .mask .mask-right a span {
   color: white;
 }
 

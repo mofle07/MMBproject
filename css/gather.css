@@ -63,10 +63,107 @@
           flex-basis: 40px;
 }
 .container .select {
+<<<<<<< HEAD
   -webkit-flex-basis: 30px;
       -ms-flex-preferred-size: 30px;
           flex-basis: 30px;
   background-color: skyblue;
+=======
+  flex-basis: 38px;
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #dadada;
+}
+.container .select .left {
+  flex: 1;
+  display: flex;
+}
+.container .select .left a {
+  width: 33.3335%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #565656;
+}
+.container .select .left a.active {
+  color: #f8601d;
+}
+.container .select .left a .size {
+  font-size: 16px;
+}
+.container .select .left a .down {
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 3px;
+}
+.container .select .left a .down.tr {
+  transform: rotate(180deg);
+}
+.container .select .right {
+  flex-basis: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #dadada;
+}
+.container .drop {
+  display: flex;
+  position: relative;
+  display: none;
+}
+.container .drop ul {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .drop ul li {
+  display: flex;
+  justify-content: space-between;
+}
+.container .drop ul li .true {
+  color: #f8601d;
+  font-size: 20px;
+  font-weight: 800;
+}
+.container .main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.container .main .banner {
+  width: 50%;
+  display: flex;
+}
+.container .main .banner a {
+  display: flex;
+  padding: 5px;
+  width: 100%;
+  flex-direction: column;
+}
+.container .main .banner a img {
+  width: 100%;
+}
+.container .main .banner a p {
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+  height: 30px;
+}
+.container .main .banner a .first {
+  font-size: 12px;
+  color: #333333;
+  word-break: break-all;
+  overflow: hidden;
+  height: 20px;
+}
+.container .main .banner a .second {
+  color: #f8601d;
+  font-size: 24px;
+  line-height: 30px;
+>>>>>>> abf22ac778c7fda142a429e62a711143a312263a
 }
 
 /*# sourceMappingURL=gather.css.map */

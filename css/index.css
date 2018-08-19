@@ -313,6 +313,9 @@ html {
   width: 50px;
   margin-bottom: 15px;
 }
+.container .main .navbar .more {
+  display: none;
+}
 .container .main .recommend {
   display: -webkit-box;
   display: -webkit-flex;

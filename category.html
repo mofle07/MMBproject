@@ -8,7 +8,7 @@
     <title>Document</title>
     <script src="./lib/js/jquery-3.3.1.min.js"></script>
     <script src="./lib/js/mui.min.js"></script>
-    <script src="./js/template-web.js"></script>
+    <script src="./lib/js/template-web.js"></script>
 
     <link rel="stylesheet" href="./lib/css/mui.min.css">
     <link rel="stylesheet" href="./css/Comparison.css">
@@ -49,20 +49,18 @@
                 </div>
             </div>
             <div class="search">
-                <input type="text" placeholder="请输入你想比价的商品">
+                <input type="text" class="search" placeholder="请输入你想比价的商品">
                 <button class="mui-btn">搜索</button>
             </div>
         </div>
 
 
         <div class="main">
-
-
             <!-- 区域滚动 -->
             <!-- <div class="mui-scroll-wrapper">
                 <div class="mui-scroll"> -->
             <ul class="mui-table-view comparison">
-                <li class="mui-table-view-cell mui-collapse ">
+                <!-- <li class="mui-table-view-cell mui-collapse ">
                     <a class="mui-navigate-right title" href="#">大家电</a>
                     <div class="mui-collapse-content comparisonlist">
                         <a href="Comparison-bottomlist.html">电视平板</a>
@@ -195,7 +193,7 @@
                         <a href="">电视平板</a>
                         <a href="">电视平板</a>
                     </div>
-                </li>
+                </li> -->
             </ul>
 
             <div class="bottomlist">
@@ -209,7 +207,7 @@
                         </li>
                         <li>
                             <img src="./images/top.jpg" alt="">
-                            <a href="#">返回顶部</a>
+                            <a id="back">返回顶部</a>
                         </li>
                     </ul>
                 </div>
@@ -226,7 +224,7 @@
         <!-- </div>
         </div> -->
 
-<!-- 底部隐藏 -->
+        <!-- 底部隐藏 -->
         <div class="footer">
             <div class="left">
                 <a class="mui-icon mui-icon-closeempty "></a>
@@ -238,7 +236,7 @@
             </div>
 
 
-            <button class="mui-btn mui-btn-warning mui-btn ">立即打开</button>
+            <button class="mui-btn mui-btn-warning footer-btn ">立即打开</button>
         </div>
     </div>
 
@@ -248,21 +246,24 @@
 
 </html>
 
-<!--  -->
-<script type="text/html" id="comparisonliat">
-    
-    <li class="mui-table-view-cell mui-collapse ">
-            <a class="mui-navigate-right title" href="#">大家电</a>
-            <div class="mui-collapse-content comparisonlist">
-                <a href="">电视平板</a>
-                <a href="">电视平板</a>
-                <a href="">电视平板</a>
-                <a href="">电视平板</a>
-                <a href="">电视平板</a>
-                <a href="">电视平板</a>
-                <a href="">电视平板</a>
-                <a href="">电视平板</a>
-                <a href="">电视平板</a>
-            </div>
-        </li>
+
+
+<script type="text/html" id="categoryItem-modal">
+                {{each result v i}}
+            <li class="mui-table-view-cell mui-collapse  categoryItem" data-open="open">
+                       
+                    <a data-id="{{v.titleId}}" class="mui-navigate-right title">{{v.title}}</a>
+                
+                <div class="mui-collapse-content comparisonlist">
+                    
+               </div>
+         </li>
+        {{/each}}
+</script>
+
+
+<script type="text/html" id="categoryItem">
+{{each result v i}}
+<a  class="list" data-id="{{v.categoryId}}">{{v.category}}</a>
+{{/each}}
 </script>
