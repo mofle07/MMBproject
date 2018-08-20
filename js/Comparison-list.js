@@ -16,6 +16,29 @@ $(function () {
         $(".slide").hide();
     })
 
+<<<<<<< HEAD
+     //url的关键字提取函数
+ 
+// var url = location.href;
+// var query = getParam(url);
+// var pid = query.id;
+
+
+    //导航
+    $.ajax({
+        url:"http://mmb.ittun.com/api/getcategorybyid",
+        type:"get",
+        data:{categoryid:1},
+        success:function(res){
+            console.log(res);
+            var htmlStr = template("navTem",res);
+            console.log(htmlStr);
+            $(".nav").html(htmlStr);
+        }
+    })
+
+=======
+>>>>>>> 24471d4e9bed4a6503fdd4942e21fd45b44117ea
 
     //   //分析url拿到id
     var url = location.href;

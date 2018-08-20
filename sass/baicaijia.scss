@@ -170,7 +170,11 @@ html {
     }
     .main {
         flex: 1;
+<<<<<<< HEAD
         margin-top: 95px;
+=======
+        margin-top: 100px;
+>>>>>>> 82538153047386b544594744d1365cbe42d40aab
         .products{
             display: none;
             &.selected{

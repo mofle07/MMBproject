@@ -91,7 +91,6 @@ html {
 
 .container {
   margin: 0px auto;
-  max-width: 600px;
   padding-right: 0px;
   padding-left: 0px;
   height: 100%;
@@ -162,7 +161,7 @@ html {
 .container .main .products .detail .left span {
   height: 80px;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
   letter-spacing: 2px;
   flex: 1;
   text-overflow: ellipsis;
