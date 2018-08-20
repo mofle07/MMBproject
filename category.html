@@ -38,7 +38,7 @@
 
             <div class="header-info">
                 <div class="logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="./images/manmanmai.png" alt="">
                     </a>
                 </div>
@@ -252,9 +252,9 @@
                 {{each result v i}}
             <li class="mui-table-view-cell mui-collapse  categoryItem" data-open="open">
                        
-                    <a data-id="{{v.titleId}}" class="mui-navigate-right title">{{v.title}}</a>
+                    <a data-id="{{v.titleId}}" class="mui-navigate-right title dropdown-toggle" aria-expanded="false" data-toggle="dropdown" aria-haspopup="true">{{v.title}}</a>
                 
-                <div class="mui-collapse-content comparisonlist">
+                <div class="mui-collapse-content glyphicon-menu-down comparisonlist">
                     
                </div>
          </li>
@@ -265,5 +265,8 @@
 <script type="text/html" id="categoryItem">
 {{each result v i}}
 <a  class="list" data-id="{{v.categoryId}}">{{v.category}}</a>
+
 {{/each}}
+<a href=""></a>
+<a href=""></a>
 </script>

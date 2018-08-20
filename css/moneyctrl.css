@@ -1,245 +1,48 @@
-@charset "UTF-8";
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/*
+Error: Invalid GBK character "\xE5"
+        on line 45 of sass/moneyctrl.scss
 
-input {
-  outline: 0 none;
-  border: 0;
-}
+40:     height: 100%;
+41: }
+42: 
+43: body {
+44:     background-color: #f2f2f2;
+45:     font: 12px/100% "微软雅黑";
+46: }
+47: 
+48: .top {
+49:     position: relative;
+50:     height: 90px;
 
-ul,
-ol {
-  list-style: none;
-}
-
-img {
-  border: 0;
-  vertical-align: middle;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  height: 0px;
-  clear: both;
-}
-
-.clearfix {
-  *zoom: 1;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  background-color: #f2f2f2;
-  font: 12px/100% "微软雅黑";
-}
-
-.top {
-  position: relative;
-  height: 90px;
-  z-index: 100;
-}
-.top .top-iner {
-  position: fixed;
-  height: 90px;
-  background-color: #fff;
-}
-.top .top-iner .top-bar {
-  height: 44px;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  border-bottom: solid #ccc 1px;
-}
-.top .top-iner .top-bar img {
-  flex-basis: 80px;
-  height: 24px;
-}
-.top .top-iner .top-bar .searchbox {
-  flex: 1;
-  margin-left: 8px;
-  margin-right: 8px;
-  position: relative;
-}
-.top .top-iner .top-bar .searchbox input {
-  width: 100%;
-  height: 30px;
-  border: solid 1px red;
-  background-color: #eee;
-  border-radius: 15px;
-  padding-left: 26px;
-  margin-bottom: 0px;
-  font-size: 12px;
-}
-.top .top-iner .top-bar .searchbox .glyphicon-search {
-  position: absolute;
-  top: 8px;
-  left: 10px;
-}
-.top .top-iner .top-bar a {
-  flex-basis: 50px;
-  height: 30px;
-  border: solid orangered 1px;
-  border-radius: 8px;
-  text-align: center;
-  line-height: 30px;
-  color: orangered;
-  text-decoration: none;
-}
-.top .top-iner .nav {
-  position: relative;
-}
-.top .top-iner .nav a {
-  font-size: 14px;
-  display: inline-block;
-  height: 100%;
-  font-weight: bold;
-  text-decoration: none;
-}
-.top .top-iner .nav a.active {
-  box-shadow: inset 0px -4px red;
-  color: #f00;
-}
-
-.main {
-  background-color: #fff;
-  max-width: 960px;
-  margin: 10px auto 0px;
-}
-.main .productslist ul li {
-  height: 130px;
-  border-bottom: solid 1px #ccc;
-  display: flex;
-  padding: 10px;
-}
-.main .productslist ul li a {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  text-decoration: none;
-}
-.main .productslist ul li a img {
-  flex-basis: 110px;
-  height: 110px;
-}
-.main .productslist ul li a .productInfo {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-left: 4px;
-  color: black;
-}
-.main .productslist ul li a .productInfo .title {
-  color: black;
-}
-.main .productslist ul li a .productInfo .decript {
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 20px;
-}
-.main .productslist ul li a .productInfo .decript .preferential {
-  color: orangered;
-}
-.main #paginator {
-  margin: 8px 0px;
-  padding-left: 20px;
-}
-
-.footer {
-  position: relative;
-  height: 164px;
-}
-.footer .breadCrumb {
-  height: 40px;
-  display: flex;
-  align-items: center;
-  border-bottom: solid 1px #ccc;
-  border-top: solid 1px #ccc;
-  padding-left: 10px;
-}
-.footer .foot-nav {
-  height: 34px;
-  display: flex;
-  margin-top: 30px;
-  border-top: #ccc solid 1px;
-  border-bottom: solid 1px #ccc;
-}
-.footer .foot-nav a {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  text-decoration: none;
-}
-.footer .foot-nav a:nth-child(2) {
-  border-left: solid #ccc 1px;
-  border-right: solid #ccc 1px;
-}
-.footer .foot-nav a img {
-  width: 15px;
-  height: 15px;
-}
-.footer .friendLink {
-  height: 60px;
-  padding: 15px 0px;
-  text-align: center;
-  opacity: 0;
-}
-.footer .friendLink .loadApp {
-  color: #f00;
-}
-.footer .app-bar {
-  height: 60px;
-  position: absolute;
-  width: 100%;
-  bottom: 0px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0px 10px;
-}
-.footer .app-bar .left {
-  display: flex;
-  align-items: center;
-}
-.footer .app-bar .left .man {
-  width: 44px;
-  height: 44px;
-  background: url("../images/bottom.png") no-repeat;
-}
-.footer .app-bar .left .info .title {
-  font-size: 18px;
-}
-.footer .app-bar .left .info .descript {
-  font-size: 14px;
-}
-.footer .app-bar .download-btn {
-  height: 40px;
-  width: 74px;
-  background: orange;
-  color: #fff;
-  text-align: center;
-  line-height: 40px;
-  padding: 0px;
-  border-radius: 8px;
-  float: right;
-}
-.footer .app-bar .download-btn:hover {
-  background-color: #32104e;
-}
-
-/*# sourceMappingURL=moneyctrl.css.map */
+Backtrace:
+sass/moneyctrl.scss:45
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1041:in `rescue in block in find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1038:in `block in find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1037:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1037:in `each_with_index'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1037:in `find_encoding_error'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:771:in `rescue in check_sass_encoding'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:767:in `check_sass_encoding'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:444:in `check_encoding!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:400:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid GBK character \"\xE5\"\A         on line 45 of sass/moneyctrl.scss\A \A 40:     height: 100%;\A 41: }\A 42: \A 43: body {\A 44:     background-color: #f2f2f2;\A 45:     font: 12px/100% \"微软雅黑\";\A 46: }\A 47: \A 48: .top {\A 49:     position: relative;\A 50:     height: 90px;"; }
