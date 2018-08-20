@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <script src="./lib/js/mui.min.js"></script>
+    <script src="./lib/js/template-web.js"></script>
+
+    <script src="./js/sitenav.js"></script>
+    <!-- <script src="./js/common.js"></script> -->
+
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="./css/sitenav.css">
+
+</head>
+<!-- 商城导航 -->
+
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="header-info">
+                <span class="mui-icon mui-icon-back" id="back"></span>
+                <span class="title">商城导航</span>
+                <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 中间主体 -->
+        <div class="main">
+            <ul class="navList">
+                <!-- 商城列表 -->
+            </ul>
+        </div>
+        <!-- 尾部 -->
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li class="login">
+                        <a href="login.html">登录</a>
+                    </li>
+                    <li>
+                        <a href="#" class="regist">注册</a>
+                    </li>
+                    <li class="back">
+                        <img src="./images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script id="sitenav" type="text/html">
+    {{each list v i}}
+    <li>
+        <a href="{{v.navHref}}">
+            <img src="{{v.navImg}}" alt="">
+            <span>{{v.navTitle}}</span>
+        </a>
+    </li>
+    {{/each}}
+</script>

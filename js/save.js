@@ -43,7 +43,7 @@ $(function () {
   //   给每个产品添加点击事件跳转到详情页
   $(".products").on("click", ".product", function () {
     var productid = $(this).data("id");
-    window.location.href = "./savelist.html?productid=" + productid;
+    window.location.href = "./moneyctrllist.html?productid=" + productid;
   });
 
   // 给返回顶部添加点击事件

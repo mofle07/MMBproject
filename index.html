@@ -9,15 +9,19 @@
 
     <script src="./lib/js/jquery-3.3.1.min.js"></script>
     <script src="./lib/js/mui.min.js"></script>
+    <script src="./lib/js/template-web.js"></script>
+
     <script src="./js/index.js"></script>
+    <script src="./js/common.js"></script>
 
     <link rel="stylesheet" href="./lib/css/mui.min.css">
     <link rel="stylesheet" href="./css/index.css">
+
 </head>
 
 <body>
     <div class="container">
-
+        <!-- 头部 -->
         <div class="header">
             <div class="header-info">
                 <div class="logo">
@@ -36,182 +40,45 @@
                 <button class="mui-btn">搜索</button>
             </div>
         </div>
+        <!-- 中间主体 -->
         <div class="main">
-            <!-- 区域滚动 -->
-            <!-- <div class="mui-scroll-wrapper">
-                <div class="mui-scroll"> -->
-                    <div class="man">
-                        <img src="./images/man.png" alt="">
-                    </div>
-                    <div class="navbar">
-                        <ul class="navList">
-                            <li>
-                                <a href="#">
-                                    <img src="./images/home.png" alt="">
-                                    <span>导航</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/home.png" alt="">
-                                    <span>导航</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/home.png" alt="">
-                                    <span>导航</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/home.png" alt="">
-                                    <span>导航</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/home.png" alt="">
-                                    <span>导航</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/home.png" alt="">
-                                    <span>导航</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img src="./images/home.png" alt="">
-                                    <span>导航</span>
-                                </a>
-                            </li>
-                            <li id="more">
-                                <a href="#">
-                                    <img src="./images/gengduo.png" alt="">
-                                    <span>更多</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="more">
-                            <ul>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/gengduo.png" alt="">
-                                        <span>更多</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/gengduo.png" alt="">
-                                        <span>更多</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/gengduo.png" alt="">
-                                        <span>更多</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <img src="./images/gengduo.png" alt="">
-                                        <span>更多</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="recommend">
-                        <span>超值折扣推荐</span>
-                        <a href="#">
-                            <img src="./images/more.png" alt="">
-                        </a>
-                    </div>
-                    <div class="products">
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <div class="left">
-                                        <img src="./images/j_sources_img_2016_10_22_190_190_0_575ab3bffff305c81740cbd6ce7aceb4.jpg" alt="">
-                                    </div>
-                                    <div class="right">
-                                        <div class="title">
-                                            <span class="desc">simon西蒙6C系列五孔开关插座 香槟金*3件</span>
-                                            <span class="price">38.42元（3件6折、合12.81元/件）</span>
-                                        </div>
-                                        <div class="other">
-                                            <span>苏宁易购 | 08-18 12:24</span>
-                                            <span>
-                                                <i class="mui-icon mui-icon-chat"></i>
-                                                0
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="left">
-                                        <img src="./images/j_sources_img_2016_10_22_190_190_0_575ab3bffff305c81740cbd6ce7aceb4.jpg" alt="">
-                                    </div>
-                                    <div class="right">
-                                        <div class="title">
-                                            <span class="desc">simon西蒙6C系列五孔开关插座 香槟金*3件</span>
-                                            <span class="price">38.42元（3件6折、合12.81元/件）</span>
-                                        </div>
-                                        <div class="other">
-                                            <span>苏宁易购 | 08-18 12:24</span>
-                                            <span>
-                                                <i class="mui-icon mui-icon-chat"></i>
-                                                0
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <div class="left">
-                                        <img src="./images/j_sources_img_2016_10_22_190_190_0_575ab3bffff305c81740cbd6ce7aceb4.jpg" alt="">
-                                    </div>
-                                    <div class="right">
-                                        <div class="title">
-                                            <span class="desc">simon西蒙6C系列五孔开关插座 香槟金*3件</span>
-                                            <span class="price">38.42元（3件6折、合12.81元/件）</span>
-                                        </div>
-                                        <div class="other">
-                                            <span>苏宁易购 | 08-18 12:24</span>
-                                            <span>
-                                                <i class="mui-icon mui-icon-chat"></i>
-                                                0
-                                            </span>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="btn">
-                        <a href="#">
-                            <span>更多优惠信息</span>
-                            <span>>></span>
-                        </a>
-                    </div>
-                <!-- </div>
-            </div> -->
+            <a href="http://android.myapp.com/myapp/detail.htm?apkName=com.manmanbuy.bijia&ADTAG=mobile" class="man">
+                <img src="./images/man.png" alt="">
+            </a>
+            <div class="navbar">
+                <ul class="navList">
+                    <!-- 导航列表 -->
+                </ul>
+            </div>
+            <div class="recommend">
+                <span>超值折扣推荐</span>
+                <a href="#">
+                    <img src="./images/more.png" alt="">
+                </a>
+            </div>
+            <div class="products">
+                <ul>
+                    <!-- 产品列表 -->
+                </ul>
+            </div>
+            <div class="btn">
+                <a href="./moneyctrl.html">
+                    <span>更多优惠信息</span>
+                    <span>>></span>
+                </a>
+            </div>
         </div>
+        <!-- 尾部 -->
         <div class="footer">
             <div class="footer-nav">
                 <ul>
-                    <li>
-                        <a href="#">登录</a>
+                    <li class="login">
+                        <a href="login.html">登录</a>
                     </li>
-                    <li>
-                        <a href="#">注册</a>
+                    <li class="regist">
+                        <a href="./register.html" >注册</a>
                     </li>
-                    <li>
+                    <li class="back">
                         <img src="./images/top.jpg" alt="">
                         <a href="#">返回顶部</a>
                     </li>
@@ -233,6 +100,46 @@
 <script>
     // 区域滚动初始化代码
     // mui('.mui-scroll-wrapper').scroll({
-        // // deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    // // deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     // });
+</script>
+
+<script id="navList" type="text/html">
+    {{each list v i}}
+    <li class="{{if i == 7}}more{{/if}}" data-id={{v.indexmenuId}}>
+        <a href="{{v.titlehref}}">
+            {{#v.img}}
+            <span>{{v.name}}</span>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<script id="product" type="text/html">
+    {{each list v i}}
+    <li>
+        <a href="#" data-id={{v.productId}}>
+            <div class="left">
+                {{#v.productImgSm}}
+            </div>
+            <div class="right">
+                <div class="title">
+                    <span class="desc">{{v.productName}}</span>
+                    <span class="price">{{v.productPinkage}}</span>
+                </div>
+                <div class="other">
+                    <p>
+                        <span>{{v.productFrom}}</span>
+                        <span>|</span>
+                        <span>{{v.productTime}}</span>
+                    </p>
+                    <span>
+                        <i class="mui-icon mui-icon-chat"></i>
+                        {{v.num}}
+                    </span>
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
 </script>

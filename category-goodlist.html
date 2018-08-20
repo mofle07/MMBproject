@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <script src="./lib/js/mui.min.js"></script>
+    <script src="./js/category-bottomlist.js"></script>
+    <!-- <script src="./lib/js/bootstrap.min.js"></script> -->
+    <script src="./lib/js/template-web.js"></script>
+    <script src="./js/getUrlTools.js"></script>
+
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="./css/category-goodlist.css">
+    <!-- <link rel="stylesheet" href="./lib/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- 顶部搜索区 -->
+        <div class="header">
+            <div class="header-info">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/manmanmai.png" alt="">
+                    </a>
+                </div>
+                <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入你想比价的商品">
+                <button class="mui-btn">搜索</button>
+            </div>
+        </div>
+
+        <div class="main">
+            <!-- 区域滚动 -->
+            <!-- <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll"> -->
+            <!-- 导航 -->
+            <div class="nagive">
+                <ol class="breadcrumb"> 
+                    <!-- <li class="one" >
+                        <a href="#">首页</a>
+                        <span>></span>
+                    </li>
+                    <li class="tow"> 
+                        <a href="#">Library</a>
+                        <span>></span>
+                    </li>
+                    <li class="active">Data</li> -->
+                </ol>
+            </div> 
+
+           <div class="details">
+              
+
+                <hr>
+            </div> 
+
+    <!-- <div class="comment-title">
+        优选网友评论
+    </div> -->
+    <!-- 评论区 -->
+    <div class="disguess">
+        <!-- <div class="container clearfix">
+                            <div class="left">
+                                <span>伞***现</span>
+                                <span>2014/9/12</span>
+                            </div>
+                            <div class="right mui-pull-right">
+                                <div class="time">ddd</div>
+                                <div> 购买自：京东商城</div>
+                            </div>
+                        </div>
+                        <div class="font">
+                            <span>首先，送货很快，前一天订，第二天一早就安装，师傅服务态度好，给我看了收费清单，一个一个解释给我听，最后安装完，还将垃圾清理完毕，并带走。美的，第一次用，印象分不错，因为之前的两个都是万家乐的，每年修一次，这次的，直接就给我烧了，幸好没有爆炸，否则后果不堪设想，真心的伤不起了。这个美的的，刚用上，热水出水挺快的，声音也不大，恒温效果还不错，看以后的表现，希望
+                                满意。 </span>
+                        </div>
+                        <div class="huifu">
+                            <span>回复</span>
+                        </div> -->
+    </div>
+
+
+
+
+    <div class="more">
+        <button type="">查看更多评价</button>
+
+    </div>
+<!-- 最新评论 -->
+<div class="newdiscuss">
+    <div class="discuss-title">
+        最新评论
+    </div>
+    <div class="container1 clearfix">
+    <div class="left">
+        <span>伞***现</span>
+        <span>2014/9/12</span>
+    </div>
+    <div class="right mui-pull-right">
+        <div class="time">ddd</div>
+        <div> 购买自：京东商城</div>
+    </div>
+</div>
+</div>
+
+
+<div class="fontword">
+    <span>首先，送货很快，前一天订，第二天一早就安装，师傅服务态度好，给我看了收费清单，一个一个解释给我听，最后安装完，还将垃圾清理完毕，并带走。美的，第一次用，印象分不错，因为之前的两个都是万家乐的，每年修一次，这次的，直接就给我烧了，幸好没有爆炸，否则后果不堪设想，真心的伤不起了。这个美的的，刚用上，热水出水挺快的，声音也不大，恒温效果还不错，看以后的表现，希望
+        满意。 </span>
+</div>
+<div class="huifu">
+    <span>回复</span>
+</div>
+</div>
+
+
+
+    <!-- </div>
+        </div> -->
+    <!-- <div class="mask">
+        <div class="mask-left">
+
+            <img src="./images/favicon.ico" alt="">
+            <div class="mask-left-list ">
+
+                <p class="one">
+                    慢慢买比价客户端
+                </p>
+                <p class="tow">
+                    掌控价格不再买贵
+                </p>
+                <p class="three">
+                    500万人正在使用
+                </p>
+            </div>
+
+        </div>
+        <div class="mask-right mui-pull-right">
+            <a class=" ">
+                <span class="mui-icon mui-icon-closeempty"></span>
+            </a>
+
+            <button class="mui-btn mui-btn-warning mui-btn ">立即打开</button>
+
+        </div>
+    </div> -->
+
+
+
+    <div class="footer">
+        <div class="footer-nav">
+            <ul>
+                <li class="login">
+                    <a href="login.html">登录</a>
+                </li>
+                <li class="regist">
+                    <a href="./register.html" >注册</a>
+                </li>
+                <li>
+                    <img src="./images/top.jpg" alt="">
+                    <a id="back">返回顶部</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-info">
+            <p>
+                <a href="href=" http://m.manmanbuy.com/app.html?type=footword&value=wap "">手机APP下载</a>
+                <span>慢慢买手机版--掌上比价平台</span>
+            </p>
+            <span>m.manmanbuy.com</span>
+        </div>
+    </div>
+
+
+    <div class="bottom">
+        <div class="left">
+            <a class="mui-icon mui-icon-closeempty "></a>
+            <img src="./images/favicon.ico" alt="">
+            <p>
+                <span>实时更新品牌榜</span>
+                <span>全网比价不吃亏</span>
+            </p>
+        </div>
+
+
+        <button class="mui-btn mui-btn-warning mui-btn ">立即打开</button>
+    </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script type="text/html" id="pinglun">
+
+    {{each result v i}}
+     <div class="box">
+                    <div class="piv">
+                        {{#v.productImg}}
+                        <a>
+                            <img src="./images/sc.jpg" class="mui-pull-right  sce" alt="">
+                        </a>
+                    </div>
+                    <div class="tit">
+                        <p class="title">{{v.productName}}</p>
+                        <span class="left">当前最低价:$555</span>
+                        <span class="right">优选评论:2222条</span>
+
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-title">
+                        <a class="product-title1 active">比价购买</a>
+                       <!-- <a class="product-title1 active">比价购买</a> -->
+                        <a class="product-title1">产品参数</a>
+                        <a  class="product-title1  comment">优选评价</a>
+                    </div>
+                    <div class="top">
+                    <a class="left active">全部</a>
+                    <a class="center">值得购买</a>
+                    <a class="right">不值得购买</a>
+                    </div>
+                </div>
+                <!-- <div class="product list">
+                    <ul class="mui-table-view  shangping">
+
+                        <li class="mui-table-view-cell">
+                                {{#v .bjShop}}
+                             <a class="mui-navigate-right">
+                                <span class="mui-pull-right">$8999.00</span>
+                                <div class="left">
+                                    <p>
+                                        <img src="./images/1.png" alt="">
+                                        <span>中国亚马逊</span>
+                                    </p>
+                                    <p class="word">自营</p>
+                                </div>
+
+                            </a>
+                        </li> 
+                    </ul>
+                    <div class="price">
+                        <a href="">该商品的历史最低价：899.00 ></a>
+                        <p> * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</p>
+                    </div> -->
+
+                <!-- </div>  -->
+        {{/each}}
+</script> 
+
+
+<!-- 评论区 -->
+<script type="text/html" id="pinglunlist">
+{{each result v i}}
+   <div class="container clearfix">
+    <div class="left">
+<span>{{v.comName    }}</span>
+        <span>{{v.comTime}}</span>
+    </div>
+    <div class="right mui-pull-right">
+        <div class="time">{{v.comId}}</div>
+        <div> {{v.comFrom}}</div>
+    </div>
+</div>
+<div class="font">
+    <span>{{v.comContent}}</span>
+</div>
+<div class="huifu">
+    <span>回复</span>
+</div>
+{{/each}}
+</script>
+
+
+<!-- 导航渲染 -->
+<script type="text/html" id="daohang">
+    {{each result v i}}
+   
+                <li class="one" >
+                    <a href="index.html">首页</a>
+                    <span>></span>
+                </li>
+                <li class="tow"> 
+                    <a href="#">{{Library}}</a>
+                    <span>></span>
+                </li>
+                <li class="active">{{v.category}}</li>
+           {{/each}}
+</script>

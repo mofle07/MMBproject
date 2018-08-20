@@ -146,63 +146,51 @@ html {
     .main {
         flex: 1;
         position: relative;
-       
-        .nam {
-             display: flex;
-             flex-wrap: wrap;
-       
+        .products{
+            display: flex;
+            flex-wrap: wrap;
 
-        .products {
-            
-            // flex-wrap: wrap;
-            width: 50%;
-
-            // .product {
-                // width: 50%;
-
-                .box {
-                    border: 1px solid #c4c4c4;
-                    display: flex;
-                    flex-direction: column;
-                    // height: 270px;
-
-                    padding: 10px 10px 0px 10px;
-                    
-                    margin: 5px;
-                   
-                   a {
-                    text-decoration: none;
-                       display: flex;
-                       flex-direction: column;
-                       
-
-                       img {
-                       width: 140px;
-                       height: 140px;
-                       align-self: center;
-                       }
-                       .proname {
-                           height: 53px;
-                           font-size: 16px;
-                           line-height: 20px;
-                           padding-top: 15px;
-                           color: #000;
-                       
-                       }
-                       .prices {
-                        color: darkorange;
-                        margin-top: 15px;
-                        height: 24px;
-                       }
-                       .site {
-                           font-size: 12px;
-                        padding: 10px 10px 10px 0px;;
-                       }
-                   }
+            .product{
+                width: 50%;
+                padding-top: 20px;
+                height: 280px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                // align-items: center;
+                border-right: 1px solid #ddd;
+                border-bottom: 1px solid #ddd;
+                padding-left:10px;
+                &:nth-child(2n){
+                    border-right: 0;
                 }
-            // }
-        }
-    }
+                img{
+                    width: 140px;
+                    height: 140px;
+                    align-self: center;
+                }
+                .proname{
+                    font-size: 14px;
+                    font-weight: bold;
+                    line-height: 18px;
+                }
+              .prices{
+                 color: orangered;
+                 font-size: 14px;
+                 height: 18px;
+                 line-height: 18px;
+               }
+               .site{
+                   line-height: 18px;
+                   font-size: 12px;
+               }
+
+
+               
+            }
+        }  
+       
+        
     }
     .footer {
         flex-basis: 100px;

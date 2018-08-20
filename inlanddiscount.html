@@ -13,8 +13,8 @@
     <script src="./lib/js/jquery-3.3.1.min.js"></script>
 
     <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/discount.css">
-    <script src="./js/discount.js"></script>
+    <link rel="stylesheet" href="./css/inlanddiscount.css">
+    <script src="./js/inlanddiscount.js"></script>
     <script src="./lib/js/template-web.js"></script>
 </head>
 
@@ -41,23 +41,12 @@
             <div class="mui-scroll-wrapper">
                 <div class="mui-scroll nam">
 
-                <!-- <div class="products">
-                        <div class="product ">
-                                <div class="box renderer"> 
-                                <a href="">
-                                    <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
-                                    <div class="proname mui-ellipsis-2">西域美农新疆特产五星和田红枣250g*2西域美农新疆特产五星和田红枣250g*2西域美农新疆特产五星和田红枣250g*2</div>
-                                    <p class="prices">19.8元(5件99元)</p>
-                                    <p class="site">
-                                        <span class="store">京东商城 </span><i>|</i>
-                                        <span class="date">10-22</span>
-                                        <span class="hour">13:00</span>
-                                    </p>
-                                </a>
-                            </div>
-                        </div>
-                    </div> -->
-                        
+                    <div class="products">
+
+
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -85,9 +74,9 @@
             </div>
         </div>
     </div>
-    <script id="productslist" type="text/html">
+    <!-- <script id="productslist" type="text/html">
        {{each result v i}}
-     <div class="products">        
+           
         <div class="box renderer">      
            <a href="" data-main="{{v.productId}}" class="property">     
                {{#v.productImg}}
@@ -100,14 +89,27 @@
                </p>
            </a>                  
         </div>
-    </div> 
+   
     {{/each}}
-    </script>
+    </script> -->
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+<div class="product" data-id="{{v.productId}}">                    
+                {{#v.productImg}}
+         
+          
+                <div class="proname mui-ellipsis-2">{{v.productName}}</div>
+                <p class="prices">{{v.productPrice}}</p>
+                <p class="site">
+                    <span>{{v.productFrom}}</span>
+                    <span>{{v.productTime}} </span>
+                    | 
+                </p>
 
-    <script>
-        var property 
-    </script>
 
+</div>
+{{/each}}
+    </script>
 </body>
 
 </html>
