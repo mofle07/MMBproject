@@ -180,6 +180,7 @@ html {
                         line-height: 18px;
                         letter-spacing: 2px;
                         flex:1;
+                        text-overflow: ellipsis;
                     }
                     img{
                         flex-basis: 200px;
