@@ -1,0 +1,36 @@
+@import "./common";
+
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    .main {
+        padding-top: 10px;
+        .mui-input-group {
+            .form-group {
+                margin: 0;
+                .loginbtn {
+                    padding:0 15px;
+                }
+                .btn {
+                    margin-top: 10px;
+                    width: 100%;
+                    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+                }
+                .checkbox {
+                    display: flex;
+                    align-items: center;
+                    label { 
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mui-toast-container {
+    bottom: 100px;
+}

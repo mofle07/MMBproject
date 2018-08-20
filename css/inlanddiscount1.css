@@ -1,0 +1,243 @@
+@charset "UTF-8";
+body,
+div,
+span,
+p,
+a,
+img,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+i,
+em,
+b,
+strong,
+del,
+s,
+u,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+/* 清楚网页内标签的内外边距 */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 清楚a标签的下划线和默认字体颜色 */
+input {
+  border: 0 none;
+  outline: 0 none;
+}
+
+/* 清除表单输入框的边框和外轮廓线 */
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+/* 低版本的插入图片会默认生成边框 */
+i,
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+/* 清除li标签的默认小点点 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 设置网页的版心 */
+body {
+  font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  background-color: #fff;
+}
+
+/* 修改网页默认字体和行高 */
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+/* 设置清除浮动影响 */
+.container {
+  margin: 0px auto;
+  max-width: 600px;
+  padding-right: 0px;
+  padding-left: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .header {
+  height: 45px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: darkorange;
+}
+.container .header .previousPage {
+  font-size: 25px;
+  padding: 10px;
+}
+.container .header .previousPage a {
+  color: #fff;
+}
+.container .header .right img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.container .header h4 {
+  font-weight: normal;
+  font-size: 20px;
+  color: #fff;
+}
+.container .main {
+  flex: 1;
+  position: relative;
+}
+.container .main .products {
+  padding: 0 10px;
+}
+.container .main .products .box {
+  padding-top: 20px;
+}
+.container .main .products .box .product {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  line-height: 24px;
+}
+.container .main .products .box .price {
+  font-size: 14px;
+  color: orangered;
+  line-height: 20px;
+}
+.container .main .products .box .store {
+  padding: 10px 0;
+  font-size: 12px;
+}
+.container .main .products .detail {
+  display: flex;
+}
+.container .main .products .detail .left {
+  flex: 2;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.container .main .products .detail .left span {
+  height: 80px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  flex: 1;
+}
+.container .main .products .detail .left img {
+  flex-basis: 200px;
+  width: 180px;
+  margin-bottom: 20px;
+}
+.container .main .products .detail .right {
+  flex: 1;
+  padding-top: 20px;
+}
+.container .main .products .detail .right img {
+  width: 100px;
+}
+.container .main .products button {
+  width: 100%;
+  background-color: orange;
+  color: #fff;
+  height: 40px;
+  line-height: 20px;
+}
+.container .main .products .qr {
+  width: 100%;
+  margin-top: 20px;
+}
+.container .footer {
+  flex-basis: 100px;
+  background-color: #efefef;
+}
+.container .footer .footer-nav {
+  flex-basis: 35px;
+}
+.container .footer .footer-nav ul {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.container .footer .footer-nav ul li {
+  line-height: 35px;
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+.container .footer .footer-nav ul li:nth-child(3) {
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .footer .footer-nav ul li a {
+  color: #5a5a5a;
+}
+.container .footer .footer-nav ul li img {
+  width: 15px;
+  display: block;
+}
+.container .footer .footer-info {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5a5a5a;
+}
+.container .footer .footer-info p a {
+  color: red;
+}
+
+/*# sourceMappingURL=inlanddiscount1.css.map */

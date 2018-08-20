@@ -1,0 +1,65 @@
+@import "common.scss";
+// 电视评论
+.top {
+    height: 40px;
+    background-color: #f3f3f3;
+    color: #a24604;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+    h4 {
+        line-height: 40px;
+        font-weight: bold;
+    }
+}
+
+.main {
+    background-color: #ffffff;
+    position: relative;
+    height: 100%;
+    .productlist {
+        display: flex;
+        flex-direction: column;
+        .product {
+            a {
+                display: flex;
+                border-bottom: 1px solid #e4e4e4;
+                &:after {
+                    height: 0;
+                }
+                .left {
+                    margin-right: 10px;
+                }
+                .right {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    width: 100%;
+                    .brandName {
+                        line-height: 20px;
+                        font-size: 16px;
+                        color: #000;
+                    }
+                    .productPriceBar {
+                        height: 18px;
+                        width: 100%;
+                        .productPrice {
+                            font-size: 18px; // font-weight: bold;
+                            color: red;
+                        }
+                        .stars {
+                            img{
+                               width: 10px; 
+                            }
+                        }
+                    }
+                    .productComBar {
+                        color: #999;
+                        .productQuote {
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/baicaijia.css">
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./lib/css/swiper.css">
+    <script src="./lib/js/swiper.min.js"></script>
+    <script src="./js//baicaijia.js"></script>
+    <script src="./lib/js/mui.min.js"></script>
+    <script src="./lib/js/template-web.js"></script>
+
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/css/bootstrap.css">
+    <script src="./lib/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container" style="padding:0">
+
+
+        <div class="header">
+            <div class="top">
+                <a class="mui-icon mui-icon-back return"></a>
+                <span>白菜价-淘宝内部优惠价</span>
+                <a href="#" class="app">
+                    <img src="./images/header_app.png" alt="">
+                </a>
+            </div>
+
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="main">
+            <!-- 区域滚动 -->
+            <!-- <div class="mui-scroll-wrapper">
+                <div class="mui-scroll"> -->
+            <div class="products selected">
+            </div>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <img src="./images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="returnTop" >
+        <a href="#" class="glyphicon glyphicon-arrow-up"></a>
+    </div>
+
+</body>
+
+</html>
+<script type="text/html" id="tpl1">
+    {{each list v i}}
+    <div class="swiper-slide">
+        <a data-id="{{v.titleId}}" {{if i==0}}class="active" {{/if}}>{{v.title}}</a>
+    </div>
+    {{/each}}
+
+</script>
+<script type="text/html" id="tplDetail">
+    {{each list v i}}
+
+    <div class="product">
+        <div class="left">
+            {{#v.productImg}}
+        </div>
+        <div class="right">
+            <p>{{#v.productName}}</p>
+            <span class="price">{{#v.productPrice}}</span>
+            <!-- 进度条 -->
+            <div class="nav">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                        style="width: 60%;">
+                        60%
+                    </div>
+                </div>
+                <span>已经领100</span>
+            </div>
+            <div class="cheap">
+                <span>{{#v.productCoupon}}</span>
+                <button class="pull-right">{{#v.productHref}}</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    {{/each}}
+</script>

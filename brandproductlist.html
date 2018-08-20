@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- jQuery -->
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <!-- mui框架 -->
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <script src="./lib/js/mui.min.js"></script>
+    <!-- 模板 -->
+    <script src="lib/js/template-web.js"></script>
+    <!-- 分页 -->
+    <script src="lib/js/jquery.twbsPagination.min.js"></script>
+
+    <!-- 自己的 -->
+    <link rel="stylesheet" href="./css/brandproductlist.css">
+    <script src="./js/common.js"></script>
+    <script src="./js/brandproductlist.js"></script>
+
+</head>
+
+<body>
+    <!-- 标题栏 -->
+    <div class="top">
+        <h4>平板电视产品销量排行</h4>
+    </div>
+    <!-- 内容展示 -->
+    <div class="main">
+        <!-- 区域滚动 -->
+        <div class="mui-scroll-wrapper">
+            <div class="mui-scroll">
+
+                <!-- 内容渲染 -->
+                <ul class="mui-table-view productlist">
+                    <!-- 数据模板区域地址 -->
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 数据渲染模板 -->
+    <script type="text/html" id="productTmp">
+        {{each result v i}}
+        <li class="mui-table-view-cell product">
+            <a href="productcom.html?productId={{v.productId}}" class="">
+                <div class="left">
+                    {{#v.productImg}}
+                </div>
+                <div class="right">
+                    <p class="brandName mui-ellipsis-2">{{v.productName}}</p>
+                    <p class="productPriceBar">
+                        <span class="productPrice mui-pull-left">{{v.productPrice}}</span>
+                        <span class="mui-pull-right stars">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                        </span>
+                    </p>
+                    <div class="productComBar">
+                        <span class="productQuote">{{v.productQuote}}</span>
+                        <span class="productCom">{{v.productCom}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+
+</body>
+
+</html>
