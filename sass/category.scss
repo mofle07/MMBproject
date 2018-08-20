@@ -179,6 +179,7 @@ html {
         flex: 1;
         background-color: #f2f2f2;
         .comparison{
+           
             &:hover{
                 border-top: 2px solid #000;
             }
@@ -190,8 +191,12 @@ html {
            .title{
                font-size: 16px;
                font-weight: bolder;
+               height: 40px;
            }
             .comparisonlist{
+                // display: block;
+                // border-top: 1px solid #ccc;
+                // margin-top: 0;
                 background-color: #F9F9F9;
                 a {
                     color: #000;
@@ -199,8 +204,9 @@ html {
                     display: block;
                     width: 33.3333%;
                     height: 40px;
-                  border-top: 1px solid #ccc;
+                //   border-top: 1px solid #ccc;
                   border-right: 1px solid #ccc;
+                  border-bottom: 1px solid #ccc;
                     text-align: center;
                     line-height: 40px;
                     font-size: 12px;

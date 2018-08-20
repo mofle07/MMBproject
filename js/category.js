@@ -22,7 +22,8 @@ $(function() {
       var html = template("categoryItem-modal", obj);
       $(".comparison").html(html);
       console.log(obj);
-      $(".comparison").on("click", ".categoryItem", function() {
+      $(".comparison").on("tap", ".categoryItem", function() {
+        $(this).css("border-top","1px solid #000000").siblings().css("border-top","1px solid #ccc")
         //获取到大清单的id
         var sonid = $(this)
           .find(".title")
@@ -40,7 +41,7 @@ $(function() {
         data: { titleid: sonid },
         success: function(obj) {
           var html = template("categoryItem", obj);
-          console.log($(".categorylist"));
+          // console.log($(".categorylist"));
          $(".comparisonlist").html(html);
         }
       });
@@ -62,4 +63,6 @@ $(function() {
     window.location.href="./Comparison-list.html?categoryId="+listid;
 
   })
+
+
 });
