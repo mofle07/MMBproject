@@ -315,9 +315,11 @@ html {
   width: 100px;
 }
 .container .main .products li a .right {
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-right: 10px;
 }
 .container .main .products li a .right .title span {
   font-size: 16px;
