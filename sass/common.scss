@@ -168,6 +168,52 @@ html {
         flex: 1;
        
     }
+    // 点击底部消失区域
+    #hidden {
+      
+        flex-basis: 50px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        flex-basis: 70px;
+        background-color: #fff;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        .left{
+            display: flex;
+            flex: 1;
+            a{
+               margin-top: 20px;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                background-color: #ccc;
+              
+                  
+                    margin-right: 10px;
+            
+            }
+            img{
+                height: 40px;
+                width: 49px;
+               margin-top: 15px;
+            }
+            p{
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                span{
+                    padding: 5px;
+                }
+            }
+           
+        }
+        .footer-btn{
+            background-color: #ff7700;
+        }
+        }
     .footer {
         flex-basis: 100px;
         background-color: #efefef;

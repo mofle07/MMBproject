@@ -137,54 +137,64 @@ html {
   position: relative;
 }
 .container .main .products {
-  display: flex;
-  flex-direction: column;
+  padding: 0 10px;
 }
-.container .main .products .product {
-  width: 100%;
+.container .main .products .box {
+  padding-top: 20px;
 }
-.container .main .products .product .box {
-  border: 1px solid #c4c4c4;
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-}
-.container .main .products .product .box .proname {
-  font-size: 18px;
-  line-height: 20px;
-  margin-top: 20px;
+.container .main .products .box .product {
+  font-size: 16px;
   font-weight: bold;
+  color: #000;
+  line-height: 24px;
 }
-.container .main .products .product .box .prices {
-  color: darkorange;
-  margin-top: 10px;
-}
-.container .main .products .product .box .site {
-  line-height: 50px;
-}
-.container .main .products .product .box .abstract {
-  display: flex;
-  flex-wrap: wrap;
-}
-.container .main .products .product .box .abstract .left {
-  flex: 2;
-}
-.container .main .products .product .box .abstract .left .content {
-  line-height: 25px;
-  color: #bbbbbb;
+.container .main .products .box .price {
   font-size: 14px;
+  color: orangered;
+  line-height: 20px;
 }
-.container .main .products .product .box .abstract .left .content img {
-  margin-top: 10PX;
+.container .main .products .box .store {
+  padding: 10px 0;
+  font-size: 12px;
 }
-.container .main .products .product .box .abstract .right {
+.container .main .products .detail {
+  display: flex;
+}
+.container .main .products .detail .left {
+  flex: 2;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+.container .main .products .detail .left span {
+  height: 80px;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
   flex: 1;
 }
-.container .main .products .product .box .abstract .right img {
-  width: 100%;
+.container .main .products .detail .left img {
+  flex-basis: 200px;
+  width: 180px;
+  margin-bottom: 20px;
 }
-.container .main .products .product a {
-  margin: 20px;
+.container .main .products .detail .right {
+  flex: 1;
+  padding-top: 20px;
+}
+.container .main .products .detail .right img {
+  width: 100px;
+}
+.container .main .products button {
+  width: 100%;
+  background-color: orange;
+  color: #fff;
+  height: 40px;
+  line-height: 20px;
+}
+.container .main .products .qr {
+  width: 100%;
+  margin-top: 20px;
 }
 .container .footer {
   flex-basis: 100px;

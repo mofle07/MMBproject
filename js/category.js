@@ -59,7 +59,7 @@ $(function() {
     var listid=$(this).data("id");
     console.log(listid);
     //进入到商品展示页
-    window.location.href="./Comparisonlist.html?categoryId="+listid;
+    window.location.href="./Comparison-list.html?categoryId="+listid;
 
   })
 });

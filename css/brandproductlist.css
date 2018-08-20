@@ -146,6 +146,46 @@ html {
 .container .main {
   flex: 1;
 }
+.container #hidden {
+  flex-basis: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-basis: 70px;
+  background-color: #fff;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.container #hidden .left {
+  display: flex;
+  flex: 1;
+}
+.container #hidden .left a {
+  margin-top: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+.container #hidden .left img {
+  height: 40px;
+  width: 49px;
+  margin-top: 15px;
+}
+.container #hidden .left p {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.container #hidden .left p span {
+  padding: 5px;
+}
+.container #hidden .footer-btn {
+  background-color: #ff7700;
+}
 .container .footer {
   flex-basis: 100px;
   background-color: #efefef;
@@ -238,15 +278,15 @@ html {
   color: #000;
 }
 .main .productlist .product a .right .productPriceBar {
+  height: 18px;
   width: 100%;
 }
 .main .productlist .product a .right .productPriceBar .productPrice {
   font-size: 18px;
   color: red;
 }
-.main .productlist .product a .right .productPriceBar .star {
-  color: #ff9000;
-  text-shadow: 0px 0px #ff9000;
+.main .productlist .product a .right .productPriceBar .stars img {
+  width: 10px;
 }
 .main .productlist .product a .right .productComBar {
   color: #999;
