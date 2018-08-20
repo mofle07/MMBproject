@@ -1,0 +1,281 @@
+@charset "UTF-8";
+body,
+div,
+span,
+p,
+a,
+img,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+i,
+em,
+b,
+strong,
+del,
+s,
+u,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+/* 清楚网页内标签的内外边距 */
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* 清楚a标签的下划线和默认字体颜色 */
+input {
+  border: 0 none;
+  outline: 0 none;
+}
+
+/* 清除表单输入框的边框和外轮廓线 */
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+/* 低版本的插入图片会默认生成边框 */
+i,
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+/* 清除li标签的默认小点点 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 设置网页的版心 */
+body {
+  font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* 修改网页默认字体和行高 */
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+/* 设置清除浮动影响 */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  z-index: 100;
+  position: fixed;
+}
+.container .header .top {
+  width: 100%;
+  height: 50px;
+  padding: 0 2px;
+  background-color: #f4483e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .header .top .return {
+  font-size: 30px;
+  color: #fff;
+}
+.container .header .top span {
+  font-size: 18px;
+}
+.container .header .top .app img {
+  width: 34px;
+}
+.container .header .swiper-container {
+  height: 50px;
+  background-color: #ffffff;
+  line-height: 50px;
+}
+.container .header .swiper-container .swiper-slide a {
+  text-decoration: none;
+  color: #333333;
+  padding: 10px 10px;
+}
+.container .header .swiper-container .swiper-slide a.active {
+  color: #e4393c;
+  border-bottom: 2px solid red;
+}
+.container .header .swiper-container .swiper-slide {
+  width: 70px;
+}
+.container .main {
+  flex: 1;
+  margin-top: 10px;
+}
+.container .main .products {
+  display: none;
+}
+.container .main .products.selected {
+  display: block;
+}
+.container .main .products .product {
+  display: flex;
+  height: 150px;
+  padding: 10px 0;
+  background-color: #fff;
+  border-bottom: 1px solid #000;
+}
+.container .main .products .product .left {
+  flex-basis: 130px;
+}
+.container .main .products .product .left img {
+  width: 130px;
+  height: 130px;
+}
+.container .main .products .product .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+}
+.container .main .products .product .right p {
+  color: #000;
+}
+.container .main .products .product .right .nav {
+  display: flex;
+  padding: 7px 0;
+}
+.container .main .products .product .right .nav .progress {
+  flex: 1;
+}
+.container .main .products .product .right .nav span {
+  flex-basis: 80px;
+  color: #fc353a;
+}
+.container .main .products .product .right .cheap {
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .products .product .right .cheap span {
+  font-size: 12px;
+  height: 26px;
+  border: 1px dashed #e4393c;
+  line-height: 26px;
+}
+.container .main .products .product .right .cheap span a {
+  color: #e4393c;
+  text-decoration: none;
+}
+.container .main .products .product .right .cheap button {
+  padding: 2px;
+  background-color: #ff5e5d;
+}
+.container .main .products .product .right .cheap button a {
+  color: #e4393c;
+  text-decoration: none;
+  color: white;
+}
+.container .footer {
+  flex-basis: 100px;
+  background-color: #efefef;
+}
+.container .footer .footer-nav {
+  flex-basis: 35px;
+}
+.container .footer .footer-nav ul {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.container .footer .footer-nav ul li {
+  line-height: 35px;
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+.container .footer .footer-nav ul li:nth-child(3) {
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .footer .footer-nav ul li a {
+  color: #5a5a5a;
+}
+.container .footer .footer-nav ul li img {
+  width: 15px;
+  display: block;
+}
+.container .footer .footer-info {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5a5a5a;
+}
+.container .footer .footer-info p a {
+  color: red;
+}
+
+.returnTop {
+  position: fixed;
+  right: 0px;
+  bottom: 50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #808080;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.returnTop .glyphicon-arrow-up {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=baicaijia.css.map */
