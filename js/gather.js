@@ -136,6 +136,14 @@ $(function() {
         
     });
 
+    
+
+    $(".main").on("click",".there",function() {
+        
+      window.location.href = "./Togsproduct.html";
+    })
+    
+
     //right点击按钮
     
     
