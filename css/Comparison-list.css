@@ -240,15 +240,22 @@ html {
   width: 100%;
   border-bottom: 1px solid #ccc;
   position: relative;
+  display: flex;
+  align-items: center;
 }
-.nav #slect {
-  position: absolute;
-  right: 20px;
-  font-size: 16px;
-  top: 15px;
+.nav .navlist {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-.nav #slect span {
-  font-size: 16px;
+.nav .navlist a {
+  flex-basis: 25%;
+  line-height: 45px;
+  text-align: center;
+}
+.nav .navlist a.active {
+  color: red;
 }
 .nav .list {
   padding-top: 15px;
@@ -308,7 +315,8 @@ html {
   font-size: 16px;
   color: black;
 }
-.page .about .ten, .page .about .tev {
+.page .about .ten,
+.page .about .tev {
   padding-bottom: 10px;
   font-size: 12px;
 }

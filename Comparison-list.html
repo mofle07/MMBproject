@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
     <script src="./lib/js/jquery-3.3.1.min.js"></script>
     <script src="./lib/js/mui.min.js"></script>
     <script src="js/Comparison-list.js"></script>
     <!-- bootstrap -->
     <link rel="stylesheet" href="lib/css/bootstrap.min.css">
-    
+
     <script src="lib/js/bootstrap.min.js"></script>
     <script src="./lib/js/bootstrap-paginator.min.js"></script>
     <!-- 模板 -->
@@ -30,7 +30,7 @@
         <div class="header">
             <div class="header-info">
                 <div class="logo">
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./images/manmanmai.png" alt="">
                     </a>
                 </div>
@@ -50,13 +50,18 @@
             <!-- <div class="mui-scroll-wrapper">
                 <div class="mui-scroll"> -->
             <div class="nav">
-                <!-- <div class="list">
-                <a href="">首页<span>></span></a>
-                <a href="">全部分类<span>></span></a>
-                <a href="">电视<span>></span></a>
-               </div>
-                <a href="#" id="slect" class="pull-right">
-                    <span class="mui-icon mui-icon-settings"></span>筛选</a> -->
+                <div class="navlist">
+                    <a href="" class="active">综合
+                    </a>
+                    <a href="">销量
+
+                    </a>
+                    <a href="">价格
+                    </a>
+
+                    <a href="#" id="slect" class="pull-right">
+                        <span class="mui-icon mui-icon-settings"></span>筛选</a>
+                </div>
             </div>
             <!-- 内容 -->
             <div class="content">
@@ -104,7 +109,7 @@
                         <a href="login.html">登录</a>
                     </li>
                     <li class="regist">
-                        <a href="./register.html" >注册</a>
+                        <a href="./register.html">注册</a>
                     </li>
                     <li>
                         <img src="./images/top.jpg" alt="">
@@ -262,7 +267,7 @@
 </html>
 <script type="text/html" id="navTem">
     {{each result v i}}
-    <div class="list">
+    <div class="navlist">
         <a href="">{{v.titleId}}
             <span>></span>
         </a>
@@ -273,7 +278,7 @@
             <span>></span>
         </a>
     </div>
-    <a  id="slect" class="pull-right">
+    <a id="slect" class="pull-right">
         <span class="mui-icon mui-icon-settings"></span>筛选</a>
 
     {{/each}}

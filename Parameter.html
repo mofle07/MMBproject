@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <script src="./lib/js/mui.min.js"></script>
+    <script src="js/Comparison-list.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="./lib/js/bootstrap-paginator.min.js"></script>
+    <!-- 模板 -->
+    <script src="lib/js/template-web.js"></script>
+    <script src="./js/getUrlTools.js"></script>
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="css/parameter.css">
+    <script src="js/parmeter.js"></script>
+
+
+</head>
+
+<body>
+    <div class="container" style="padding: 0">
+
+        <div class="header">
+            <div class="header-info">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/manmanmai.png" alt="">
+                    </a>
+                </div>
+                <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入你想比价的商品">
+                <button class="mui-btn">搜索</button>
+            </div>
+        </div>
+        <div class="main">
+            <!-- nav -->
+            <div class="navs">
+                <!-- <a href="#">首页
+                    <span>></span>
+                </a>
+                <a href="#">格力
+                    <span>></span>
+                </a>
+                <a href="#">格力 KFR-35GW/(35592)FNhDa-A3
+                    <span>></span>
+                </a> -->
+            </div>
+            <div class="detail">
+                <!-- <div class="pic">
+                    <img src="images/2016040016521576785.jpg" alt="">
+                </div>
+                <p class="tes">格力(GREE) KFR-35GW/(35592)FNhDa-A3 品圆 大1.5匹 冷暖变频 除甲醛 壁挂式空调</p>
+                <div class="price">
+                    <div class="left">
+                        <span>当前最低:
+                            <span>¥3049.00 </span>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <span>优选评论:
+                            <span>8871条</span>
+                        </span>
+                    </div>
+
+                </div> -->
+
+            </div>
+            <div class="tab">
+                <li>
+                    <a href="./category-bottomlist.html">比价购买</a>
+                </li>
+                <li>
+                    <a href="#">产品参数</a>
+                </li>
+                <li>
+                    <a href="#">优选评价</a>
+                </li>
+            </div>
+            <!-- 参数部分 -->
+            <div class="bigbox">
+                <div class="box">
+                    <h4>基本参数</h4>
+                    <ul>
+                        <li>
+                            <div class="left">系列名称</div>
+                            <div class="right">品圆系列</div>
+                        </li>
+                        <li>
+                            <div class="left">空调类型</div>
+                            <div class="right">壁挂式空调</div>
+                        </li>
+                        <li>
+                            <div class="left">冷暖类型</div>
+                            <div class="right">冷暖电辅</div>
+                        </li>
+                        <li>
+                            <div class="left">变频/定频</div>
+                            <div class="right">变频</div>
+                        </li>
+                        <li>
+                            <div class="left">房间类型</div>
+                            <div class="right">卧室宝贝</div>
+                        </li>
+                        <li>
+                            <div class="left">空调匹数</div>
+                            <div class="right">1.5P</div>
+                        </li>
+                        <li>
+                            <div class="left">适用面积</div>
+                            <div class="right">15-22㎡</div>
+                        </li>
+                        <li>
+                            <div class="left">能效比</div>
+                            <div class="right">SEER3.25</div>
+                        </li>
+                        <li>
+                            <div class="left">能效等级</div>
+                            <div class="right">三级能效</div>
+                        </li>
+                        <li>
+                            <div class="left">控制方式</div>
+                            <div class="right">遥控</div>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                <div class="box">
+                    <h4>技术参数</h4>
+                    <ul>
+                        <li>
+                            <div class="left">制冷剂</div>
+                            <div class="right">新冷媒（R32）</div>
+                        </li>
+                        <li>
+                            <div class="left">制冷量</div>
+                            <div class="right">3500（450-3800）W</div>
+                        </li>
+                        <li>
+                            <div class="left">制冷功率</div>
+                            <div class="right">1110（160-1450）W</div>
+                        </li>
+                        <li>
+                            <div class="left">制热量</div>
+                            <div class="right">4500（800-5100）W</div>
+                        </li>
+                        <li>
+                            <div class="left">制热功率</div>
+                            <div class="right">1500（190 -1755）W</div>
+                        </li>
+                        <li>
+                            <div class="left">电辅加热功率</div>
+                            <div class="right">1000W</div>
+                        </li>
+                        <li>
+                            <div class="left">循环风量</div>
+                            <div class="right">630m3/h</div>
+                        </li>
+                        <li>
+                            <div class="left">室内机噪音</div>
+                            <div class="right">19/24/33/38/42d</div>
+                        </li>
+                        <li>
+                            <div class="left">室外机噪音</div>
+                            <div class="right">≤51dB</div>
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+                <div class="box">
+                    <h4>其他</h4>
+                    <ul>
+                        <li>
+                            <div class="left">电源性能</div>
+                            <div class="right">220V/50Hz</div>
+                        </li>
+                        <li>
+                            <div class="left">机身颜色</div>
+                            <div class="right">白色+蓝色装饰条</div>
+                        </li>
+                        <li>
+                            <div class="left">室内机尺寸</div>
+                            <div class="right">835×290×192mm</div>
+                        </li>
+                        <li>
+                            <div class="left">室外机尺寸</div>
+                            <div class="right">776×540×320mm</div>
+                        </li>
+                        <li>
+                            <div class="left">室内机质量</div>
+                            <div class="right">10.5kg</div>
+                        </li>
+                        <li>
+                            <div class="left">室外机质量</div>
+                            <div class="right">33.5kg</div>
+                        </li>
+                        <li>
+                            <div class="left">其他性能</div>
+                            <div class="right">独立除湿</div>
+                        </li>
+
+
+                    </ul>
+
+
+                </div>
+                <div class="box">
+                    <h4>空调附件</h4>
+                    <ul>
+                        <li>
+                            <div class="left">包装清单</div>
+                            <div class="right">室内机 x1 室外机 x1 遥控器 x1 保修卡 x1 说明书 x1 联机管 x1</div>
+                        </li>
+                    </ul>
+
+
+                </div>
+                <div class="box">
+                    <h4>保修信息</h4>
+                    <ul>
+                        <li>
+                            <div class="left">保修政策</div>
+                            <div class="right">全国联保，享受三包服务</div>
+                        </li>
+                        <li>
+                            <div class="left">质保时间</div>
+                            <div class="right">6年</div>
+                        </li>
+                        <li>
+                            <div class="left">质保备注</div>
+                            <div class="right">整机及主要零部件均保修6年</div>
+                        </li>
+                        <li>
+                            <div class="left">客服电话</div>
+                            <div class="right">400-836-5315；0756-8614883（总机）</div>
+                        </li>
+                        <li>
+                            <div class="left">电话备注</div>
+                            <div class="right">24小时电话服务</div>
+                        </li>
+                        <li>
+                            <div class="left">详细内容</div>
+                            <div class="right">2013年度家用空调（制冷量小于或等于14000W）、除湿机包修政策为整机包修六年。2005年1月1日之日起所购买的家用空调器整机包修六年。2005年1月1日之前所购买的家用空调器的包修政策按其当年的包修规定执行。如出现产品质量问题或故障，您可查询最近的维修点，由厂商的售后解决。进入官网>></div>
+                        </li>
+
+                    </ul>
+
+
+                </div>
+                <div class="box">
+                    <h4>特色功能</h4>
+                    <ul>
+                        <li>
+                            <div class="left">是否静音</div>
+                            <div class="right">是</div>
+                        </li>
+                        <li>
+                            <div class="left">清洁功能</div>
+                            <div class="right">自动清洁</div>
+                        </li>
+                        <li>
+                            <div class="left">杀菌类型</div>
+                            <div class="right">除甲醛，双重过滤网</div>
+                        </li>
+                        <li>
+                            <div class="left">电辅加热</div>
+                            <div class="right">支持</div>
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+
+
+
+            </div>
+            <!-- 简介 -->
+            <div class="synopsis">
+                    <h4>简介</h4>
+            </div>
+            <!-- 商城 -->
+            <div class="shop">
+               <div class="price">
+                   <span>商城报价</span>
+               </div>
+               <ul class="list">
+                   <li>
+                       <div class="left">
+                           <img src="images/1.png" alt="">
+                           <span>京东商城</span>
+
+                       </div>
+                       <div class="right">
+                           <span class="num">￥3399.00</span>
+                           <button class="btn">去购买</button>
+                       </div>
+                   </li>
+                   <li>
+                        <div class="left">
+                            <img src="images/1.png" alt="">
+                            <span>京东商城</span>
+ 
+                        </div>
+                        <div class="right">
+                            <span class="num">￥3399.00</span>
+                            <button class="btn">去购买</button>
+                        </div>
+                    </li>
+                    <li>
+                            <div class="left">
+                                <img src="images/1.png" alt="">
+                                <span>京东商城</span>
+     
+                            </div>
+                            <div class="right">
+                                <span class="num">￥3399.00</span>
+                                <button class="btn">去购买</button>
+                            </div>
+                        </li>
+                        <li>
+                                <div class="left">
+                                    <img src="images/1.png" alt="">
+                                    <span>京东商城</span>
+         
+                                </div>
+                                <div class="right">
+                                    <span class="num">￥3399.00</span>
+                                    <button class="btn">去购买</button>
+                                </div>
+                            </li>
+                            <li>
+                                    <div class="left">
+                                        <img src="images/1.png" alt="">
+                                        <span>京东商城</span>
+             
+                                    </div>
+                                    <div class="right">
+                                        <span class="num">￥3399.00</span>
+                                        <button class="btn">去购买</button>
+                                    </div>
+                                </li>
+
+               </ul>
+
+            </div>
+            <div class="message">
+                <span class="tes">* 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。</span>
+            </div>
+
+        </div>
+        <!-- 底部隐藏 -->
+        <div class="message" id="hidden">
+            <div class="left">
+                <a class="mui-icon mui-icon-closeempty"></a>
+                <img src="./images/favicon.ico" alt="">
+                <p>
+                    <span>实时更新品牌榜</span>
+                    <span>全网比价不吃亏</span>
+                </p>
+            </div>
+
+            <button class="mui-btn mui-btn-warning footer-btn ">立即打开</button>
+        </div>
+
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li class="login">
+                        <a href="login.html">登录</a>
+                    </li>
+                    <li class="regist">
+                        <a href="./register.html">注册</a>
+                    </li>
+                    <li>
+                        <img src="./images/top.jpg" alt="">
+                        <a id="back">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="href=" http://m.manmanbuy.com/app.html?type=footword&value=wap "">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+            <!-- </div>
+                <button class="mui-btn mui-btn-warning footer-btn ">立即打开</button>
+            </div> -->
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+<script type="text/html" id="mainTem">
+    {{each result v i}}
+    <div class="pic">
+                   {{#v.productImg}}
+                </div>
+                <p class="tes">{{v.productName}}</p>
+                <div class="price">
+                    <div class="left">
+                        <span>当前最低:
+                            <span>¥3049.00 </span>
+                        </span>
+                    </div>
+                    <div class="right">
+                        <span>优选评论:
+                            <span>8871条</span>
+                        </span>
+                    </div>
+
+                </div>
+
+    {{/each}}
+</script>
+
+<!-- 导航 -->
+<script type="text/html" id="daohang">
+    {{each result v i}}
+
+    <li class="one">
+        <a href="index.html">首页</a>
+    </li>
+    <li class="tow">
+        <a href="#"></a>
+        <span>></span>
+    </li>
+    <li class="active">
+        <a href="./Comparison-list.html?categoryId={{v.categoryId}}">{{v.category}}</a>
+    </li>
+    {{/each}}
+</script>
