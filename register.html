@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <script src="./lib/js/mui.min.js"></script>
+    <script src="./lib/js/bootstrap.min.js"></script>
+    <!-- 表单验证文件 -->
+    <script src="./lib/js/bootstrapValidator.min.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./login.js"></script>
+
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <!-- 表单验证文件 -->
+    <link rel="stylesheet" href="./lib/css/bootstrapValidator.min.css">
+    <link rel="stylesheet" href="./css/register.css">
+</head>
+
+<body>
+    <div class="container" style="padding:0">
+
+        <div class="header">
+            <div class="header-info">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/manmanmai.png" alt="">
+                    </a>
+                </div>
+                <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入你想比价的商品">
+                <button class="mui-btn">搜索</button>
+            </div>
+        </div>
+        <div class="main">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="用户名/手机号">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label"></label>
+                    <div class="col-sm-10">
+                        <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="密码">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-warning" id="signup">注册</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">
+                                <span>一个月内自动登录</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li class="login">
+                        <a href="#">登录</a>
+                    </li>
+                    <li class="regist active">
+                        <a href="#" >注册</a>
+                    </li>
+                    <li class="back">
+                        <img src="./images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script>
+    // 区域滚动初始化代码
+    // mui('.mui-scroll-wrapper').scroll({
+    // // deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    // });
+</script>

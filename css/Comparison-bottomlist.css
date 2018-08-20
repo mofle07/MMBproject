@@ -1,0 +1,418 @@
+body,
+div,
+span,
+p,
+a,
+img,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+i,
+em,
+b,
+strong,
+del,
+s,
+u,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input {
+  border: 0 none;
+  outline: 0 none;
+}
+
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  background-color: #fff;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .header {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e6e6e6;
+}
+.container .header .header-info {
+  flex-basis: 50px;
+  background-color: #ff841d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.container .header .header-info .logo a img {
+  width: 180px;
+}
+.container .header .header-info .app a img {
+  width: 35px;
+}
+.container .header .search {
+  flex-basis: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+}
+.container .header .search input {
+  font-size: 16px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 0;
+  background-color: #f1f1f1;
+  border: none;
+}
+.container .header .search button {
+  font-size: 16px;
+  color: white;
+  width: 64px;
+  line-height: 30px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #ff841d;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 10px;
+}
+.container .main {
+  flex: 1;
+}
+.container .footer {
+  flex-basis: 100px;
+  background-color: #efefef;
+}
+.container .footer .footer-nav {
+  flex-basis: 35px;
+}
+.container .footer .footer-nav ul {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.container .footer .footer-nav ul li {
+  line-height: 35px;
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+.container .footer .footer-nav ul li:nth-child(3) {
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .footer .footer-nav ul li a {
+  color: #5a5a5a;
+}
+.container .footer .footer-nav ul li img {
+  width: 15px;
+  display: block;
+}
+.container .footer .footer-info {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5a5a5a;
+}
+.container .footer .footer-info p a {
+  color: red;
+}
+
+.container {
+  display: flex;
+}
+
+.main {
+  flex: 1;
+  background-color: #f2f2f2;
+  position: relative;
+}
+.main .nagive {
+  height: 40px;
+  line-height: 40px;
+}
+.main .nagive ol {
+  display: flex;
+  font-size: 14px;
+  color: #5a5a5a;
+  margin-left: 10px;
+}
+.main .nagive ol li {
+  padding-left: 5px;
+}
+.main .details {
+  border-top: 1px solid #ccc;
+}
+.main .details .box {
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+.main .details .box .piv {
+  text-align: center;
+}
+.main .details .box .sce {
+  margin: 20px;
+  height: 40px;
+  width: 40px;
+}
+.main .details .box .tit {
+  margin: 20px 10px;
+}
+.main .details .box .title {
+  font-size: 18px;
+  color: #000;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+.main .details .box span {
+  padding-right: 20%;
+  color: #aaaac2;
+}
+.main .details .product {
+  margin-top: 20px;
+}
+.main .details .product .product-title {
+  height: 40px;
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+  display: flex;
+}
+.main .details .product .product-title a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.3333%;
+  font-size: 14px;
+  border-right: 1px solid red;
+  color: white;
+  background-color: #ffc933;
+}
+.main .details .product .product-title a:nth-child(3) {
+  border-right: none;
+  background-color: #ffc933;
+}
+.main .details .product .product-title a.active {
+  background-color: #ff9a17;
+}
+.main .details .product .shangping .mui-table-view-cell {
+  padding-top: 15px;
+  height: 80px;
+}
+.main .details .product .shangping .mui-table-view-cell .mui-navigate-right .mui-pull-right {
+  padding-right: 20px;
+  color: red;
+}
+.main .details .product .shangping .mui-table-view-cell .mui-navigate-right .word {
+  padding-top: 10px;
+}
+.main .details .product .price {
+  height: 87px;
+  background-color: #fff;
+  padding: 20px 5px;
+}
+.main .details .product .price p {
+  padding: 20px 0px 0px 10px;
+  line-height: 16px;
+}
+.main .comment-title {
+  background-color: #dbdbdb;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+}
+.main .disguess {
+  padding: 10px;
+  color: #999999;
+}
+.main .disguess .container .left {
+  display: flex;
+  justify-content: space-between;
+}
+.main .disguess .container .right {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .disguess .font {
+  padding-top: 5px;
+  line-height: 18px;
+}
+.main .disguess .font span {
+  color: #000;
+  font-size: 14px;
+}
+.main .disguess .huifu {
+  color: #666;
+  font-size: 12px;
+  padding-top: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+.main .more {
+  background: #f2f2f2;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .more button {
+  height: 32px;
+  text-align: center;
+  border: 1px solid #bababa;
+  border-radius: 6px;
+  font-size: 12px;
+}
+.main .mask {
+  height: 80px;
+  background-color: #434343;
+  color: #000;
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+}
+.main .mask .mask-left {
+  display: flex;
+}
+.main .mask .mask-left img {
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+}
+.main .mask .mask-left p {
+  color: #fee6c2;
+  font-size: 12px;
+  padding: 5px 8px;
+}
+.main .mask .mask-left .one {
+  padding-top: 10px;
+  font-size: 16px;
+  color: white;
+}
+.main .mask .mask-right {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.main .mask .mask-right a {
+  margin-bottom: 8px;
+  margin-left: 25px;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+  border-radius: 50%;
+}
+.main .mask .mask-right a span {
+  color: white;
+}
+
+.bottom {
+  flex-basis: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-basis: 70px;
+  background-color: #fff;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.bottom .left {
+  display: flex;
+  flex: 1;
+}
+.bottom .left a {
+  margin-top: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+.bottom .left img {
+  height: 40px;
+  width: 49px;
+  margin-top: 15px;
+}
+.bottom .left p {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.bottom .left p span {
+  padding: 5px;
+}
+
+/*# sourceMappingURL=Comparison-bottomlist.css.map */

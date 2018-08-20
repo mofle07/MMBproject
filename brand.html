@@ -58,7 +58,7 @@
                 <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <!-- 标题 -->
-                        <div class="title">平板电视那个好</div>
+                        <div class="title">平板电视哪个牌子好</div>
                         <ul class="mui-table-view brands">
                             <!-- 数据模板区域地址 -->
 
@@ -100,7 +100,7 @@
         <li class="mui-table-view-cell brand">
             <a href="brandproduct.html?brandtitleid={{v.brandTitleId}}" class="mui-navigate-right ">
                 <div class="left">
-                    <span class="mui-badge mui-badge-danger">{{i+1}}</span>
+                    <span class="mui-badge {{if(i == 0)}} mui-badge-danger {{else if(i == 1)}} mui-badge-primary {{else if(i == 2)}}mui-badge-warning {{else(i == 1)}} mui-badge-gray{{/if}}">{{i+1}}</span>
                 </div>
                 <div class="right">
                     <p class="brandName">{{v.brandName}}</p>
