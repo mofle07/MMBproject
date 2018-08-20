@@ -1,0 +1,426 @@
+body,
+div,
+span,
+p,
+a,
+img,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+i,
+em,
+b,
+strong,
+del,
+s,
+u,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+input {
+  border: 0 none;
+  outline: 0 none;
+}
+
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  background-color: #fff;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .header {
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e6e6e6;
+}
+.container .header .header-info {
+  flex-basis: 50px;
+  background-color: #ff841d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 5px;
+}
+.container .header .header-info .logo a img {
+  width: 180px;
+}
+.container .header .header-info .app a img {
+  width: 35px;
+}
+.container .header .search {
+  flex-basis: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  position: relative;
+}
+.container .header .search input {
+  font-size: 16px;
+  height: 30px;
+  border-radius: 30px;
+  margin: 0;
+  background-color: #f1f1f1;
+  border: none;
+}
+.container .header .search button {
+  font-size: 16px;
+  color: white;
+  width: 64px;
+  line-height: 30px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #ff841d;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 10px;
+}
+.container .main {
+  flex: 1;
+}
+.container #hidden {
+  flex-basis: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-basis: 70px;
+  background-color: #fff;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.container #hidden .left {
+  display: flex;
+  flex: 1;
+}
+.container #hidden .left a {
+  margin-top: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+.container #hidden .left img {
+  height: 40px;
+  width: 49px;
+  margin-top: 15px;
+}
+.container #hidden .left p {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.container #hidden .left p span {
+  padding: 5px;
+}
+.container #hidden .footer-btn {
+  background-color: #ff7700;
+}
+.container .footer {
+  flex-basis: 100px;
+  background-color: #efefef;
+}
+.container .footer .footer-nav {
+  flex-basis: 35px;
+}
+.container .footer .footer-nav ul {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+.container .footer .footer-nav ul li {
+  flex: 1;
+  border-right: 1px solid #c4c4c4;
+}
+.container .footer .footer-nav ul li:nth-child(3) {
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .footer .footer-nav ul li.active {
+  box-shadow: 0px 0px 5px #92bdda;
+}
+.container .footer .footer-nav ul li a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  line-height: 35px;
+  color: #5a5a5a;
+}
+.container .footer .footer-nav ul li img {
+  width: 15px;
+  display: block;
+}
+.container .footer .footer-info {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5a5a5a;
+}
+.container .footer .footer-info p a {
+  color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 100%;
+}
+.container .header {
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  border: none;
+  z-index: 50;
+}
+.container .header .header-info {
+  padding: 0 30px;
+  flex-basis: 85px;
+}
+.container .header .header-info .titlebur {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bolder;
+}
+.container .header .header-info .logo .iconfont {
+  color: #ffff;
+  font-size: 20px;
+}
+.container .footer {
+  z-index: 3;
+}
+.container .main {
+  background-color: #f2f2f2;
+  padding: 95px 0px 0px 0px;
+}
+.container .main .mui-scroll {
+  padding: 95px 0px 100px 0px;
+}
+.container .main .mui-scroll .content {
+  margin: 0px auto;
+  max-width: 960px;
+  background-color: #fff;
+  padding: 4px 10px;
+}
+.container .main .mui-scroll .content .pic {
+  width: 100%;
+}
+.container .main .mui-scroll .content .pic img {
+  width: 218px;
+  margin: 0 auto;
+}
+.container .main .mui-scroll .content .info {
+  margin: 12px 0px;
+}
+.container .main .mui-scroll .content .info span {
+  color: #999999;
+}
+.container .main .mui-scroll .content .title {
+  color: #000;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 16px;
+  margin: 10px 0px 5px 0px;
+}
+.container .main .mui-scroll .content .subtitle {
+  color: #ff9000;
+  font-size: 18px;
+  line-height: 18px;
+  margin: 10px 0px 5px 0px;
+}
+.container .main .mui-scroll .content .golink {
+  height: 40px;
+  margin: 20px 0px 20px 0px;
+}
+.container .main .mui-scroll .content .golink a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  background-color: #ff9000;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 40px;
+  margin-left: 10px;
+}
+.container .main .mui-scroll .content .word {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+.container .main .mui-scroll .content .subword {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+.container .main .mui-scroll .content .subpic img {
+  width: 350px;
+  margin: 0 auto;
+}
+.container .main .mui-scroll .content .dropup {
+  margin-top: 10px;
+  text-align: right;
+  position: relative;
+}
+.container .main .mui-scroll .content .dropup #dropdownMenu2 {
+  width: 200px;
+  margin: 0 auto;
+}
+.container .main .mui-scroll .content .dropup .dropdown-menu li {
+  padding: 5px 10px;
+  border-bottom: 1px dotted  #ff841d;
+}
+.container .main .mui-scroll .content .dropup .dropdown-menu li span {
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .mui-scroll .content .dropup .dropdown-menu li span strong {
+  color: #ff841d;
+}
+.container .main .mui-scroll .content .qr {
+  text-align: right;
+  margin: 20px;
+  height: 100px;
+}
+.container .main .mui-scroll .content .qr img {
+  margin: 0 auto;
+  width: 300px;
+}
+.container .main .mui-scroll .content .cu-content-pl .tit {
+  font-size: 16px;
+  line-height: 45px;
+}
+.container .main .mui-scroll .content .cu-content-pl .ctrl {
+  text-align: right;
+}
+.container .main .mui-scroll .content .cu-content-pl .ctrl input {
+  background-color: #ff841d;
+  border: none;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul {
+  display: flex;
+  flex-direction: column;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b {
+  display: flex;
+  margin-bottom: 30px;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b .userimg {
+  flex-basis: 60px;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b .userimg img {
+  width: 80px;
+  border-radius: 50%;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b .con {
+  flex: 1;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b .con .name {
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b .con .name .username {
+  flex: 1;
+  font-size: 16px;
+  line-height: 20px;
+  color: #5c99c1;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b .con .name .time {
+  flex: 1;
+  margin-right: 0px;
+  text-align: right;
+}
+.container .main .mui-scroll .content .cu-content-pl .list ul .ui-border-b .con .content {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.mui-backdrop {
+  width: 0;
+  height: 0;
+}
+
+/*# sourceMappingURL=savelist.css.map */

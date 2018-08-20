@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>国内折扣</title>
+
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <script src="./lib/js/mui.min.js"></script>
+
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" href="./lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/inlanddiscount.css">
+    <script src="./js/inlanddiscount.js"></script>
+    <script src="./lib/js/template-web.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+
+            <div class="previousPage">
+                <a href="" class="homebutton">
+                    <span class="glyphicon glyphicon-menu-left"></span>
+                </a>
+            </div>
+            <h4>国内折扣</h4>
+            <div class="right">
+                <a href="#">
+                    <img src="./images/header_app.png" alt="">
+                </a>
+            </div>
+
+        </div>
+        <div class="main">
+            <!-- 区域滚动 -->
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll nam">
+
+                    <div class="products">
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <img src="./images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+    </div>
+    <!-- <script id="productslist" type="text/html">
+       {{each result v i}}
+           
+        <div class="box renderer">      
+           <a href="" data-main="{{v.productId}}" class="property">     
+               {{#v.productImg}}
+               <div class="proname mui-ellipsis-2">{{v.productName}}</div>
+               <p class="prices">{{v.productPrice}}</p>
+               <p class="site">
+                   <span class="store">{{v.productFrom}}</span>
+                   <span>|</span>
+                   <span class="date">{{v.productTime}}</span>
+               </p>
+           </a>                  
+        </div>
+   
+    {{/each}}
+    </script> -->
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+<div class="product" data-id="{{v.productId}}">                    
+                {{#v.productImg}}
+         
+          
+                <div class="proname mui-ellipsis-2">{{v.productName}}</div>
+                <p class="prices">{{v.productPrice}}</p>
+                <p class="site">
+                    <span>{{v.productFrom}}</span>
+                    <span>{{v.productTime}} </span>
+                    | 
+                </p>
+
+
+</div>
+{{/each}}
+    </script>
+</body>
+
+</html>

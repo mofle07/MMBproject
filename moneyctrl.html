@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./lib/js/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="./lib/css/bootstrap.css">
+    <script src="./lib/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <script src="./lib/js/mui.min.js"></script>
+    <script src="./lib/js/template-web.js"></script>
+    <script src="./lib/js/bootstrap-paginator.js"></script>
+    <!-- <script src="./lib/js/jquery.twbsPagination.js"></script> -->
+    <link rel="stylesheet" href="./css/moneyctrl.css">
+    <script src="./js/moneyctrl.js"></script>
+</head>
+
+<body>
+
+    <div class="top">
+        <div class="top-iner">
+            <div class="top-bar">
+                <img src="http://static.manmanbuy.com/m/img/mlogo.png" alt="">
+                <div class="searchbox">
+                    <input type="text" placeholder="搜索商品比价">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+                <a href="">下载</a>
+            </div>
+            <div class="nav">
+                <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <div class="mui-scroll">
+                        <a href="./index.html" class="mui-control-item ">
+                            首页
+                        </a>
+                        <a class="mui-control-item active" href="">
+                            省钱控
+                        </a>
+                        <a class="mui-control-item" href="">
+                            比价搜索
+                        </a>
+                        <a class="mui-control-item" href="">
+                            国内折扣
+                        </a>
+                        <a class="mui-control-item" href="">
+                            查历史价
+                        </a>
+                        <a class="mui-control-item" href="">
+                            白菜价
+                        </a>
+                        <a class="mui-control-item" href="">
+                            小时风云榜
+                        </a>
+                       
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="productslist">
+            <ul>
+                <li>
+                    <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
+                    <div class="productInfo">
+                        <p class="decript">
+                            妮维雅 全身深层润肤乳 125ml*2瓶
+                            <span class=" preferential">14.9元(券后)</span>
+                        </p>
+                        <p class="other">
+                            <span class="place">天猫商城 | 08-18 15:25</span>
+                            <span class="comments  mui-pull-right">
+                                <i class="glyphicon glyphicon-comment"></i>
+                                0</span>
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 分页 -->
+        <div class="">
+            <ul id="paginator"></ul>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- 面包屑导航 -->
+        <div class="breadCrumb">
+            <a href="">首页</a>
+            <span class="">></span>
+            <span>省钱控</span>
+        </div>
+        <div class="foot-nav">
+            <a href="">登录</a>
+            <a href="">注册</a>
+            <a href="JavaScript:void(0)" class="back">
+                <img src="./images/top.jpg" alt=""> 返回顶部
+            </a>
+        </div>
+        <div class="friendLink">
+            <a href="" class="loadApp">手机App下载</a>
+            <a href="">慢慢买手机版</a>
+            <span>-掌上比价平台</span>
+            <p> m.manmanbuy.com </p>
+        </div>
+        <div class="app-bar">
+            <div class="left">
+                <span class="glyphicon glyphicon-remove remove"></span>
+                <div class="man"></div>
+                <div class="info">
+                    <p class="title">全网折扣实时更新</p>
+                    <p class="descript">神价第一时间通知</p>
+                </div>
+            </div>
+
+            <button class="download-btn ">立即打开</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
+<script type="text/html" id="product">
+    {{each result v}}
+    <li>
+        <a href="./savelist.html?{{productId=v.productId}}">
+            {{#v.productImg2}}
+            <div class="productInfo">
+                <p class="decript">
+                    {{v.productName}}
+                    <span class=" preferential">{{v.productPinkage}}</span>
+                </p>
+                <p class="other">
+                    <span class="place">{{v.productFrom}}</span>
+                    <span class="comments  mui-pull-right">
+                        <i class="glyphicon glyphicon-comment"></i>
+                        {{v.productComCount}}</span>
+                </p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>

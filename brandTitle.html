@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- jQuery -->
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <!-- mui框架 -->
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <script src="./lib/js/mui.min.js"></script>
+    <!-- 模板 -->
+    <script src="lib/js/template-web.js"></script>
+
+    <!-- 自己的 -->
+    <link rel="stylesheet" href="./css/brandTitle.css">
+    <script src="./js/common.js"></script>
+    <script src="./js/brandTitle.js"></script>
+
+</head>
+
+<body>
+    <!-- 主体区域框 -->
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="header-info">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/manmanmai.png" alt="">
+                    </a>
+                </div>
+                <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入你想比价的商品">
+                <button class="mui-btn">搜索</button>
+            </div>
+        </div>
+
+        <!-- 主栏 -->
+        <div class="main">
+            <!-- 导航栏 -->
+            <div class="navBar">
+                <p>
+                    <a>首页</a> >
+                    <a>全部分类</a> > </p>
+            </div>
+            <!-- 滚动主区域 -->
+            <div class="brandTitles">
+                <!-- 区域滚动 -->
+                <div class="mui-scroll-wrapper">
+                    <div class="mui-scroll">
+                        <!-- 标题 -->
+                        <div class="title">热门品牌排行</div>
+                        <ul class="mui-table-view brands">
+                            <!-- 数据模板区域地址 -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li>
+                        <a href="#">登录</a>
+                    </li>
+                    <li>
+                        <a href="#">注册</a>
+                    </li>
+                    <li>
+                        <img src="./images/top.jpg" alt="">
+                        <a href="#">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="#">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 数据渲染模板 -->
+    <script type="text/html" id="brandTitleTmp">
+        {{each result v i}}
+        <li class="mui-table-view-cell brand" data-brandTitleId={{v.brandTitleId}}>
+            <a href="brand.html?brandtitleid={{v.brandTitleId}}" class="mui-navigate-right brandText">{{v.brandTitle}}</a>
+        </li>
+        {{/each}}
+    </script>
+</body>
+
+</html>

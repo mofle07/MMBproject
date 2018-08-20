@@ -1,0 +1,243 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input {
+    outline: 0 none;
+    border: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background-color: #f2f2f2;
+    font: 12px/100% "微软雅黑";
+}
+
+.top {
+    position: relative;
+    height: 90px;
+    z-index: 100;
+    .top-iner {
+        position: fixed;
+        height: 90px;
+        background-color: #fff;
+        .top-bar {
+            height: 44px;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: solid #ccc 1px;
+            img {
+                flex-basis: 80px;
+                height: 24px;
+            }
+            .searchbox {
+                flex: 1;
+                margin-left: 8px;
+                margin-right: 8px;
+                position: relative;
+                input {
+                    width: 100%;
+                    height: 20px;
+                    border: solid 1px red;
+                    background-color: #eee;
+                    border-radius: 15px;
+                    padding-left: 20px;
+                    margin-bottom: 0px;
+                    font-size: 12px;
+                }
+                .glyphicon-search {
+                    position: absolute;
+                    top: 4px;
+                    left: 10px;
+                }
+            }
+            a {
+                flex-basis: 50px;
+                height: 20px;
+                border: solid orangered 1px;
+                border-radius: 8px;
+                text-align: center;
+                line-height: 20px;
+                color: orangered;
+                text-decoration: none;
+            }
+        }
+        .nav {
+            position: relative;
+            a {
+                font-size: 14px;
+                display: block;
+                height: 100%;
+                font-weight: bold;
+                text-decoration: none;
+                &.active {
+                    border-bottom: 2px solid red;
+                }
+            }
+        }
+    }
+}
+
+.main {
+    background-color: #fff;
+    max-width: 960px;
+    margin: 10px auto 0px;
+    .productslist {
+        ul {
+            li {
+                height: 130px;
+                border-bottom: solid 1px #ccc;
+                display: flex;
+                padding: 10px;
+                a {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    text-decoration: none;
+                    img {
+                        flex-basis: 110px;
+                        height: 110px;
+                    }
+                    .productInfo {
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        padding-left: 4px;
+                        .decript {
+                            font-size: 16px;
+                            letter-spacing: 3px;
+                            line-height: 20px;
+                            .preferential {
+                                color: orangered;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #paginator {
+        margin: 8px 0px;
+        padding-left: 20px;
+    }
+}
+
+.footer {
+    position: relative;
+    height: 164px;
+    .breadCrumb {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border-bottom: solid 1px #ccc;
+        border-top: solid 1px #ccc;
+        padding-left: 10px;
+    }
+    .foot-nav {
+        height: 34px;
+        display: flex;
+        margin-top: 30px;
+        border-top: #ccc solid 1px;
+        border-bottom: solid 1px #ccc;
+        a {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            text-decoration: none;
+            &:nth-child(2) {
+                border-left: solid #ccc 1px;
+                border-right: solid #ccc 1px;
+            }
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+    }
+    .friendLink {
+        height: 60px;
+        padding: 15px 0px;
+        text-align: center; // display: none;
+        opacity: 0;
+        .loadApp {
+            color: #f00;
+        }
+    }
+    .app-bar {
+        height: 60px;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        .left {
+            display: flex;
+            align-items: center;
+            .man {
+                width: 44px;
+                height: 44px;
+                background: url('../images/bottom.png') no-repeat;
+            }
+            .info {
+                .title {
+                    font-size: 18px;
+                }
+                .descript {
+                    font-size: 14px;
+                }
+            }
+        }
+        .download-btn {
+            height: 40px;
+            width: 74px;
+            background: orange;
+            color: #fff;
+            text-align: center;
+            line-height: 40px;
+            padding: 0px;
+            border-radius: 8px;
+            float: right;
+            &:hover {
+                background-color: rgb(50, 16, 78)
+            }
+        }
+    }
+}

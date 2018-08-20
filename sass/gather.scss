@@ -33,7 +33,137 @@
         }
     }
     .select {
-        flex-basis: 30px;
-        background-color: skyblue;
+        flex-basis: 38px;
+        display: flex;
+        background-color: #fff;
+        border-bottom:1px solid #dadada;
+
+        
+
+       .left {
+           flex: 1;
+           display: flex;
+
+           a {
+               width: 33.3335%;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               color: #565656;
+
+               &.active {
+                   color: #f8601d;
+               }
+
+               .size {
+                   font-size: 16px;
+               }
+               
+            .down {
+               font-size: 12px;
+               font-weight: bold;
+               margin-left: 3px;
+
+               &.tr {
+                transform: rotate(180deg);
+            }
+           }
+
+           }
+
+           
+       }
+
+       .right {
+           flex-basis: 38px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border-left:1px solid #dadada;
+       }
+    }
+
+    .drop {
+        display: flex;
+        position: relative;
+        display: none;
+
+      
+       
+
+        ul {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+
+                .true {
+                    color: #f8601d;
+                    font-size: 20px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding:10px;
+     
+
+        .banner {
+            width: 50%;
+            display: flex;
+
+            a {
+
+                display: flex;
+                padding:5px;
+                width: 100%;
+                flex-direction: column;
+                // border: 1px solid yellow;
+
+               
+                
+
+                img {
+                    width: 100%;
+                }
+    
+                p {
+                    width: 100%;
+                    margin: 0;
+                    background-color: #fff;
+                   
+                    height: 30px;
+                    
+                }
+    
+                .first {
+                    // margin-top: 5px;
+                    font-size: 12px;
+                    color:#333333;
+                    word-break: break-all;
+                    overflow: hidden;
+                    height: 20px;
+                }
+    
+                .second {
+                    color: #f8601d;
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+
+            }
+
+          
+        }
     }
 }
