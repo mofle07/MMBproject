@@ -13,6 +13,8 @@
     <script src="./lib/js/mui.min.js"></script>
     <!-- 模板 -->
     <script src="lib/js/template-web.js"></script>
+    <!-- 分页 -->
+    <script src="lib/js/jquery.twbsPagination.min.js"></script>
 
     <!-- 自己的 -->
     <link rel="stylesheet" href="./css/brandproductlist.css">
@@ -34,11 +36,9 @@
 
                 <!-- 内容渲染 -->
                 <ul class="mui-table-view productlist">
-
                     <!-- 数据模板区域地址 -->
-
-
                 </ul>
+
 
             </div>
         </div>
@@ -56,7 +56,13 @@
                     <p class="brandName mui-ellipsis-2">{{v.productName}}</p>
                     <p class="productPriceBar">
                         <span class="productPrice mui-pull-left">{{v.productPrice}}</span>
-                        <span class="star mui-pull-right">☆☆☆☆☆</span>
+                        <span class="mui-pull-right stars">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                            <img src="./images/star.png" alt="">
+                        </span>
                     </p>
                     <div class="productComBar">
                         <span class="productQuote">{{v.productQuote}}</span>
@@ -67,6 +73,8 @@
         </li>
         {{/each}}
     </script>
+
+
 </body>
 
 </html>

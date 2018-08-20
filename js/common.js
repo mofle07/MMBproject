@@ -1,13 +1,11 @@
-<<<<<<< HEAD
  $(function () {
      $(".footer-nav").on('mouseenter', 'li', function () {
          $(this).addClass('active').siblings().removeClass('active');
-         //console.log("haha1");
-
      })
  })
-=======
 // 封装区域 -----------------------
+// A.封装区域 -----------------------
+
 //a. URL中的参数获取(可适配单个/多个参数) - 周
 function getParam(){
 
@@ -34,19 +32,23 @@ function getParam(){
 
 
 
-// 执行区域 -------------------------------
+// B.执行区域 -------------------------------
 $(function () {
 
-    // -------------------------- 组件调用区域
+    // B.1-------------------------- 组件调用区域
 
-    // 区域滚动初始化代码
+    // 区域滚动初始化代码 - 周
     mui('.mui-scroll-wrapper').scroll({
         deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
     });
 
-    //  -------------------------- 交互
+    //  B.2-------------------------- 交互
 
+    $(".footer-nav").on('mouseenter', 'li', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+        //console.log("haha1");
+
+    })
 
 
 })
->>>>>>> ad67227387ebe4334ce4adb5c93d9b99a67c6dad

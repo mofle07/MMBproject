@@ -92,25 +92,10 @@ $(function() {
 
     //点击优秀评论
     $(".details").on("click",".comment",function(){
-        window.location.href="./category-goodlist.html"
+        window.location.href="./category-goodlist.html?productId="+$(this).data("id");
     })
 
-    //点击登录,验证表单
-    $('#signup').click(function () {
-        var username = $('input[name=username]').val();
-        // console.log(username);
-        var password = $('input[name=password]').val();
-        if (username.length == 0) {
-            mui.toast("请输入用户名/手机号");
-            return;
-        }
-        if (password.length == 0) {
-            mui.toast("请输入密码");
-            return;
-        }
-
-});
-
+    
     
     });
     

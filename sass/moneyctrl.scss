@@ -99,9 +99,11 @@ body {
             position: relative;
             a {
                 font-size: 14px;
+                display: block;
+                height: 100%;
                 font-weight: bold;
                 text-decoration: none;
-                &.active{
+                &.active {
                     border-bottom: 2px solid red;
                 }
             }

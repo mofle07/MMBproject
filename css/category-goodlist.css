@@ -462,41 +462,6 @@ html {
   padding: 5px;
 }
 
-.newdiscuss {
-  padding: 5px;
-}
-.newdiscuss .discuss-title {
-  background-color: #dbdbdb;
-  height: 35px;
-  font-size: 16px;
-  text-align: center;
-  line-height: 35px;
-}
-.newdiscuss .container1 .left {
-  display: flex;
-  justify-content: space-between;
-}
-.newdiscuss .container1 .right {
-  padding-top: 5px;
-  display: flex;
-  justify-content: space-between;
-}
-.newdiscuss .fontword {
-  padding-top: 5px;
-  line-height: 35px;
-  font-size: 16px;
-}
-.newdiscuss .fontword span {
-  color: #000;
-  font-size: 14px;
-}
-.newdiscuss .huifu {
-  color: #666;
-  font-size: 12px;
-  padding-top: 5px;
-  border-bottom: 1px dashed #ccc;
-}
-
 .main .product .top {
   height: 50px;
   background-color: #f2f2f2;
@@ -528,6 +493,147 @@ html {
 }
 .main .product .top.active {
   border-bottom: 1px solid red;
+}
+.main .newdiscuss .top {
+  border-bottom: 3px solid #000;
+  padding: 5px 0px;
+}
+.main .newdiscuss .top .discuss-title {
+  background-color: #dbdbdb;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+}
+.main .newdiscuss .top .container1 {
+  margin-top: 10px;
+}
+.main .newdiscuss .top .container1 .left {
+  display: flex;
+  justify-content: space-between;
+}
+.main .newdiscuss .top .container1 .right {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.main .newdiscuss .top .fontword {
+  padding-top: 5px;
+  line-height: 18px;
+  font-size: 16px;
+}
+.main .newdiscuss .top .fontword span {
+  color: #000;
+  font-size: 14px;
+}
+.main .newdiscuss .top .huifu {
+  color: #666;
+  font-size: 12px;
+  padding-top: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+.main .myagin .myagintitle {
+  background-color: #dbdbdb;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+}
+.main .myagin .myaginpinglun {
+  margin: 5px 10px;
+}
+.main .myagin .star {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .myagin .star a {
+  padding: 10px 10px;
+  width: 33.333%;
+}
+.main .myagin .star .one .star1 {
+  color: #ff9000;
+}
+.main .myagin .star .one1 .star1,
+.main .myagin .star .one1 .star2 {
+  color: #ff9000;
+}
+.main .myagin .star .one2 .star1,
+.main .myagin .star .one2 .star2,
+.main .myagin .star .one2 .star3 {
+  color: #ff9000;
+}
+.main .myagin .star .one3 .star1,
+.main .myagin .star .one3 .star2,
+.main .myagin .star .one3 .star3,
+.main .myagin .star .one3 .star4 {
+  color: #ff9000;
+}
+.main .myagin .star .one4 span {
+  color: #ff9000;
+}
+.main .myagin .text {
+  margin: 5px 10px;
+}
+.main .myagin .text input {
+  height: 100px;
+}
+.main .myagin .button {
+  display: flex;
+}
+.main .myagin .button .aginbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background-color: #ebebeb;
+}
+.main .baojia {
+  border-top: 3px solid #000;
+  margin-top: 30px;
+}
+.main .baojia .title {
+  background-color: #dbdbdb;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+}
+.main .bottom {
+  flex-basis: 50px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  flex-basis: 70px;
+  background-color: #fff;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.main .bottom .left {
+  display: flex;
+  flex: 1;
+}
+.main .bottom .left a {
+  margin-top: 20px;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 10px;
+}
+.main .bottom .left img {
+  height: 40px;
+  width: 49px;
+  margin-top: 15px;
+}
+.main .bottom .left p {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.main .bottom .left p span {
+  padding: 5px;
 }
 
 /*# sourceMappingURL=category-goodlist.css.map */
