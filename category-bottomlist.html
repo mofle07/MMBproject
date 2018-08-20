@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
     <script src="./lib/js/jquery-3.3.1.min.js"></script>
     <script src="./lib/js/mui.min.js"></script>
     <script src="./js/category-bottomlist.js"></script>
@@ -24,7 +25,7 @@
         <div class="header">
             <div class="header-info">
                 <div class="logo">
-                    <a href="#">
+                    <a href="index.html">
                         <img src="./images/manmanmai.png" alt="">
                     </a>
                 </div>
@@ -197,7 +198,7 @@
                         <a class="product-title1 active">比价购买</a>
                        <!-- <a class="product-title1 active">比价购买</a> -->
                         <a class="product-title1">产品参数</a>
-                        <a  class="product-title1  comment">优选评价</a>
+                        <a  class="product-title1  comment"data-id="{{v.productId}}">优选评价</a>
                     </div>
                 </div>
                 <div class="product list">
@@ -260,7 +261,7 @@
                     <span>></span>
                 </li>
                 <li class="tow"> 
-                    <a href="#">{{Library}}</a>
+                    <a href="#">全部分类</a>
                     <span>></span>
                 </li>
                 <li class="active">{{v.category}}</li>
