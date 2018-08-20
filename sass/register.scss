@@ -1,17 +1,49 @@
 @import "./common";
-
-.main {
-    .form-horizontal {
-        .form-group {
-            margin: 0;
-            .btn {
-                width: 100%;
-                background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
-            }
-            .checkbox {
-                labal {
+.container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    .main {
+        padding: 0 10px;
+        flex: 1;
+        .form-horizontal {
+            .form-group {
+                margin: 15px 0;
+                .loginbtn {
+                    padding: 0 15px;
+                }
+                input {
+                    margin: 0;
+                }
+                .btn {
+                    width: 100%;
+                    background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+                }
+                .checkbox {
                     display: flex;
                     align-items: center;
+                    label {
+                        padding-top: 0;
+                        padding-bottom: 0;
+                    }
+                }
+                .register {
+                    margin-top: 10px;
+                }
+            }
+            .verify {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                .verifybtn {
+                    height: 40px;
+                    flex: 1;
+                    .btn {
+                        height: 100%;
+                    }
+                }
+                .yanzheng {
+                    flex: 2;
                 }
             }
         }

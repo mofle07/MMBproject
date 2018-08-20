@@ -1,7 +1,7 @@
 $(function () {
-    
+
     //点击登录,验证表单
-    $('#signup').click(function () {
+    $('#signup').on('tap', function () {
         var username = $('input[name=username]').val();
         console.log(username);
         var password = $('input[name=password]').val();
@@ -14,16 +14,16 @@ $(function () {
             return;
         }
 
-        // $.ajax({
-        //     url: "/user/login",
-        //     type: "post",
-        //     data: $('form').serialize(),
-        //     success: function (res) {
-        //         if (res.success) {
-        //             window.history.back();
-        //         }
-        //     }
+        $.ajax({
+            url: "/user/login",
+            type: "post",
+            data: $('form').serialize(),
+            success: function (res) {
+                if (res.success) {
+                    window.history.back();
+                }
+            }
 
-        // })
+        })
     })
 })
