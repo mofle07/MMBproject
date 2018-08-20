@@ -27,28 +27,28 @@ input {
     margin: 0;
 }
 
-/* 清楚网页内标签的内外边距 */
+
 
 a {
     text-decoration: none;
     color: #000;
 }
 
-/* 清楚a标签的下划线和默认字体颜色 */
+
 
 input {
     border: 0 none;
     outline: 0 none;
 }
 
-/* 清除表单输入框的边框和外轮廓线 */
+
 
 img {
     border: 0 none;
     vertical-align: middle;
 }
 
-/* 低版本的插入图片会默认生成边框 */
+
 
 i,
 em {
@@ -68,21 +68,21 @@ li {
     list-style: none;
 }
 
-/* 清除li标签的默认小点点 */
+
 
 .w {
     width: 1200px;
     margin: 0 auto;
 }
 
-/* 设置网页的版心 */
+
 
 body {
     font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     background-color: #fff;
 }
 
-/* 修改网页默认字体和行高 */
+
 
 .clearfix:after {
     content: "";
@@ -103,11 +103,11 @@ html {
     height: 100%;
 }
 
-/* 设置清除浮动影响 */
+
 
 .container {
     margin: 0px auto;
-    max-width: 600px;
+    // max-width: 600px;
     padding-right: 0px;
     padding-left: 0px;
     height: 100%;
@@ -148,6 +148,8 @@ html {
         position: relative;
         .products{
             padding:0 10px;
+            display: flex;
+            flex-direction: column;
             .box{
                 padding-top: 20px;
                 .product{
@@ -177,9 +179,10 @@ html {
                     span{
                         height: 80px;
                         font-size: 14px;
-                        line-height: 18px;
+                        line-height: 20px;
                         letter-spacing: 2px;
                         flex:1;
+                        text-overflow: ellipsis;
                     }
                     img{
                         flex-basis: 200px;
@@ -203,12 +206,27 @@ html {
                 // margin-left: 10px;
                 height: 40px;
                 line-height: 20px;
+                font-size: 20px;
             }
             .qr{
                
                width: 100%; 
                margin-top: 20px;
             //    padding-top: 20px;
+            }
+            .tit {
+                margin-top: 20px;
+               line-height: 25px;
+                
+            }
+            .ctrl {
+               margin-top: 10px;
+               display: flex;
+               flex-direction: row-reverse;
+            input {
+                background-color: darkorange;
+                border: none;
+            }
             }
         }
        

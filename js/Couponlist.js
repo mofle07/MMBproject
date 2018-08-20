@@ -23,5 +23,10 @@ $(function(){
         return coupon;
     }
 
+    //返回按钮点击事件
+    $(".back").click(function(){
+        window.history.back();
+    })
+
     
 })

@@ -18,7 +18,9 @@
     <!-- 自己的 -->
     <link rel="stylesheet" href="./css/brand.css">
     <script src="./js/common.js"></script>
+    <script src="./js/getUrlTools.js"></script>
     <script src="./js/brand.js"></script>
+    
 
 </head>
 
@@ -29,7 +31,7 @@
         <div class="header">
             <div class="header-info">
                 <div class="logo">
-                    <a href="#">
+                    <a href="./index.html">
                         <img src="./images/manmanmai.png" alt="">
                     </a>
                 </div>
@@ -76,10 +78,10 @@
             <div class="footer-nav">
                 <ul>
                     <li>
-                        <a href="#">登录</a>
+                        <a href="./login.html">登录</a>
                     </li>
                     <li>
-                        <a href="#">注册</a>
+                        <a href="./register.html">注册</a>
                     </li>
                     <li>
                         <img src="./images/top.jpg" alt="">
@@ -101,7 +103,7 @@
     <script type="text/html" id="brandTmp">
         {{each result v i}}
         <li class="mui-table-view-cell brand">
-            <a href="brandproduct.html?brandtitleid={{v.brandTitleId}}" class="mui-navigate-right ">
+            <a href="./Comparison-list.html?brandtitleid={{result.brandtitleid}}" class="mui-navigate-right ">
                 <div class="left">
                     <span class="mui-badge {{if(i == 0)}} mui-badge-danger {{else if(i == 1)}} mui-badge-primary {{else if(i == 2)}}mui-badge-warning {{else(i == 1)}} mui-badge-gray{{/if}}">{{i+1}}</span>
                 </div>
