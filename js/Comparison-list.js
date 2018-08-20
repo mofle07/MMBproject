@@ -21,16 +21,19 @@ $(function () {
     var url = location.href;
 
     var query = urlTool(url);
-
+    console.log(query);
+    
     //拿到当前商品的id
-    var pid = query.categoryId;
+    var pid = query[0];
     console.log(pid);
 
     var page = 1
+
+    
     //列表
     function rend(id, page) {
         $.ajax({
-            url: "http://mmb.ittun.com/api/getproductlist",
+            url: "http://mmb.ittun.com/api/getproductlist?",
             data: {
                 categoryid: id,
                 pageid: page
@@ -88,7 +91,10 @@ $(function () {
         // var listid = $(this).data("id");
         //console.log(listid);
         // 进入到商品展示页
-        window.location.href = "./category-bottomlist.html?productId=" + pid;
+        var productid = $(this).data('id')
+        console.log(productid);
+        
+        window.location.href = "./category-bottomlist.html?productId=" + productid + "&category=" + pid;
 
     })
 

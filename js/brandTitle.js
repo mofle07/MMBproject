@@ -7,7 +7,8 @@ function getbrandtitle() {
         url: "http://mmb.ittun.com/api/getbrandtitle",
         type: "get",
         success: function (res) {
-
+            console.log(res);
+            
             var htmlStr = template("brandTitleTmp", res);
             $('.brands').html(htmlStr);
 
