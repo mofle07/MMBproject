@@ -7,7 +7,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/Couponlist.css">
-    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="lib/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="lib/css/mui.min.css">
     <script src="lib/js/zepto.min.js"></script>
     <script src="lib/js/mui.min.js"></script>
     <script src="lib/js/bootstrap.js"></script>
@@ -33,21 +34,27 @@
 
         <!-- main部分 -->
         <div class="main"> 
-            <p class="bar">-点餐前出示手机中的优惠券，即可享受优惠-</p>
-            <ul class="list">
-                <li>
-                    <div class="top">
-                        <img src="./images/banner01.jpg" alt="">
-                        <div class="info">
-                            <p>两人小食组 新奥尔良鸡翅黄金鸡块劲爆鸡米花</p>
-                            <span>￥ 28</span>
-                        </div>
-                        <span class="arrow"></span>
-                    </div>
-                    <span class="bottom">有效期至10月31日</span>
-                </li>
-
-            </ul>
+            <!-- <p class="bar">-点餐前出示手机中的优惠券，即可享受优惠-</p> -->
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <!--这里放置真实显示的DOM内容-->
+                    <ul class="list">
+                        <!-- <li>
+                            <div class="top">
+                                <img src="./images/banner01.jpg" alt="">
+                                <div class="info">
+                                    <p>两人小食组 新奥尔良鸡翅黄金鸡块劲爆鸡米花</p>
+                                    <span>￥ 28</span>
+                                </div>
+                                <span class="arrow"></span>
+                            </div>
+                            <span class="bottom">有效期至10月31日</span>
+                        </li> -->
+                        
+                    </ul>
+                </div>
+            </div>
+            
         </div>
 
         <!-- footer部分 -->
@@ -77,18 +84,26 @@
     </div>
 </body>
 </html>
+<script>
+    // 区域滚动初始化代码
+    mui('.mui-scroll-wrapper').scroll({
+        // deceleration: 0.0005 //flick 减速系数，系数越大，滚动速度越慢，滚动距离越小，默认值0.0006
+    });
+</script>
+
+<!-- 渲染模板 -->
 <script type="text/html" id="tpl">
-    {{each}}
+    {{each list v i}}
     <li>
         <div class="top">
-            <img src="./images/banner01.jpg" alt="">
+        {{#v.couponProductImg}}
             <div class="info">
-                <p>两人小食组 新奥尔良鸡翅黄金鸡块劲爆鸡米花</p>
-                <span>￥ 28</span>
+                <p>{{v.couponProductName}}</p>
+                <span>{{v.couponProductPrice}}</span>
             </div>
             <span class="arrow"></span>
         </div>
-        <span class="bottom">有效期至10月31日</span>
+        <span class="bottom">{{v.couponProductTime}}</span>
     </li>
     {{/each}}
 </script>
