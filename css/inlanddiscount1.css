@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-@charset "UTF-8";
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 body,
 div,
 span,
@@ -31,37 +27,21 @@ input {
   margin: 0;
 }
 
-<<<<<<< HEAD
-=======
-/* 清楚网页内标签的内外边距 */
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 a {
   text-decoration: none;
   color: #000;
 }
 
-<<<<<<< HEAD
-=======
-/* 清楚a标签的下划线和默认字体颜色 */
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 input {
   border: 0 none;
   outline: 0 none;
 }
 
-<<<<<<< HEAD
-=======
-/* 清除表单输入框的边框和外轮廓线 */
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 img {
   border: 0 none;
   vertical-align: middle;
 }
 
-<<<<<<< HEAD
-=======
-/* 低版本的插入图片会默认生成边框 */
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 i,
 em {
   font-style: normal;
@@ -80,28 +60,16 @@ li {
   list-style: none;
 }
 
-<<<<<<< HEAD
-=======
-/* 清除li标签的默认小点点 */
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 .w {
   width: 1200px;
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
-/* 设置网页的版心 */
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 body {
   font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   background-color: #fff;
 }
 
-<<<<<<< HEAD
-=======
-/* 修改网页默认字体和行高 */
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 .clearfix:after {
   content: "";
   display: block;
@@ -121,10 +89,6 @@ html {
   height: 100%;
 }
 
-<<<<<<< HEAD
-=======
-/* 设置清除浮动影响 */
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 .container {
   margin: 0px auto;
   max-width: 600px;

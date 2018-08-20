@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-@charset "UTF-8";
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 * {
   padding: 0;
   margin: 0;
@@ -46,11 +42,7 @@ body {
 
 body {
   background-color: #f2f2f2;
-<<<<<<< HEAD
   font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-=======
-  font: 12px/100% "微软雅黑";
->>>>>>> ec26a8dc205ddd947eead4ab5b74e84afd3e4bbe
 }
 
 .top {
