@@ -252,10 +252,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-<<<<<<< HEAD
-=======
   height: 100%;
->>>>>>> 447db5c1840196236c245c734fe558352bb938ac
   position: relative;
 }
 .main .brandTitles .title {
@@ -289,11 +286,7 @@ html {
 .main .brandTitles .brands li.brand .mui-navigate-right .left {
   margin-right: 8px;
 }
-<<<<<<< HEAD
-.main .brandTitles .brands li.brand .mui-navigate-right .left .mui-badge-danger {
-=======
 .main .brandTitles .brands li.brand .mui-navigate-right .left .mui-badge {
->>>>>>> 447db5c1840196236c245c734fe558352bb938ac
   border-radius: 0;
 }
 .main .brandTitles .brands li.brand .mui-navigate-right .right .brandName {
