@@ -56,8 +56,9 @@ $(function () {
         document.documentElement.scrollTop = 0;
 
     })
-    $('.nav a').eq(0).click(function () {
-        location.href = './index.html'
-    })
+ 
+    mui('body').on('tap', 'a', function () {
+        document.location.href = this.href;
+    });
 
 })
