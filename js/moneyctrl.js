@@ -49,11 +49,15 @@ $(function () {
     $('.remove').click(function () {
         // 让app下载部分小时
         $('.app-bar').hide();
-        $('.friendLink').css('opacity',1)
+        $('.friendLink').css('opacity', 1)
     })
     //   给放回顶部添加点击事件
     $('.back').click(function () {
         document.documentElement.scrollTop = 0;
 
     })
+    $('.nav a').eq(0).click(function () {
+        location.href = './index.html'
+    })
+
 })

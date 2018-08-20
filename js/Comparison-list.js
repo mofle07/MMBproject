@@ -17,20 +17,9 @@ $(function(){
     })
 
      //url的关键字提取函数
-  function urlTool(urlStr) {
-    //1. 把url以？分割
-    var arr = urlStr.split("?").pop().split("&");
-    console.log(arr); //["proName=1", "page=1"]
-    var query = {};
-    arr.forEach(function(v) {
-        var param = v.split("=");
-        query[param[0]] = param[1];
-    });
-
-    return query;
-}
+ 
 // var url = location.href;
-// var query = urlTool(url);
+// var query = getParam(url);
 // var pid = query.id;
 
 
@@ -46,23 +35,34 @@ $(function(){
     //         $(".nav").html(htmlStr);
     //     }
     // })
+
+
+    //   //分析url拿到id
+var url=location.href;
+
+var query=urlTool(url);
+
+//拿到当前商品的id
+var pid=query.categoryId;
+console.log(pid);
    
     var page = 1
     //列表
-    function rend(){
+    function rend(id,page){
         $.ajax({
             url:"http://mmb.ittun.com/api/getproductlist",
-            data:{categoryid:1,pageid:page},
+            data:{categoryid:id,pageid:page},
             success:function(res){
-                console.log(res)
+              
                 var htmlStr = template("listTem",res);
+                console.log(htmlStr)
                 $(".list").html(htmlStr);
     
             }
         }) 
     
     }
-    rend(page)
+    rend(pid,page)
 
    
     // 页码
@@ -87,7 +87,7 @@ $(function(){
                 }
             });
             
-            console.log(res)
+            // console.log(res)
             var htmlStr = template("listTem",res);
             $(".list").html(htmlStr);
 
@@ -95,9 +95,22 @@ $(function(){
     }) 
     
     
+//给二级清单一个点击事件
+$(".list").on("tap","li",function(){
+    // alert("0")
+    //获取到所点击的id
+    var listid=$(this).data("id");
+    console.log(listid);
+    // 进入到商品展示页
+    window.location.href="./category-bottomlist.html?productId="+listid;
 
+  })
 
- 
+   //返回顶部
+   $("#back").click(function() {
+    $("html,body").animate({ scrollTop: 0 }, "slow");
+  });
+
   
 
 
