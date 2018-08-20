@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+
+    <script src="./lib/js/zepto.min.js"></script>
+
+    <script src="./lib/js/mui.min.js"></script>
+
+    <script src="./lib/js/template-web.js"></script>
+
+    <script src="./js/gather.js"></script>
+
+    <link rel="stylesheet" href="./css/gather.css">
+</head>
+<body>
+   
+    <div class="container">
+            
+        <div class="top">
+            <a href="./index.html" class="mui-icon mui-icon-arrowleft back"></a>
+            <span class="title">凑单品</span>
+            <a class="right"></a>
+        </div>
+        <div class="select">
+            <div class="left">
+                <!-- 模板 -->
+            </div>
+            <div class="right">
+                <a class="mui-icon mui-icon-bars"></a>
+            </div>
+        </div>
+        <!-- 点击下拉数据 -->
+        <div class="drop">       
+            <ul class="mui-table-view" id="ul1">                                    
+            </ul>
+        </div>        
+        <div class="drop1">       
+                <ul class="mui-table-view" id="ul2">   
+
+                        <li class="mui-table-view-cell">天猫</li>
+                        <li class="mui-table-view-cell">苏宁</li>
+                        <li class="mui-table-view-cell">唯品会</li>                                 
+                </ul>
+            </div>
+        <div class="drop2">       
+                    <ul class="mui-table-view" id="ul3">   
+                            <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">全部价格</a>
+                                </li>
+                            <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">10-100元</a>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">101-200元</a>
+                                </li>
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">220-359元</a>
+                                </li>                                 
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">420-559元</a>
+                                </li>                                 
+                                                              
+                                <li class="mui-table-view-cell">
+                                    <a class="mui-navigate-right">大于1001元</a>
+                                </li>                                 
+                    </ul>
+            </div>
+        <div class="drop3">       
+                <ul class="mui-table-view" id="ul4">                     
+                        <li class="mui-table-view-cell">
+                            <input type="text" placeholder="搜索">
+                            <p>排序</p>
+                            <div class="desc">
+                                <span class="ligth">销量</span>
+                                <span>价格</span>
+                                <span>价格</span>
+                                <span></span>
+                            </div>
+                            <p>分类</p>
+                            <div class="cate">
+                                <a>
+                                    <span class="ca">全部</span>
+                                </a>
+                                <a>
+                                    <span>家居</span>
+                                </a>
+                                <a>
+                                    <span>数码</span>
+                                </a>
+                                <a>
+                                    <span>办公</span>
+                                </a>
+                                <a>
+                                    <span>个护</span>
+                                </a>
+                                <a>
+                                    <span>食品</span>
+                                </a>
+                                <a>
+                                    <span>母婴</span>
+                                </a>
+                                <a>
+                                    <span>服饰</span>
+                                </a>
+                            </div>
+                        
+                        </li>
+                                                   
+                </ul>
+        </div>
+        
+        <div class="main">
+                <div class="mask">
+                        <div class="top"></div>
+                        <div class="bottom">
+                            <div class="little"></div>
+                        </div>
+                </div>
+                
+        </div>
+        <div class="footer"></div>
+    </div>
+
+    <!-- 用来获取凑单品的店铺的信息 并渲染到店铺的下拉列表 -->
+    <script type="text/html" id="shop">
+        {{each result v i}}
+         <a class="title {{if i == 0}}active{{/if}}" data-id="{{i}}">
+             <span class="size {{if i == 0}}tex{{/if}} {{if i==1}}txt{{/if}} {{if i == 2}}ttx{{/if}}">{{v.shopName}}</span>
+             <span class="mui-icon mui-icon-arrowdown down"></span>
+         </a>
+         {{/each}}
+    </script>
+
+    <!-- 用来获取凑单品的区域的信息 并渲染到区域的下拉列表 -->
+    <script type="text/html" id="area">
+        {{each result v i}}
+        <li id="nav" class="mui-table-view-cell" data-id="{{v.areaId}}">
+            <span>{{v.areaName}}</span>
+            <span class="true mui-icon {{if i == 0}}mui-icon-checkmarkempty{{/if}}"></span>
+        </li>
+         {{/each}}
+    </script>
+
+    <!-- 用来获取凑单品的区域的信息 并渲染到区域的下拉列表 -->
+    <script type="text/html" id="product">
+        {{each result v i}}
+      <div class="banner">
+                <a href="">
+                <img src="{{v.productImg}}" alt="">
+                <p class="first">{{v.productName}}</p>
+                
+                <p class="second">
+                    <span>{{v.productPrice}}</span>
+                    {{if i%3 == 0}}
+                    <span class="there">去凑单</span>
+                    {{/if}}
+                </p>
+                
+            </a>
+            </div>   
+         {{/each}}
+    </script>
+
+
+</body>
+</html>
+<script>
+
+</script>
