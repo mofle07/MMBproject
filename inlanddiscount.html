@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>国内折扣</title>
-
+     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
     <link rel="stylesheet" href="./lib/css/mui.min.css">
     <script src="./lib/js/mui.min.js"></script>
 
@@ -24,7 +24,7 @@
         <div class="header">
 
             <div class="previousPage">
-                <a href="" class="homebutton">
+                <a href="./index.html" class="homebutton">
                     <span class="glyphicon glyphicon-menu-left"></span>
                 </a>
             </div>
@@ -74,30 +74,10 @@
             </div>
         </div>
     </div>
-    <!-- <script id="productslist" type="text/html">
-       {{each result v i}}
-           
-        <div class="box renderer">      
-           <a href="" data-main="{{v.productId}}" class="property">     
-               {{#v.productImg}}
-               <div class="proname mui-ellipsis-2">{{v.productName}}</div>
-               <p class="prices">{{v.productPrice}}</p>
-               <p class="site">
-                   <span class="store">{{v.productFrom}}</span>
-                   <span>|</span>
-                   <span class="date">{{v.productTime}}</span>
-               </p>
-           </a>                  
-        </div>
-   
-    {{/each}}
-    </script> -->
     <script type="text/html" id="tpl">
         {{each result v i}}
 <div class="product" data-id="{{v.productId}}">                    
                 {{#v.productImg}}
-         
-          
                 <div class="proname mui-ellipsis-2">{{v.productName}}</div>
                 <p class="prices">{{v.productPrice}}</p>
                 <p class="site">
@@ -105,8 +85,6 @@
                     <span>{{v.productTime}} </span>
                     | 
                 </p>
-
-
 </div>
 {{/each}}
     </script>

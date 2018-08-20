@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
     <script src="./lib/js/jquery-3.3.1.js"></script>
     <link rel="stylesheet" href="./lib/css/bootstrap.css">
     <script src="./lib/js/bootstrap.js"></script>
@@ -39,7 +40,7 @@
                         <a class="mui-control-item active" href="">
                             省钱控
                         </a>
-                        <a class="mui-control-item" href="">
+                        <a class="mui-control-item" href="./index.html">
                             比价搜索
                         </a>
                         <a class="mui-control-item" href="">
@@ -64,11 +65,13 @@
     <div class="main">
         <div class="productslist">
             <ul>
-                <li>
+                <!-- <li>
+                    <a href="">
                     <img src="./images/55d2cf3eNc2d117d0.jpg" alt="">
                     <div class="productInfo">
                         <p class="decript">
-                            妮维雅 全身深层润肤乳 125ml*2瓶
+                            
+                            <span class='title'>妮维雅 全身深层润肤乳 125ml*2瓶</span>
                             <span class=" preferential">14.9元(券后)</span>
                         </p>
                         <p class="other">
@@ -78,7 +81,8 @@
                                 0</span>
                         </p>
                     </div>
-                </li>
+                </a>
+                </li> -->
             </ul>
         </div>
         <!-- 分页 -->
@@ -131,7 +135,8 @@
             {{#v.productImg2}}
             <div class="productInfo">
                 <p class="decript">
-                    {{v.productName}}
+                  
+                    <span class='title'>  {{v.productName}}</span>
                     <span class=" preferential">{{v.productPinkage}}</span>
                 </p>
                 <p class="other">

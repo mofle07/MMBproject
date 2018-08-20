@@ -18,12 +18,12 @@ $(function() {
     
     
     //   //分析url拿到id
-    // var url=location.href();
-    // var query=getUrlTools(url);
+    var url=location.href;
+    var query=urlTool(url);
     
-    // //拿到当前商品的id
-    // var pid=query.categoryId;
-    
+    //拿到当前商品的id
+    var pid=query.productId;
+    console.log(pid)
     
       function reden(id) {
         $.ajax({
@@ -32,12 +32,12 @@ $(function() {
           success: function(obj) {
             console.log(obj);
             var html = template("pinglun", obj);
-            //console.log(html);
+            // console.log(html);
             $(".details").html(html);
           }
         });
       }
-      reden(1);
+      reden(pid);
     
     
     
@@ -47,40 +47,35 @@ $(function() {
           success:function(obj){
            
               var html=template("pinglunlist",obj);
-                
+            //   console.log(html);
                  $(".disguess").html(html);
           }
       })
     
     //给导航一个点击事件
-    
+      //导航的全部分类一个点击事件,跳转到比价搜索的主页
+  $(".breadcrumb").on("tap",".tow",function(){
+      window.location.href="./category.html";
+  })
+
     // 获取到首页的id和上一页的id
-    
-    // 
-    //以及
-    $.ajax({
-        url: "http://mmb.ittun.com/api/getcategory",
-    // data:{productId:}
-       success:function(obj){
-    
-        // 二级页面的
-        // var url1=location.href;
-        // var query1=getUrlTools(url1);
-        // var shouye=query1.productId;
-        
+        //   var url1=window.location.href;
+        //   console.log(url1)
+        //   var query1=urlTool(url);
+        //   var pid1=query1.categoryId;
+        //   console.log(pid1)
         $.ajax({
             url:"http://mmb.ittun.com/api/getcategorybyid",
             data:{
-                categoryid:1,
+                categoryid:pid,
             },
             success:function(obj){
+     
                 var html=template("daohang",obj);
                 $(".breadcrumb").html(html)
             }
         })
-       }
-    })
-    
+   
         //给导航区加一个active,变色
     $(".details").on("tap",".product a",function(){
     // alert("0")
@@ -97,24 +92,10 @@ $(function() {
 
     //点击优秀评论
     $(".details").on("click",".comment",function(){
-        window.location.href="./category-goodlist.html"
+        window.location.href="./category-goodlist.html?productId="+$(this).data("id");
     })
-    //点击登录,验证表单
-    $('#signup').click(function () {
-        var username = $('input[name=username]').val();
-        console.log(username);
-        var password = $('input[name=password]').val();
-        if (username.length == 0) {
-            mui.toast("请输入用户名/手机号");
-            return;
-        }
-        if (password.length == 0) {
-            mui.toast("请输入密码");
-            return;
-        }
 
-});
-
+    
     
     });
     

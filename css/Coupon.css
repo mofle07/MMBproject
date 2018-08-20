@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body,
 div,
 span,
@@ -61,19 +60,16 @@ li {
   list-style: none;
 }
 
-/* 清除li标签的默认小点点 */
 .w {
   width: 1200px;
   margin: 0 auto;
 }
 
-/* 设置网页的版心 */
 body {
   font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   background-color: #fff;
 }
 
-/* 修改网页默认字体和行高 */
 .clearfix:after {
   content: "";
   display: block;
@@ -96,7 +92,6 @@ body {
   box-sizing: border-box;
 }
 
-/* 设置清除浮动影响 */
 div.container {
   padding-left: 0px;
   padding-right: 0px;
