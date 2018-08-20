@@ -1,5 +1,6 @@
 @import "./common";
 .container {
+    // background-color: #d15960;
     .header {
         width: 100%;
         min-height: 50px;
@@ -20,29 +21,18 @@
             }
         }
     }
-    .main {
-        padding: 10px 40px;
-        ul {
+    main {
+        flex: 1;
+        padding: 10px 20px;
+        .grid {
             display: flex;
             flex-wrap: wrap;
-            li {
-                margin-right: 5px;
-                margin-bottom: 5px;
-                a {
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    padding: 15px 15px;
-                    border: 1px solid #ccc;
-                    img {
-                        width: 16px;
-                        display: block;
-                        margin-right: 10px;
-                    }
-                    span {
-                        font-size: 18px;
-                    }
-                }
+            justify-content: space-between;
+            .grid__item {
+                margin-bottom: 10px;
+            }
+            a {
+                text-decoration: none;
             }
         }
     }

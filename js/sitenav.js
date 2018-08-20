@@ -10,7 +10,8 @@ $(function () {
             success: function (res) {
                 console.log(res);
                 var html = template('sitenav',{list:res.result});
-                $('.navList').html(html);
+                $('.grid').html(html);
+
             }
         })
     }
