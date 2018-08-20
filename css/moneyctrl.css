@@ -101,12 +101,18 @@ body {
 .top .top-iner .nav {
   position: relative;
 }
-.top .top-iner .nav a {
+.top .top-iner .nav ul li {
+  float: left;
+  height: 100%;
+}
+.top .top-iner .nav ul li a {
   font-size: 14px;
+  display: block;
+  height: 100%;
   font-weight: bold;
   text-decoration: none;
 }
-.top .top-iner .nav a.active {
+.top .top-iner .nav ul li a.active {
   border-bottom: 2px solid red;
 }
 
