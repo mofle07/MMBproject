@@ -26,9 +26,6 @@ input {
     padding: 0;
     margin: 0;
 }
-
-/* 清楚网页内标签的内外边距 */
-
 a {
     text-decoration: none;
     color: #000;
@@ -143,10 +140,20 @@ div.container{
     }
 
     .main{
-        margin-top: 20px;
         display: flex;
         flex-direction: column;
         flex: 1;
+        .bar{
+            flex-basis: 30px;
+            background-color: #efefef;
+            border-top: 0.5px solid #ccc;
+            span{
+                margin-left: 15px;
+                font-size: 12px;
+                line-height: 30px;
+                color: #595959;
+            }
+        }
         .list{
             // flex: 1;
             display: flex;
@@ -161,18 +168,6 @@ div.container{
                 img{
                     width: 100%;
                 }
-            }
-        }
-
-        .bar{
-            flex-basis: 30px;
-            background-color: #efefef;
-            border-top: 0.5px solid #ccc;
-            span{
-                margin-left: 15px;
-                font-size: 12px;
-                line-height: 30px;
-                color: #595959;
             }
         }
     }

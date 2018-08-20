@@ -1,47 +1,206 @@
-/*
-Error: Invalid GBK character "\xE6"
-        on line 30 of sass/Coupon.scss
+@charset "UTF-8";
+body,
+div,
+span,
+p,
+a,
+img,
+ul,
+ol,
+dl,
+li,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+input,
+i,
+em,
+b,
+strong,
+del,
+s,
+u,
+input {
+  padding: 0;
+  margin: 0;
+}
 
-25: input {
-26:     padding: 0;
-27:     margin: 0;
-28: }
-29: 
-30: /* 清楚网页内标签的内外边距 *\/
-31: 
-32: a {
-33:     text-decoration: none;
-34:     color: #000;
-35: }
+a {
+  text-decoration: none;
+  color: #000;
+}
 
-Backtrace:
-sass/Coupon.scss:30
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1041:in `rescue in block in find_encoding_error'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1038:in `block in find_encoding_error'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1037:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1037:in `each_with_index'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:1037:in `find_encoding_error'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/util.rb:765:in `check_sass_encoding'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:444:in `check_encoding!'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:400:in `_to_tree'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid GBK character \"\xE6\"\A         on line 30 of sass/Coupon.scss\A \A 25: input {\A 26:     padding: 0;\A 27:     margin: 0;\A 28: }\A 29: \A 30: /* 清楚网页内标签的内外边距 */\A 31: \A 32: a {\A 33:     text-decoration: none;\A 34:     color: #000;\A 35: }"; }
+/* 清楚a标签的下划线和默认字体颜色 */
+input {
+  border: 0 none;
+  outline: 0 none;
+}
+
+/* 清除表单输入框的边框和外轮廓线 */
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+
+/* 低版本的插入图片会默认生成边框 */
+i,
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+b,
+strong {
+  font-weight: normal;
+}
+
+li {
+  list-style: none;
+}
+
+/* 清除li标签的默认小点点 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/* 设置网页的版心 */
+body {
+  font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  background-color: #fff;
+}
+
+/* 修改网页默认字体和行高 */
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+/* 设置清除浮动影响 */
+div.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+div.container .header {
+  flex-basis: 50px;
+  background-color: #f4483e;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+div.container .header .back a {
+  font-size: 20px;
+  color: #fff;
+  padding-left: 15px;
+}
+div.container .header .title {
+  font-size: 20px;
+  color: #fff;
+}
+div.container .header .app {
+  padding-right: 15px;
+}
+div.container .header .app a img {
+  width: 35px;
+}
+div.container .main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+div.container .main .bar {
+  flex-basis: 30px;
+  background-color: #efefef;
+  border-top: 0.5px solid #ccc;
+}
+div.container .main .bar span {
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 30px;
+  color: #595959;
+}
+div.container .main .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+div.container .main .list a {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.container .main .list a img {
+  width: 100%;
+}
+div.container .footer {
+  flex-basis: 100px;
+  background-color: #efefef;
+}
+div.container .footer .footer-nav {
+  flex-basis: 35px;
+}
+div.container .footer .footer-nav ul {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+div.container .footer .footer-nav ul li {
+  line-height: 35px;
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+}
+div.container .footer .footer-nav ul li:nth-child(3) {
+  border-right: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.container .footer .footer-nav ul li a {
+  color: #5a5a5a;
+}
+div.container .footer .footer-nav ul li img {
+  width: 15px;
+  display: block;
+}
+div.container .footer .footer-info {
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #5a5a5a;
+}
+div.container .footer .footer-info p a {
+  color: red;
+}
+
+/*# sourceMappingURL=Coupon.css.map */
