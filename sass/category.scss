@@ -27,27 +27,20 @@ input {
     margin: 0;
 }
 
-
-
 a {
     text-decoration: none;
     color: #000;
 }
-
-
 
 input {
     border: 0 none;
     outline: 0 none;
 }
 
-
-
 img {
     border: 0 none;
     vertical-align: middle;
 }
-
 
 i,
 em {
@@ -67,20 +60,15 @@ li {
     list-style: none;
 }
 
-
-
 .w {
     width: 1200px;
     margin: 0 auto;
 }
 
-
-
 body {
     font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     background-color: #fff;
 }
-
 
 .clearfix:after {
     content: "";
@@ -106,128 +94,110 @@ html {
     display: flex;
     flex-direction: column;
     .header {
-        min-height: 100px;
-        // background-color: red;
+        min-height: 100px; // background-color: red;
         display: flex;
         flex-direction: column;
         border-bottom: 1px solid #e6e6e6;
-         .header-info {
-              flex-basis: 50px;
-              background-color: #ff841d;
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              padding-left: 15px;
-              padding-right: 5px;
-             .logo {
-                 a {
-                     img {
-                         width: 180px;
-                     }
-                 }
-             }
-             .app {
-                 a {
-                     img {
-                         width: 35px;
-                         ;
-                     }
-                 }
-             }
-    }
-
-
-
-    .search {
-        flex-basis: 50px;
-        display: flex;
-        align-items: center;
-        padding: 0 10px;
-        position: relative;
-        
-        input {
-            
-            font-size: 16px;
-            height: 30px;
-            flex: 1;
-            border-radius: 30px;
-            margin: 0;
-            background-color: #f1f1f1;
-            border: none;
-        }
-        button {
-            // margin-right: 20px;
-            font-size: 16px;
-            color: white;
-            width: 64px;
-            line-height: 30px;
-            padding: 0;
-            border-radius: 30px;
+        .header-info {
+            flex-basis: 50px;
             background-color: #ff841d;
-            border: none;
-            outline: none;
-            position: absolute;
-            right: 10px;
-
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 15px;
+            padding-right: 5px;
+            .logo {
+                a {
+                    img {
+                        width: 180px;
+                    }
+                }
+            }
+            .app {
+                a {
+                    img {
+                        width: 35px;
+                        ;
+                    }
+                }
+            }
+        }
+        .search {
+            flex-basis: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            position: relative;
+            input {
+                font-size: 16px;
+                height: 30px;
+                flex: 1;
+                border-radius: 30px;
+                margin: 0;
+                background-color: #f1f1f1;
+                border: none;
+            }
+            button {
+                // margin-right: 20px;
+                font-size: 16px;
+                color: white;
+                width: 64px;
+                line-height: 30px;
+                padding: 0;
+                border-radius: 30px;
+                background-color: #ff841d;
+                border: none;
+                outline: none;
+                position: absolute;
+                right: 10px;
+            }
         }
     }
-
-}
     .main {
         position: relative;
-       
         flex: 1;
         background-color: #f2f2f2;
-        .comparison{
-           
-            &:hover{
+        .comparison {
+            &:hover {
                 border-top: 2px solid #000;
             }
             background-color: #ebebeb;
             margin: 5px 5px;
-           border: 1px solid #ccc;
-           border-radius: 5px;
-        //    height: 40px;
-           .title{
-               font-size: 16px;
-               font-weight: bolder;
-               height: 40px;
-           }
-            .comparisonlist{
-                display: block;
-                // border-top: 1px solid #ccc;
-                // margin-top: 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            .title {
+                font-size: 16px;
+                font-weight: bolder;
+                height: 40px;
+            }
+            .comparisonlist {
+
                 background-color: #F9F9F9;
+                border: 1px solid #ccc;
+                border-bottom: none;
+                border-top: none;
+                padding: 0;
                 a {
                     color: #000;
                     float: left;
                     display: block;
                     width: 33.3333%;
                     height: 40px;
-                //   border-top: 1px solid #ccc;
-                  border-right: 1px solid #ccc;
-                  border-bottom: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                    border-bottom: 1px solid #ccc;
                     text-align: center;
                     line-height: 40px;
                     font-size: 12px;
-                    text-decoration: none;
-                    // border-top: none;
-                    border-left: none;
-                // &:nth-child(n+7){
-                //     border-bottom: none;
-                // }
-                &:nth-child(3n){
-                border-right: none;
+                    text-decoration: none; 
+                    border-left: none; 
+                 
+                    &:nth-child(3n) {
+                        border-right: none;
+                    }
                 }
-    
-    
-    
-                }
-    
-            
+            }
         }
-        }
-        .bottomlist{
+        .bottomlist {
             height: 100px;
             background-color: #efefef;
             .bottomlist-nav {
@@ -274,48 +244,43 @@ html {
         }
     }
     .footer {
-      
-            flex-basis: 50px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            flex-basis: 70px;
-            background-color: #fff;
-            justify-content: space-between;
+        flex-basis: 50px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        flex-basis: 70px;
+        background-color: #fff;
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        padding: 0px 10px;
+        .left {
             display: flex;
-            align-items: center;
-            padding: 0px 10px;
-            .left{
+            flex: 1;
+            a {
+                margin-top: 20px;
+                height: 25px;
+                width: 25px;
+                border-radius: 50%;
+                background-color: #ccc;
+                margin-right: 10px;
+            }
+            img {
+                height: 40px;
+                width: 49px;
+                margin-top: 15px;
+            }
+            p {
                 display: flex;
-                flex: 1;
-                a{
-                   margin-top: 20px;
-                    height: 25px;
-                    width: 25px;
-                    border-radius: 50%;
-                    background-color: #ccc;
-                  
-                      
-                        margin-right: 10px;
-                
+                flex-direction: column;
+                padding: 10px;
+                span {
+                    padding: 5px;
                 }
-                img{
-                    height: 40px;
-                    width: 49px;
-                   margin-top: 15px;
-                }
-                p{
-                    display: flex;
-                    flex-direction: column;
-                    padding: 10px;
-                    span{
-                        padding: 5px;
-                    }
-                }
-               
             }
-            .footer-btn{
-                background-color: #ff7700;
-            }
-            }
+        }
+        .footer-btn {
+            background-color: #ff7700;
+        }
+    }
 }

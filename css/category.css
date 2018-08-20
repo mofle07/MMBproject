@@ -164,8 +164,11 @@ html {
   height: 40px;
 }
 .container .main .comparison .comparisonlist {
-  display: block;
   background-color: #F9F9F9;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  border-top: none;
+  padding: 0;
 }
 .container .main .comparison .comparisonlist a {
   color: #000;
