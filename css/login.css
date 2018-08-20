@@ -235,16 +235,36 @@ html {
   color: red;
 }
 
-.main .form-horizontal .form-group {
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container .main {
+  padding-top: 10px;
+}
+.container .main .mui-input-group .form-group {
   margin: 0;
 }
-.main .form-horizontal .form-group .btn {
+.container .main .mui-input-group .form-group .loginbtn {
+  padding: 0 15px;
+}
+.container .main .mui-input-group .form-group .btn {
+  margin-top: 10px;
   width: 100%;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
 }
-.main .form-horizontal .form-group .checkbox labal {
+.container .main .mui-input-group .form-group .checkbox {
   display: flex;
   align-items: center;
+}
+.container .main .mui-input-group .form-group .checkbox label {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.mui-toast-container {
+  bottom: 100px;
 }
 
 /*# sourceMappingURL=login.css.map */

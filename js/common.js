@@ -1,3 +1,9 @@
+ $(function () {
+     $(".footer-nav").on('mouseenter', 'li', function () {
+         $(this).addClass('active').siblings().removeClass('active');
+     })
+ })
+// 封装区域 -----------------------
 // A.封装区域 -----------------------
 
 //a. URL中的参数获取(可适配单个/多个参数) - 周

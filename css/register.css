@@ -235,16 +235,53 @@ html {
   color: red;
 }
 
-.main .form-horizontal .form-group {
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.container .main {
+  padding: 0 10px;
+  flex: 1;
+}
+.container .main .form-horizontal .form-group {
+  margin: 15px 0;
+}
+.container .main .form-horizontal .form-group .loginbtn {
+  padding: 0 15px;
+}
+.container .main .form-horizontal .form-group input {
   margin: 0;
 }
-.main .form-horizontal .form-group .btn {
+.container .main .form-horizontal .form-group .btn {
   width: 100%;
   background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
 }
-.main .form-horizontal .form-group .checkbox labal {
+.container .main .form-horizontal .form-group .checkbox {
   display: flex;
   align-items: center;
+}
+.container .main .form-horizontal .form-group .checkbox label {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.container .main .form-horizontal .form-group .register {
+  margin-top: 10px;
+}
+.container .main .form-horizontal .verify {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.container .main .form-horizontal .verify .verifybtn {
+  height: 40px;
+  flex: 1;
+}
+.container .main .form-horizontal .verify .verifybtn .btn {
+  height: 100%;
+}
+.container .main .form-horizontal .verify .yanzheng {
+  flex: 2;
 }
 
 /*# sourceMappingURL=register.css.map */
