@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
+    <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
     <link rel="stylesheet" href="css/baicaijia.css">
     <link rel="stylesheet" href="./lib/css/mui.min.css">
     <script src="./lib/js/jquery-3.3.1.min.js"></script>
@@ -34,27 +34,23 @@
                 </a>
             </div>
 
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
+            <div class="nav">
+                <div class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                    <div class="mui-scroll">
 
-
+                    </div>
 
                 </div>
             </div>
-
-
-
-
         </div>
+
         <div class="main">
             <!-- 区域滚动 -->
             <!-- <div class="mui-scroll-wrapper">
                 <div class="mui-scroll"> -->
             <div class="products selected">
+                
             </div>
-
-
-
         </div>
         <div class="footer">
             <div class="footer-nav">
@@ -82,7 +78,7 @@
 
 
     </div>
-    <div class="returnTop" >
+    <div class="returnTop">
         <a href="#" class="glyphicon glyphicon-arrow-up"></a>
     </div>
 
@@ -91,9 +87,10 @@
 </html>
 <script type="text/html" id="tpl1">
     {{each list v i}}
-    <div class="swiper-slide">
+    <a href="./index.html" class="mui-control-item {{if i==0}}active{{/if}}" data-id="{{v.titleId}}">{{v.title}}</a>
+    <!-- <div class="swiper-slide">
         <a data-id="{{v.titleId}}" {{if i==0}}class="active" {{/if}}>{{v.title}}</a>
-    </div>
+    </div> -->
     {{/each}}
 
 </script>

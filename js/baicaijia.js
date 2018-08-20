@@ -13,21 +13,15 @@ $(function(){
         type:"get",
         dataType:"json",
         success:function(res){
-            // console.log(res);
+            console.log(res);
             var html=template("tpl1",{list:res.result});
-            $('.swiper-wrapper').html(html);
+            $('.mui-scroll').html(html);
         }
     })
         // tab栏切换
-        // $(".swiper-wrapper a").mouseenter(function(){
-        //     alert("a");
-        //     $(this).addClass("active").parent().siblings().children().removeClass("active");
-            // var index=$(this).parent().index();
-            // $(".products").eq(index).addClass("selected").siblings().removeClass("selected");
-        // })
-        // tab栏切换
-        $(".swiper-wrapper").on("mouseenter","a",function(){
-           $(this).addClass("active").parent().siblings().children().removeClass("active");
+
+        $(".mui-scroll").on("tap", "a", function () {
+           $(this).addClass("active").siblings().removeClass("active");
             var index=$(this).parent().index();
             $(".products").eq(index).addClass("selected").siblings().removeClass("selected");
             var titleId=$(this).data("id");
@@ -35,6 +29,21 @@ $(function(){
             productDetail(titleId);
         })
     
+
+         mui('.mui-scroll-wrapper').scroll({
+             options: {
+                 scrollY: false, //是否竖向滚动
+                 scrollX: true, //是否横向滚动
+                 startX: 0, //初始化时滚动至x
+                 startY: 0, //初始化时滚动至y
+                 indicators: true, //是否显示滚动条
+                 deceleration: 0.0006, //阻尼系数,系数越小滑动越灵敏
+                 bounce: true //是否启用回弹
+             }
+         });
+
+
+
         //产品ajax请求
         function productDetail(id){
             $.ajax({

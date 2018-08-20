@@ -123,21 +123,21 @@ html {
 .container .header .top .app img {
   width: 34px;
 }
-.container .header .swiper-container {
+.container .header .nav {
   height: 50px;
   background-color: #ffffff;
   line-height: 50px;
 }
-.container .header .swiper-container .swiper-slide a {
+.container .header .nav .mui-scroll a {
   text-decoration: none;
   color: #333333;
-  padding: 10px 10px;
+  font-size: 18px;
 }
-.container .header .swiper-container .swiper-slide a.active {
+.container .header .nav .mui-scroll a.active {
   color: #e4393c;
   border-bottom: 2px solid red;
 }
-.container .header .swiper-container .swiper-slide {
+.container .header .nav .swiper-slide {
   width: 70px;
 }
 .container .main {
