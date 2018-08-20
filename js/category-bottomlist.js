@@ -35,8 +35,6 @@ $(function () {
                 productid: id
             },
             success: function (obj) {
-                obj.result[0].categoryName = JSON.stringify(categoryname[0]);
-                //console.log(obj);
                 var html = template("pinglun", obj);
                 // console.log(html);
                 $(".details").html(html);
@@ -83,7 +81,7 @@ $(function () {
         success: function (obj) {
             //console.log(obj);
 
-            categoryname.push(obj.result[0].category);
+            //categoryname.push(obj.result[0].category);
             //console.log(categoryname);
 
             var html = template("daohang", obj);
