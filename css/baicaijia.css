@@ -142,7 +142,7 @@ html {
 }
 .container .main {
   flex: 1;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 .container .main .products {
   display: none;

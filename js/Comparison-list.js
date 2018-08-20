@@ -23,18 +23,18 @@ $(function(){
 // var pid = query.id;
 
 
-    // 导航
-    // $.ajax({
-    //     url:"http://mmb.ittun.com/api/getcategorybyid",
-    //     type:"get",
-    //     data:{categoryid:1},
-    //     success:function(res){
-    //         console.log(res);
-    //         var htmlStr = template("navTem",res);
-    //         console.log(htmlStr);
-    //         $(".nav").html(htmlStr);
-    //     }
-    // })
+    //导航
+    $.ajax({
+        url:"http://mmb.ittun.com/api/getcategorybyid",
+        type:"get",
+        data:{categoryid:1},
+        success:function(res){
+            console.log(res);
+            var htmlStr = template("navTem",res);
+            console.log(htmlStr);
+            $(".nav").html(htmlStr);
+        }
+    })
 
 
     //   //分析url拿到id
