@@ -240,9 +240,10 @@ html {
 }
 .main .navs {
   height: 45px;
-  background-color: #ddd;
+  background-color: #fff;
   display: flex;
   padding: 0 10px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
 }
 .main .navs a {
   text-align: center;

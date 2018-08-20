@@ -197,27 +197,14 @@
         <div class="product-title">
             <a class="product-title1 active">比价购买</a>
             <!-- <a class="product-title1 active">比价购买</a> -->
-            <a href="./Parameter.html?category={{v.categoryName}}" class="product-title1">产品参数</a>
+            <a href="./Parameter.html?productId={{v.productId}}&categoryid={{v.categoryId}}" class="product-title1">产品参数</a>
             <a href="./Parameter.html?" class="product-title1  comment" data-id="{{v.productId}}">优选评价</a>
         </div>
     </div>
     <div class="product list">
         <ul class="mui-table-view  shangping">
 
-            <li class="mui-table-view-cell">
-                {{#v .bjShop}}
-                <!-- <a class="mui-navigate-right">
-                                <span class="mui-pull-right">$8999.00</span>
-                                <div class="left">
-                                    <p>
-                                        <img src="./images/1.png" alt="">
-                                        <span>中国亚马逊</span>
-                                    </p>
-                                    <p class="word">自营</p>
-                                </div>
-
-                            </a>
-                        </li> -->
+            <li class="mui-table-view-cell">{{#v .bjShop}}</li>
         </ul>
         <div class="price">
             <a href="">该商品的历史最低价：899.00 ></a>

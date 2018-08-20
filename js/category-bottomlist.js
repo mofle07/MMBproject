@@ -19,14 +19,15 @@ $(function () {
 
 
 
-    //   //分析url拿到id
+    //分析url拿到id
     var url = location.href;
     var query = urlTool(url);
+    console.log(query);
 
     //拿到当前商品的id
-    var pid = query[0];
+    var pid = query[0];;
     var categoryid = query[1];
-    //console.log(categoryid)
+    console.log(pid)
 
     function reden(id) {
         $.ajax({
@@ -35,8 +36,9 @@ $(function () {
                 productid: id
             },
             success: function (obj) {
+                console.log(obj);
+
                 var html = template("pinglun", obj);
-                // console.log(html);
                 $(".details").html(html);
             }
         });
@@ -51,9 +53,9 @@ $(function () {
             productid: pid
         },
         success: function (obj) {
+            console.log(obj);
 
             var html = template("pinglunlist", obj);
-            //   console.log(html);
             $(".disguess").html(html);
         }
     })
@@ -64,14 +66,6 @@ $(function () {
         window.location.href = "./category.html";
     })
 
-    // 获取到首页的id和上一页的id
-    //   var url1=window.location.href;
-    //   console.log(url1)
-    //   var query1=urlTool(url);
-    //   var pid1=query1.categoryId;
-    //   console.log(pid1)
-    var categoryname = [];
-    //console.log(categoryname);
 
     $.ajax({
         url: "http://mmb.ittun.com/api/getcategorybyid",
@@ -79,13 +73,27 @@ $(function () {
             categoryid: categoryid,
         },
         success: function (obj) {
-            //console.log(obj);
+            console.log(obj);
+            
+            if (obj.result.length != 0) {
+                var html = template("daohang", obj);
+                $(".breadcrumb").html(html);
+                sessionStorage.setItem('categoryName', obj.result[0].category)
+            } else {
+                var cname = sessionStorage.getItem('categoryName')
 
-            //categoryname.push(obj.result[0].category);
-            //console.log(categoryname);
+                obj.result.push({category:cname});
+                 obj.result[0].categoryId = categoryid;
+                //  obj.result.push({
+                //      categoryId: categoryid
+                //  });
+                console.log(obj);
+                var html = template("daohang", obj);
+                $(".breadcrumb").html(html);
 
-            var html = template("daohang", obj);
-            $(".breadcrumb").html(html)
+            }
+
+
         }
     })
 

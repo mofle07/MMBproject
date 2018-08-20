@@ -44,8 +44,8 @@ $(function () {
     console.log(query);
     
     //拿到当前商品的id
-    var pid = query[0];
-    console.log(pid);
+    var categoryid = query[0];
+    console.log(categoryid);
 
     var page = 1
 
@@ -75,7 +75,7 @@ $(function () {
     $.ajax({
         url: "http://mmb.ittun.com/api/getproductlist",
         data: {
-            categoryid: pid,
+            categoryid: categoryid,
             pageid: page
         },
         success: function (res) {
@@ -92,7 +92,7 @@ $(function () {
                     page = index;
 
                     //每一次点击都会去发起ajax请求，获取数据，渲染数据
-                    rend(pid, page);
+                    rend(categoryid, page);
                 }
             });
 
@@ -114,7 +114,7 @@ $(function () {
         var productid = $(this).data('id')
         console.log(productid);
         
-        window.location.href = "./category-bottomlist.html?productId=" + productid + "&category=" + pid;
+        window.location.href = "./category-bottomlist.html?productId=" + productid+"&categoryid="+categoryid;
 
     })
 
