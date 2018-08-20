@@ -122,10 +122,20 @@ div.container .header .app a img {
   width: 35px;
 }
 div.container .main {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+div.container .main .bar {
+  flex-basis: 30px;
+  background-color: #efefef;
+  border-top: 0.5px solid #ccc;
+}
+div.container .main .bar span {
+  margin-left: 15px;
+  font-size: 12px;
+  line-height: 30px;
+  color: #595959;
 }
 div.container .main .list {
   display: flex;
@@ -140,17 +150,6 @@ div.container .main .list a {
 }
 div.container .main .list a img {
   width: 100%;
-}
-div.container .main .bar {
-  flex-basis: 30px;
-  background-color: #efefef;
-  border-top: 0.5px solid #ccc;
-}
-div.container .main .bar span {
-  margin-left: 15px;
-  font-size: 12px;
-  line-height: 30px;
-  color: #595959;
 }
 div.container .footer {
   flex-basis: 100px;

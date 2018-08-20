@@ -55,5 +55,4 @@ $(function () {
 // 创建返回方法
 function back() {
   window.history.back();
-  alert("aaa");
 }

@@ -75,7 +75,6 @@ li {
     margin: 0 auto;
 }
 
-
 body {
     font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     background-color: #fff;
@@ -177,7 +176,7 @@ div.container{
                     }
                     .info{
                         overflow: hidden;
-                        text-overflow:ellipsis; //文本溢出显示省略号
+                        text-overflow:ellipsis; 
                         white-space: nowrap;
                         width:130px;
                         padding-left: 10px;
@@ -185,6 +184,7 @@ div.container{
                         display: flex;
                         flex-direction: column;
                         font-size: 12px;
+   
                     }
                     .arrow{
                         width: 3%;

@@ -5,32 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+
+  
+  
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+
      <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" media="screen" />
     <link rel="stylesheet" href="./css/Couponlist.css">
     <!-- <link rel="stylesheet" href="lib/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="lib/css/mui.min.css">
+
+
+    <script src="./lib/js/jquery-3.3.1.js"></script>
+
     <script src="lib/js/zepto.min.js"></script>
     <script src="lib/js/mui.min.js"></script>
     <script src="lib/js/bootstrap.js"></script>
     <script src="lib/js/template-web.js"></script>
     <script src="./js/Couponlist.js"></script>
-
+    <link rel="stylesheet" href="./css/Couponlist.css">
 </head>
 <body>
     <div class="container">
         <!-- header部分 -->
         <div class="header">
-            <div class="back">
-                <a href="#">
-                    < </a>
+                <div class="back">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-menu-left"></span>
+                    </a>
+                </div>
+                <div class="title">优惠券列表</div>
+                <div class="app">
+                        <a href="#">
+                            <img src="./images/header_app.png" alt="">
+                        </a>
+                </div>
             </div>
-            <div class="title">肯德基优惠券</div>
-            <div class="app">
-                <a href="#">
-                    <img src="./images/header_app.png" alt="">
-                </a>
-            </div>
-        </div>
 
         <!-- main部分 -->
         <div class="main"> 
@@ -43,7 +55,7 @@
                             <div class="top">
                                 <img src="./images/banner01.jpg" alt="">
                                 <div class="info">
-                                    <p>两人小食组 新奥尔良鸡翅黄金鸡块劲爆鸡米花</p>
+                                    <p style="padding: 4px;">两人小食组 新奥尔良鸡翅黄金鸡块劲爆鸡米花</p>
                                     <span>￥ 28</span>
                                 </div>
                                 <span class="arrow"></span>
@@ -98,7 +110,7 @@
         <div class="top">
         {{#v.couponProductImg}}
             <div class="info">
-                <p>{{v.couponProductName}}</p>
+                <p style="padding: 4px;">{{v.couponProductName}}</p>
                 <span>{{v.couponProductPrice}}</span>
             </div>
             <span class="arrow"></span>

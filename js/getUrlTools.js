@@ -3,10 +3,11 @@
     //1. 把url以？分割
     var arr = urlStr.split("?").pop().split("&");
     console.log(arr); //["proName=1", "page=1"]
-    var query = {};
+    var query = [];
     arr.forEach(function(v) {
         var param = v.split("=");
-        query[param[0]] = param[1];
+        // query[param[0]] = param[1];
+        query.push(param[1]);
     });
 
     return query;

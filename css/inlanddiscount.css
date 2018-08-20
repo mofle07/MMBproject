@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body,
 div,
 span,
@@ -28,25 +27,21 @@ input {
   margin: 0;
 }
 
-/* 清楚网页内标签的内外边距 */
 a {
   text-decoration: none;
   color: #000;
 }
 
-/* 清楚a标签的下划线和默认字体颜色 */
 input {
   border: 0 none;
   outline: 0 none;
 }
 
-/* 清除表单输入框的边框和外轮廓线 */
 img {
   border: 0 none;
   vertical-align: middle;
 }
 
-/* 低版本的插入图片会默认生成边框 */
 i,
 em {
   font-style: normal;
@@ -65,19 +60,16 @@ li {
   list-style: none;
 }
 
-/* 清除li标签的默认小点点 */
 .w {
   width: 1200px;
   margin: 0 auto;
 }
 
-/* 设置网页的版心 */
 body {
   font: 12px/100% "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
   background-color: #fff;
 }
 
-/* 修改网页默认字体和行高 */
 .clearfix:after {
   content: "";
   display: block;
@@ -97,10 +89,8 @@ html {
   height: 100%;
 }
 
-/* 设置清除浮动影响 */
 .container {
   margin: 0px auto;
-  max-width: 600px;
   padding-right: 0px;
   padding-left: 0px;
   height: 100%;
