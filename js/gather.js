@@ -1,7 +1,7 @@
 $(function() {
 
     setTimeout(function() {
-        render(0,1);
+        render(2,0);
     },1000);
 
     //获取凑单品的店铺的信息 并渲染到店铺的下拉列表
