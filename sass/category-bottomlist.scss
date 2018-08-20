@@ -4,7 +4,7 @@
 }
 .main {
   flex: 1;
-  background-color: #f2f2f2;
+  background-color: #fff;
   position: relative;
 
   .nagive {
@@ -112,13 +112,7 @@
   
   }
     
-    
  
-
-  //
-  //  
-    
-  //
 
   .comment-title {
     background-color: #dbdbdb;
@@ -167,7 +161,9 @@
     align-items: center;
     button {
       height: 32px;
-      // width: p2r(344);
+      flex: 1;
+      // // width: p2r(344);
+      // width: 100%;
       text-align: center;
       border: 1px solid #bababa;
       border-radius: 6px;

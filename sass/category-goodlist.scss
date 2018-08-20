@@ -1,0 +1,77 @@
+@import "./common.css";
+@import "./category-bottomlist.scss";
+
+.newdiscuss{
+    padding: 5px;
+    .discuss-title{
+        background-color: #dbdbdb;
+        height: 35px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 35px;
+    }
+    .container1{
+        .left {
+            display: flex;
+            justify-content: space-between;
+          }
+          .right {
+            padding-top: 5px;
+            display: flex;
+            justify-content: space-between;
+          }
+        }
+        .fontword {
+          padding-top: 5px;
+          line-height: 35px;
+      font-size: 16px;
+          span {
+            color: #000;
+            font-size: 14px;
+          }
+        }
+    
+        .huifu {
+          color: #666;
+          font-size: 12px;
+          padding-top: 5px;
+          border-bottom: 1px dashed #ccc;
+        }
+    }
+.main{
+.product{
+    .top{
+        height: 50px;
+        background-color:#f2f2f2;
+        display: flex;
+        
+        .left{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #5a5a5a;
+        }
+        .center{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #5a5a5a;
+        }
+        .right{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            color: #5a5a5a;
+        }
+        &.active{
+            border-bottom: 1px solid red;
+        }
+    }
+}
+}

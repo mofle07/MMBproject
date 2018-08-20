@@ -1,3 +1,4 @@
+@import url(./common.css);
 body,
 div,
 span,
@@ -461,4 +462,72 @@ html {
   padding: 5px;
 }
 
-/*# sourceMappingURL=category-bottomlist.css.map */
+.newdiscuss {
+  padding: 5px;
+}
+.newdiscuss .discuss-title {
+  background-color: #dbdbdb;
+  height: 35px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 35px;
+}
+.newdiscuss .container1 .left {
+  display: flex;
+  justify-content: space-between;
+}
+.newdiscuss .container1 .right {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.newdiscuss .fontword {
+  padding-top: 5px;
+  line-height: 35px;
+  font-size: 16px;
+}
+.newdiscuss .fontword span {
+  color: #000;
+  font-size: 14px;
+}
+.newdiscuss .huifu {
+  color: #666;
+  font-size: 12px;
+  padding-top: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+
+.main .product .top {
+  height: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+}
+.main .product .top .left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #5a5a5a;
+}
+.main .product .top .center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #5a5a5a;
+}
+.main .product .top .right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #5a5a5a;
+}
+.main .product .top.active {
+  border-bottom: 1px solid red;
+}
+
+/*# sourceMappingURL=category-goodlist.css.map */

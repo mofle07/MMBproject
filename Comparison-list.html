@@ -17,7 +17,7 @@
     <script src="./lib/js/bootstrap-paginator.min.js"></script>
     <!-- 模板 -->
     <script src="lib/js/template-web.js"></script>
-
+    <script src="./js/getUrlTools.js"></script>
     <link rel="stylesheet" href="./lib/css/mui.min.css">
     <link rel="stylesheet" href="css/Comparison-list.css">
     <link rel="stylesheet" href="css/Com-other.css">
@@ -100,21 +100,21 @@
         <div class="footer">
             <div class="footer-nav">
                 <ul>
-                    <li>
-                        <a href="#">登录</a>
+                    <li class="login">
+                        <a href="login.html">登录</a>
                     </li>
-                    <li>
-                        <a href="#">注册</a>
+                    <li class="regist">
+                        <a href="./register.html" >注册</a>
                     </li>
                     <li>
                         <img src="./images/top.jpg" alt="">
-                        <a href="#">返回顶部</a>
+                        <a id="back">返回顶部</a>
                     </li>
                 </ul>
             </div>
             <div class="footer-info">
                 <p>
-                    <a href="#">手机APP下载</a>
+                    <a href="href=" http://m.manmanbuy.com/app.html?type=footword&value=wap "">手机APP下载</a>
                     <span>慢慢买手机版--掌上比价平台</span>
                 </p>
                 <span>m.manmanbuy.com</span>
@@ -273,20 +273,20 @@
             <span>></span>
         </a>
     </div>
-    <a href="#" id="slect" class="pull-right">
+    <a  id="slect" class="pull-right">
         <span class="mui-icon mui-icon-settings"></span>筛选</a>
 
     {{/each}}
 </script>
 <script type="text/html" id="listTem">
     {{each result v i}}
-    <li>
+    <li data-id="{{v.productId}}">
         <div class="left">
             {{#v.productImg}}
         </div>
         <div class="right">
             <p class="text">{{v.productName}}</p>
-            <p class="price">¥
+            <p class="price">
                 <span class="num">{{v.productPrice}}</span>
             </p>
             <div class="read">
