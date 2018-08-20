@@ -255,31 +255,20 @@ html {
   font-weight: bold;
   color: #fff;
 }
-.container .main {
-  padding: 10px 40px;
+.container main {
+  flex: 1;
+  padding: 10px 20px;
 }
-.container .main ul {
+.container main .grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
-.container .main ul li {
-  margin-right: 5px;
-  margin-bottom: 5px;
+.container main .grid .grid__item {
+  margin-bottom: 10px;
 }
-.container .main ul li a {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 15px 15px;
-  border: 1px solid #ccc;
-}
-.container .main ul li a img {
-  width: 16px;
-  display: block;
-  margin-right: 10px;
-}
-.container .main ul li a span {
-  font-size: 18px;
+.container main .grid a {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=sitenav.css.map */
