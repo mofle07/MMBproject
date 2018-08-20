@@ -172,13 +172,13 @@ body, html {
   font-size: 16px;
   color: #000; }
 .main .productlist .product a .right .productPriceBar {
+  height: 18px;
   width: 100%; }
 .main .productlist .product a .right .productPriceBar .productPrice {
   font-size: 18px;
   color: red; }
-.main .productlist .product a .right .productPriceBar .star {
-  color: #ff9000;
-  text-shadow: 0px 0px #ff9000; }
+.main .productlist .product a .right .productPriceBar .stars img {
+  width: 10px; }
 .main .productlist .product a .right .productComBar {
   color: #999; }
 .main .productlist .product a .right .productComBar .productQuote {

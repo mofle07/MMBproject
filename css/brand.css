@@ -136,12 +136,7 @@ body, html {
   justify-content: center;
   color: #5a5a5a; }
 .container .footer .footer-info p a {
-<<<<<<< HEAD
-  color: red;
-}
-=======
   color: red; }
->>>>>>> d4a833ff81a65d4ad33a692c3bc72cb0528c69c3
 
 .main {
   display: flex;
@@ -158,6 +153,7 @@ body, html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
   position: relative; }
 .main .brandTitles .title {
   flex-basis: 40px;
@@ -185,7 +181,7 @@ body, html {
   font-weight: normal; }
 .main .brandTitles .brands li.brand .mui-navigate-right .left {
   margin-right: 8px; }
-.main .brandTitles .brands li.brand .mui-navigate-right .left .mui-badge-danger {
+.main .brandTitles .brands li.brand .mui-navigate-right .left .mui-badge {
   border-radius: 0; }
 .main .brandTitles .brands li.brand .mui-navigate-right .right .brandName {
   color: #000;
