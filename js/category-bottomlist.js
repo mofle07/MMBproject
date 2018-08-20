@@ -22,7 +22,8 @@ $(function() {
     var query=urlTool(url);
     
     //拿到当前商品的id
-    var pid=query.productId;
+    var pid=query[0];
+    var categoryid = query[1];
     console.log(pid)
     
       function reden(id) {
@@ -67,7 +68,7 @@ $(function() {
         $.ajax({
             url:"http://mmb.ittun.com/api/getcategorybyid",
             data:{
-                categoryid:pid,
+                categoryid: categoryid,
             },
             success:function(obj){
      
