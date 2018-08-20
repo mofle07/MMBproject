@@ -22,7 +22,7 @@ $(function () {
             url: 'http://mmb.ittun.com/api/getmoneyctrl',
             success: function (res) {
                 var htmlstr = template('product', res);
-               $('.productslist ul').html(htmlstr);
+                $('.productslist ul').html(htmlstr);
 
                 // 分页部分
                 $("#paginator").bootstrapPaginator({
@@ -56,8 +56,9 @@ $(function () {
         document.documentElement.scrollTop = 0;
 
     })
-    $('.nav a').eq(0).click(function () {
-        location.href = './index.html'
-    })
+ 
+    mui('body').on('tap', 'a', function () {
+        document.location.href = this.href;
+    });
 
 })

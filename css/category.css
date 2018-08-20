@@ -161,8 +161,10 @@ html {
 .container .main .comparison .title {
   font-size: 16px;
   font-weight: bolder;
+  height: 40px;
 }
 .container .main .comparison .comparisonlist {
+  display: block;
   background-color: #F9F9F9;
 }
 .container .main .comparison .comparisonlist a {
@@ -171,8 +173,8 @@ html {
   display: block;
   width: 33.3333%;
   height: 40px;
-  border-top: 1px solid #ccc;
   border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   text-align: center;
   line-height: 40px;
   font-size: 12px;
