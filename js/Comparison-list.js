@@ -16,7 +16,6 @@ $(function () {
         $(".slide").hide();
     })
 
-<<<<<<< HEAD
      //url的关键字提取函数
  
 // var url = location.href;
@@ -37,8 +36,6 @@ $(function () {
         }
     })
 
-=======
->>>>>>> 24471d4e9bed4a6503fdd4942e21fd45b44117ea
 
     //   //分析url拿到id
     var url = location.href;
