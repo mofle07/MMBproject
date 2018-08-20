@@ -1,0 +1,261 @@
+@import "./common.scss";
+.container {
+  display: flex;
+}
+.main {
+  flex: 1;
+  background-color: #fff;
+  position: relative;
+
+  .nagive {
+    height: 40px;
+    line-height: 40px;
+    //    margin-right: 10px;
+    ol {
+      display: flex;
+      font-size: 14px;
+      color: #5a5a5a;
+      margin-left: 10px;
+      li {
+        padding-left: 5px;
+      }
+    }
+  }
+  .details {
+    
+    border-top: 1px solid #ccc;
+    .box{
+      background-color: white;
+      border-bottom: 1px solid #ccc;
+      .piv {
+          text-align: center;
+        }
+        .sce {
+          margin: 20px;
+          height: 40px;
+          width: 40px;
+        }
+
+        .tit {
+          margin: 20px 10px;
+    
+    }
+    .title {
+      // padding: 5px 0px;
+      font-size: 18px;
+      color: #000;
+      line-height: 24px;
+      padding-bottom: 20px;
+    }
+    span {
+      padding-right: 20%;
+      color: #aaaac2;
+    }
+  }
+.product{
+  margin-top: 20px;
+  .product-title {
+    height: 40px;
+    // margin-top: 30px;
+    //   background-color: rosybrown;
+    border-bottom: 1px solid red;
+    border-top: 1px solid red;
+    display: flex;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 33.3333%;
+      font-size: 14px;
+      border-right: 1px solid red;
+      color: white;
+      background-color: #ffc933;
+      &:nth-child(3) {
+        border-right: none;
+        background-color: #ffc933;
+      }
+
+      &.active {
+        background-color: #ff9a17;
+      }
+    }
+  }
+  .shangping {
+    .mui-table-view-cell {
+      padding-top: 15px;
+      height: 80px;
+      
+      .mui-navigate-right {
+        .mui-pull-right {
+          padding-right: 20px;
+          color: red;
+        }
+        .word {
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+  .price {
+    height: 87px;
+    background-color: #fff;
+    padding: 20px 5px;
+    p {
+      padding: 20px 0px 0px 10px;
+      line-height: 16px;
+    }
+  }
+}
+
+
+  
+  }
+    
+ 
+
+  .comment-title {
+    background-color: #dbdbdb;
+    height: 35px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+  }
+  .disguess {
+    padding: 10px;
+    color: #999999;
+    .container {
+      .left {
+        display: flex;
+        justify-content: space-between;
+      }
+      .right {
+        padding-top: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .font {
+      padding-top: 5px;
+      line-height: 18px;
+  
+      span {
+        color: #000;
+        font-size: 14px;
+      }
+    }
+
+    .huifu {
+      color: #666;
+      font-size: 12px;
+      padding-top: 5px;
+      border-bottom: 1px dashed #ccc;
+    }
+  }
+
+  .more {
+    background: #f2f2f2;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      height: 32px;
+      flex: 1;
+      // // width: p2r(344);
+      // width: 100%;
+      text-align: center;
+      border: 1px solid #bababa;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+  }
+
+.mask {
+  height: 80px;
+  background-color: #434343;
+  color: #000;
+  display: flex;
+  padding: 0px 10px;
+  // line-height: 80px;
+  justify-content: space-between;
+  .mask-left {
+    display: flex;
+
+    img {
+      height: 50px;
+      width: 50px;
+      margin-top: 15px;
+    }
+    p {
+      // padding: 5px;
+      color: #fee6c2;
+      font-size: 12px;
+      padding: 5px 8px;
+    }
+    .one {
+      padding-top: 10px;
+      font-size: 16px;
+      color: white;
+    }
+  }
+  .mask-right {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    a {
+      margin-bottom: 8px;
+      margin-left: 25px;
+      height: 25px;
+      width: 25px;
+      background-color: #000;
+      border-radius: 50%;
+      span {
+        color: white;
+      }
+    }
+  }
+}
+}
+.bottom{
+flex-basis: 50px;
+position: fixed;
+bottom: 0;
+width: 100%;
+flex-basis: 70px;
+    
+background-color: #fff;
+justify-content: space-between;
+display: flex;
+align-items: center;
+padding: 0px 10px;
+.left{
+    display: flex;
+    flex: 1;
+    a{
+       margin-top: 20px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #ccc;
+      
+          
+            margin-right: 10px;
+    
+    }
+    img{
+        height: 40px;
+        width: 49px;
+       margin-top: 15px;
+    }
+    p{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        span{
+            padding: 5px;
+        }
+    }
+}
+
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="./lib/js/jquery-3.3.1.min.js"></script>
+    <script src="./lib/js/mui.min.js"></script>
+    <script src="js/Comparison-list.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="./lib/js/bootstrap-paginator.min.js"></script>
+    <!-- 模板 -->
+    <script src="lib/js/template-web.js"></script>
+    <script src="./js/getUrlTools.js"></script>
+    <link rel="stylesheet" href="./lib/css/mui.min.css">
+    <link rel="stylesheet" href="css/Comparison-list.css">
+    <link rel="stylesheet" href="css/Com-other.css">
+
+</head>
+
+<body>
+    <div class="container" style="padding: 0">
+
+        <div class="header">
+            <div class="header-info">
+                <div class="logo">
+                    <a href="#">
+                        <img src="./images/manmanmai.png" alt="">
+                    </a>
+                </div>
+                <div class="app">
+                    <a href="#">
+                        <img src="./images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="请输入你想比价的商品">
+                <button class="mui-btn">搜索</button>
+            </div>
+        </div>
+        <div class="main">
+            <!-- 区域滚动 -->
+            <!-- <div class="mui-scroll-wrapper">
+                <div class="mui-scroll"> -->
+            <div class="nav">
+                <!-- <div class="list">
+                <a href="">首页<span>></span></a>
+                <a href="">全部分类<span>></span></a>
+                <a href="">电视<span>></span></a>
+               </div>
+                <a href="#" id="slect" class="pull-right">
+                    <span class="mui-icon mui-icon-settings"></span>筛选</a> -->
+            </div>
+            <!-- 内容 -->
+            <div class="content">
+                <ul class="list">
+
+                </ul>
+            </div>
+            <!-- 分页 -->
+            <div class="page">
+                <div class="pull-right">
+                    <ul id="paginator"></ul>
+                </div>
+                <div class="about">
+                    <p class="friend">友情连接</p>
+                    <p class="ten">电视机十大品牌</p>
+                    <p class="tev">电视机品牌大全</p>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- </div>
+            </div> -->
+        </div>
+        <!-- 底部隐藏 -->
+        <div class="message" id="hidden">
+            <div class="left">
+                <a class="mui-icon mui-icon-closeempty "></a>
+                <img src="./images/favicon.ico" alt="">
+                <p>
+                    <span>实时更新品牌榜</span>
+                    <span>全网比价不吃亏</span>
+                </p>
+            </div>
+
+            <button class="mui-btn mui-btn-warning footer-btn ">立即打开</button>
+        </div>
+
+        <div class="footer">
+            <div class="footer-nav">
+                <ul>
+                    <li class="login">
+                        <a href="login.html">登录</a>
+                    </li>
+                    <li class="regist">
+                        <a href="./register.html" >注册</a>
+                    </li>
+                    <li>
+                        <img src="./images/top.jpg" alt="">
+                        <a id="back">返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    <a href="href=" http://m.manmanbuy.com/app.html?type=footword&value=wap "">手机APP下载</a>
+                    <span>慢慢买手机版--掌上比价平台</span>
+                </p>
+                <span>m.manmanbuy.com</span>
+            </div>
+            <!-- </div>
+                <button class="mui-btn mui-btn-warning footer-btn ">立即打开</button>
+            </div> -->
+        </div>
+    </div>
+    <div class="slide">
+
+        <div class="text">
+            <span>筛选</span>
+            <span class="mui-pull-right" id="close">X</span>
+        </div>
+        <div class="content">
+            <div class="mui-scroll-wrapper">
+                <div class="mui-scroll">
+                    <ul>
+                        <li>
+                            <div class="top">
+                                <span>品牌</span>
+                                <span class="all">全部品牌</span>
+                                <span class="mui-icon mui-icon-arrowdown mui-pull-right"></span>
+                            </div>
+                            <div class="bottom">
+                                <button class="mui-btn mui-btn-danger">全部品牌</button>
+                                <button>美的</button>
+                                <button>隔离</button>
+                                <button>奥克斯</button>
+                                <button>海尔</button>
+                                <button>海信</button>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="top">
+                                <span>品类</span>
+                                <span class="all">全部品类</span>
+                                <span class="mui-icon mui-icon-arrowdown mui-pull-right"></span>
+                            </div>
+                            <div class="bottom">
+                                <button class="mui-btn mui-btn-danger">全部品类</button>
+                                <button>液晶电视</button>
+                                <button>曲面电视</button>
+                                <button>3D电视</button>
+                                <button>会议/广告机</button>
+                                <button>激光/影院电视</button>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="top">
+                                <span>尺寸</span>
+                                <span class="all">全部尺寸</span>
+                                <span class="mui-icon mui-icon-arrowdown mui-pull-right"></span>
+                            </div>
+                            <div class="bottom">
+                                <button class="mui-btn mui-btn-danger">全部尺寸</button>
+                                <button>32英寸以下</button>
+                                <button>32英寸</button>
+                                <button>37-39英寸</button>
+                                <button>40-42英寸</button>
+                                <button>43-45英寸</button>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="top">
+                                <span>分辨率</span>
+                                <span class="all">全部分辨率</span>
+                                <span class="mui-icon mui-icon-arrowdown mui-pull-right"></span>
+                            </div>
+                            <div class="bottom">
+                                <button class="mui-btn mui-btn-danger">全部分辨率</button>
+                                <button>超高清4k</button>
+                                <button>全高清1080P</button>
+                                <button>高清720P</button>
+                                <button>蓝光</button>
+                                <button>其他</button>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="top">
+                                <span>功能</span>
+                                <span class="all">全部功能</span>
+                                <span class="mui-icon mui-icon-arrowdown mui-pull-right"></span>
+                            </div>
+                            <div class="bottom">
+                                <button class="mui-btn mui-btn-danger">全部功能</button>
+                                <button>智能网络电视</button>
+                                <button>普通电视</button>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="top">
+                                <span>3D</span>
+                                <span class="all">全部3D</span>
+                                <span class="mui-icon mui-icon-arrowdown mui-pull-right"></span>
+                            </div>
+                            <div class="bottom">
+                                <button class="mui-btn mui-btn-danger">全部3D</button>
+                                <button>支持3D</button>
+                                <button>不支持3D</button>
+                                <button>高清720P</button>
+                                <button>蓝光</button>
+                                <button>其他</button>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="top">
+                                <span>3D</span>
+                                <span class="all">全部3D</span>
+                                <span class="mui-icon mui-icon-arrowdown mui-pull-right"></span>
+                            </div>
+                            <div class="bottom">
+                                <button class="mui-btn mui-btn-danger">全部3D</button>
+                                <button>支持3D</button>
+                                <button>不支持3D</button>
+                                <button>高清720P</button>
+                                <button>蓝光</button>
+                                <button>其他</button>
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
+<script type="text/html" id="navTem">
+    {{each result v i}}
+    <div class="list">
+        <a href="">{{v.titleId}}
+            <span>></span>
+        </a>
+        <a href="">{{v.categoryId}}
+            <span>></span>
+        </a>
+        <a href="">{{v.category}}
+            <span>></span>
+        </a>
+    </div>
+    <a  id="slect" class="pull-right">
+        <span class="mui-icon mui-icon-settings"></span>筛选</a>
+
+    {{/each}}
+</script>
+<script type="text/html" id="listTem">
+    {{each result v i}}
+    <li data-id="{{v.productId}}">
+        <div class="left">
+            {{#v.productImg}}
+        </div>
+        <div class="right">
+            <p class="text">{{v.productName}}</p>
+            <p class="price">
+                <span class="num">{{v.productPrice}}</span>
+            </p>
+            <div class="read">
+                <span class="mall">{{v.productQuote}}</span>
+                <span class="sales mui-pull-right">{{v.productCom}}</span>
+            </div>
+        </div>
+    </li>
+
+
+    {{/each}}
+
+
+</script>

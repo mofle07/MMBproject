@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" href="./css/Couponlist.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <script src="lib/js/zepto.min.js"></script>
+    <script src="lib/js/mui.min.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+    <script src="lib/js/template-web.js"></script>
+    <script src="./js/Couponlist.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -14,7 +23,7 @@
                 <a href="#">
                     < </a>
             </div>
-            <div class="title">优惠券</div>
+            <div class="title">肯德基优惠券</div>
             <div class="app">
                 <a href="#">
                     <img src="./images/header_app.png" alt="">
@@ -23,10 +32,22 @@
         </div>
 
         <!-- main部分 -->
-        <div class="main">
-            <div class="list">
-                
-            </div>
+        <div class="main"> 
+            <p class="bar">-点餐前出示手机中的优惠券，即可享受优惠-</p>
+            <ul class="list">
+                <li>
+                    <div class="top">
+                        <img src="./images/banner01.jpg" alt="">
+                        <div class="info">
+                            <p>两人小食组 新奥尔良鸡翅黄金鸡块劲爆鸡米花</p>
+                            <span>￥ 28</span>
+                        </div>
+                        <span class="arrow"></span>
+                    </div>
+                    <span class="bottom">有效期至10月31日</span>
+                </li>
+
+            </ul>
         </div>
 
         <!-- footer部分 -->
@@ -56,3 +77,18 @@
     </div>
 </body>
 </html>
+<script type="text/html" id="tpl">
+    {{each}}
+    <li>
+        <div class="top">
+            <img src="./images/banner01.jpg" alt="">
+            <div class="info">
+                <p>两人小食组 新奥尔良鸡翅黄金鸡块劲爆鸡米花</p>
+                <span>￥ 28</span>
+            </div>
+            <span class="arrow"></span>
+        </div>
+        <span class="bottom">有效期至10月31日</span>
+    </li>
+    {{/each}}
+</script>
