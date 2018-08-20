@@ -129,6 +129,8 @@ html {
 }
 .container .main .products {
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
 }
 .container .main .products .box {
   padding-top: 20px;
@@ -163,6 +165,7 @@ html {
   line-height: 18px;
   letter-spacing: 2px;
   flex: 1;
+  text-overflow: ellipsis;
 }
 .container .main .products .detail .left img {
   flex-basis: 200px;
@@ -182,10 +185,24 @@ html {
   color: #fff;
   height: 40px;
   line-height: 20px;
+  font-size: 20px;
 }
 .container .main .products .qr {
   width: 100%;
   margin-top: 20px;
+}
+.container .main .products .tit {
+  margin-top: 20px;
+  line-height: 25px;
+}
+.container .main .products .ctrl {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.container .main .products .ctrl input {
+  background-color: darkorange;
+  border: none;
 }
 .container .footer {
   flex-basis: 100px;
