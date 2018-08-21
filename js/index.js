@@ -23,13 +23,13 @@ $(function () {
     //点击图标更多,加载其它导航
     $('.navList').on('tap', '.more', function () {
         var maxHeight = $('.navbar').css("maxHeight");
-        if (maxHeight == "225px") {
+        if (maxHeight == "220px") {
             $('.navbar').animate({
                 maxHeight: 335,
             }, "normal");
         } else {
             $('.navbar').animate({
-                maxHeight: 225,
+                maxHeight: 220,
             }, "normal");
         }
     });

@@ -8,7 +8,6 @@ function getbrandtitle() {
         type: "get",
         success: function (res) {
             console.log(res);
-            
             var htmlStr = template("brandTitleTmp", res);
             $('.brands').html(htmlStr);
 
@@ -26,5 +25,9 @@ $(function () {
     getbrandtitle();
 
 
-
+    $('.brands').on('tap', 'a', function () {
+        console.log($(this).html());
+        sessionStorage.setItem('brandtitle', $(this).html());
+        //brand.html?brandtitleid={{v.categoryId}};
+    })
 })

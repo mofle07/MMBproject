@@ -53,7 +53,7 @@
             <div class="navBar">
                 <p>
                     <a href="index.html">首页</a> >
-                    <a href="brandTitle.html">十大品牌</a>
+                    <a href="brandTitle.html">十大品牌 ></a>
                     <a>平板电视</a> 
                 </p>
             </div>
@@ -63,7 +63,14 @@
                 <div class="mui-scroll-wrapper">
                     <div class="mui-scroll">
                         <!-- 标题 -->
-                        <div class="title">平板电视哪个牌子好</div>
+                        <div class="title">
+                            <script type="text/html" id="brandtitle">
+                                {{each brandtitle}}
+                                <span>{{v}}</span>
+                                {{/each}}
+                            </script>
+                            
+                        </div>
                         <ul class="mui-table-view brands">
                             <!-- 数据模板区域地址 -->
 
@@ -103,7 +110,7 @@
     <script type="text/html" id="brandTmp">
         {{each result v i}}
         <li class="mui-table-view-cell brand">
-            <a href="./Comparison-list.html?brandtitleid={{result.brandtitleid}}" class="mui-navigate-right ">
+            <a href="./Comparison-list.html?brandtitleid={{v.brandId}}" class="mui-navigate-right ">
                 <div class="left">
                     <span class="mui-badge {{if(i == 0)}} mui-badge-danger {{else if(i == 1)}} mui-badge-primary {{else if(i == 2)}}mui-badge-warning {{else(i == 1)}} mui-badge-gray{{/if}}">{{i+1}}</span>
                 </div>
