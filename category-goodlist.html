@@ -348,10 +348,10 @@
     </div>
     <div class="product">
         <div class="product-title">
-            <a class="product-title1 active">比价购买</a>
+            <a href="./category-bottomlist.html?productId={{v.productId}}&categoryid={{v.categoryId}}" class="product-title1">比价购买</a>
             <!-- <a class="product-title1 active">比价购买</a> -->
-            <a class="product-title1">产品参数</a>
-            <a class="product-title1  comment">优选评价</a>
+            <a href="./Parameter.html?productId={{v.productId}}&categoryid={{v.categoryId}}" class="product-title1">产品参数</a>
+            <a class="product-title1  comment active ">优选评价</a>
         </div>
         <div class="top">
             <a class="left active">全部</a>
@@ -394,11 +394,9 @@
         <a href="index.html">首页</a>
         <span>></span>
     </li>
-    <li class="tow">
-        <a href="category.html">全部分类</a>
-        <span>></span>
+    <li class="active">
+         <a href="./Comparison-list.html?categoryId={{v.categoryId}}">{{v.category}}</a>
     </li>
-    <li class="active">{{v.category}}</li>
     {{/each}}
 </script>
 

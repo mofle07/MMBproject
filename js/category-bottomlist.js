@@ -74,26 +74,22 @@ $(function () {
         },
         success: function (obj) {
             console.log(obj);
-            
+
             if (obj.result.length != 0) {
                 var html = template("daohang", obj);
                 $(".breadcrumb").html(html);
                 sessionStorage.setItem('categoryName', obj.result[0].category)
             } else {
                 var cname = sessionStorage.getItem('categoryName')
-
-                obj.result.push({category:cname});
-                 obj.result[0].categoryId = categoryid;
-                //  obj.result.push({
-                //      categoryId: categoryid
-                //  });
+                obj.result.push({
+                    category: cname
+                });
+                obj.result[0].categoryId = categoryid;
                 console.log(obj);
                 var html = template("daohang", obj);
                 $(".breadcrumb").html(html);
 
             }
-
-
         }
     })
 
@@ -113,7 +109,7 @@ $(function () {
 
     //点击优秀评论
     $(".details").on("click", ".comment", function () {
-        window.location.href = "./category-goodlist.html?productId=" + $(this).data("id");
+        window.location.href = "./category-goodlist.html?productId=" + $(this).data("id") + "&categoryid=" + categoryid;
     })
 
 

@@ -11,10 +11,7 @@ $(function() {
         type:"GET",
         dataType:"json",
         success:function(res) {
-            console.log(res);
-
             var temp = template("shop",res);
-
             $(".select .left").html(temp);
             
         }
@@ -30,8 +27,6 @@ $(function() {
             dataType:"json",
             type:"GET",
             success:function(res) {
-                console.log(res);
-    
                 var area = template('area',res);
     
                 $(".drop ul").html(area);
